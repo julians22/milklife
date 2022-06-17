@@ -4,7 +4,6 @@
 /public/storage
 /public/media
 /public/img
-/public/mix-manifest.json
 /storage/*.key
 /public/vendor/tinymce
 /vendor
