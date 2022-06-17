@@ -1,0 +1,56 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "@coreui/coreui": "^3.0.0",
+    "@coreui/icons": "^1.0.1",
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@popperjs/core": "^2.5.1",
+    "@splidejs/splide-extension-url-hash": "^0.3.0",
+    "alpinejs": "^2.3.5",
+    "autoprefixer": "^10.4.7",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.0",
+    "cross-env": "^7.0",
+    "jquery": "^3.5.1",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.19",
+    "perfect-scrollbar": "^1.5.0",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.4.13",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.20.1",
+    "sass-loader": "^8.0.0",
+    "sweetalert2": "^9.8.2",
+    "tailwindcss": "^3.0.24",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "name": "milklife",
+  "description": "[![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-boilerplate) [![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-boilerplate)  <br/> [![StyleCI](https://styleci.io/repos/30171828/shield?style=plastic)](https://github.styleci.io/repos/30171828) ![Tests](https://github.com/rappasoft/laravel-boilerplate/workflows/Tests/badge.svg?branch=master) <br/> ![GitHub contributors](https://img.shields.io/github/contributors/rappasoft/laravel-boilerplate.svg) ![GitHub stars](https://img.shields.io/github/stars/rappasoft/laravel-boilerplate.svg?style=social)",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.0.2",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "floating-vue": "^1.0.0-beta.18",
+    "fullpage.js": "^4.0.7",
+    "tinymce": "^5.10.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

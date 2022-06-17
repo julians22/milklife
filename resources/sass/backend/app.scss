@@ -1,0 +1,15 @@
+@import "../global";
+
+// Coreui
+@import '~@coreui/coreui/scss/coreui';
+@import '~@coreui/icons/css/free.min.css';
+
+body.mce-content-body{
+    padding: .5rem !important;
+    background-color: white !important;
+}
+
+.img-thumbnail.img-thumbnail-orange{
+    background-color: #c58d3b;
+}
+

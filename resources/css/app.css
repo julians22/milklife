@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav{
+        @apply py-4 fixed top-0 left-0 right-0 bg-transparent z-10 transition-all ease-linear duration-75;
+    }
+    .nav.scroll{
+        @apply top-[-500px] duration-[700ms];
+    }
+    .nav .nav-wrapper{
+        @apply flex justify-between items-center max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide;
+    }
+
+    .nav .item-wrapper{
+        @apply flex flex-col items-center justify-center text-lg font-semibold;
+    }
+
+    .btn{
+        @apply px-2 py-1 text-white rounded-sm transition-all ease-linear duration-300 inline-block;
+    }
+
+    .btn-milklife-blue{
+        @apply bg-milklife-blue text-white active:ring-2 ring-offset-milklife-blue-darken;
+    }
+
+    .btn.btn-doodle{
+        @apply text-lg font-semibold font-gotham-black p-6 2xl:text-2xl 2xl:p-8;
+    }
+
+    .btn.btn-doodle.btn-sm{
+        @apply text-base p-4;
+    }
+
+    .btn.btn-whatsapp{
+        @apply inline-flex items-center space-x-4 bg-green-500 text-xl lg:text-3xl p-3 rounded-2xl font-gotham-bold;
+    }
+
+
+    .banner-section, .about-section, .variant-section, .article-section, .explore-section, .contact-section{
+        @apply min-h-screen w-full bg-cover bg-left-top bg-no-repeat;
+    }
+
+    .about-section, .variant-section, .article-section, .explore-section, .contact-section, .variant-section{
+        @apply pt-4 relative;
+    }
+
+    .banner-content{
+        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center;
+    }
+
+    .banner-content .splide__pagination__page{
+        @apply w-4 h-4 bg-milklife-blue-darken;
+    }
+
+    .banner-content .splide__pagination__page.is-active{
+        @apply w-4 h-4 bg-white scale-100;
+    }
+
+    .variant-item{
+        @apply flex flex-col items-center justify-end text-lg font-semibold text-white py-2 border-8 border-white rounded-md mx-auto space-y-3 w-48 h-full;
+    }
+    .variant-item .variant-img{
+        @apply w-32 h-auto;
+    }
+
+    .variant-title{
+        @apply text-center font-gotham-black text-lg;
+    }
+
+    .article-box{
+        @apply w-[370px];
+    }
+
+    .article-image-wrapper{
+        @apply mb-3 border-[12px] shadow-md -rotate-2;
+    }
+
+    .article-image-wrapper .article-image{
+        @apply w-full h-48 2xl:h-56 object-center object-cover;
+    }
+
+
+
+    .page-nav-item{
+        @apply w-5 h-5 rounded-full bg-milklife-blue transition-all ease-in-out duration-700;
+    }
+    .page-nav-item.active{
+        @apply bg-milklife-blue-darken;
+    }
+
+    .page-title{
+        @apply font-koara-bold text-5xl lg:text-6xl text-center text-white tracking-wider leading-tight;
+    }
+
+    .page-title.page-title-lg{
+        @apply text-6xl lg:text-7xl;
+    }
+
+    .about-section.page .about-content, .explore-section.page .explore-content, .variant-section.page .variant-content{
+        @apply max-w-5xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto;
+    }
+
+    .article-section.page .article-content{
+        @apply max-w-4xl lg:max-w-5xl 2xl:max-w-7xl mx-auto;
+    }
+
+    .about-title{
+        @apply text-center font-gotham-bold text-3xl text-milklife-orange;
+    }
+
+    .about-body .detail .title{
+        @apply font-koara-bold text-3xl text-milklife-orange mb-2;
+    }
+
+    .nav-artikel-wrapper{
+        @apply flex space-x-10 justify-center items-center mx-auto max-w-max;
+    }
+
+
+    .nav-artikel-wrapper .nav-artikel{
+        @apply relative p-10 block text-white cursor-pointer;
+    }
+    .nav-artikel-wrapper .nav-artikel.active, .nav-artikel-wrapper .nav-artikel:hover{
+        @apply text-milklife-blue-darken;
+    }
+    .nav-artikel-wrapper .nav-artikel span{
+        @apply block;
+    }
+
+    .nav-misc-wrapper{
+        @apply flex space-x-10 justify-center items-center mx-auto max-w-max;
+    }
+    .nav-misc-wrapper .nav-misc{
+        @apply relative p-10 block text-white cursor-pointer w-[315px];
+    }
+    .nav-misc-wrapper .nav-misc.active, .nav-misc-wrapper .nav-misc:hover{
+        @apply text-milklife-blue-darken;
+    }
+    .nav-misc-wrapper .nav-misc span{
+        @apply block;
+    }
+
+    footer .link-icons-wrapper .link-icon-items{
+        @apply w-10 h-10 bg-contain bg-center bg-no-repeat hover:scale-110 hover:-translate-y-2 transition-transform ease-in-out duration-300;
+    }
+
+    .product-image.product-image-large{
+        @apply w-[100px] 2xl:w-[120px];
+    }
+    .product-image.product-image-medium{
+        @apply w-[88px] 2xl:w-[108px];
+    }
+    .product-image.product-image-small{
+        @apply w-[85px] 2xl:w-[100px];
+    }
+
+    .product-show-case{
+        @apply flex justify-around text-white;
+    }
+    .product-show-case .product-intro{
+        @apply w-2/5;
+    }
+    .product-show-case .product-excelence{
+        @apply w-2/5 text-4xl font-koara-bold pl-5;
+    }
+    .product-misc{
+        @apply flex justify-between items-start flex-row;
+    }
+    .product-misc .product-misc-content{
+        @apply min-h-[400px] flex-1 pl-7;
+    }
+    .grid-instax{
+        @apply w-[50px] h-[50px] relative transition-all ease-linear duration-500 delay-200;
+    }
+
+    .grid-instax img{
+        @apply transition-transform duration-500 ease-in-out scale-0;
+    }
+
+    .is-visible .grid-instax{
+        @apply w-[260px] h-[260px];
+    }
+    .is-visible .grid-instax img{
+        @apply scale-100;
+    }
+
+    .explore-rope-image{
+        @apply relative inset-x-0 top-12 mb-40;
+    }
+    .explore-rope-image .img-thumbnail{
+        @apply border-[12px] shadow-xl border-white w-[164px] h-[164px] 2xl:w-48 2xl:h-48;
+    }
+
+    .shop-link{
+        @apply bg-white p-2 rounded-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all ease-in-out;
+    }
+}

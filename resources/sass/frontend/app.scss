@@ -1,0 +1,222 @@
+// Vendors
+@import 'vendors';
+
+@import "../global";
+@import "fonts";
+@import "global";
+
+// Variables
+@import 'variables';
+@import 'animations';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+.nav{
+    .nav-wrapper{
+        height: 106px;
+        .item-wrapper{
+            width: 200px;
+            height: 64px;
+            position: relative;
+            padding: 0 20px;
+            z-index: 12;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('/img/appereance_menu.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                z-index: -1;
+                opacity: 0;
+                transition: all 0.7s ease-in-out;
+            }
+
+            &.active{
+
+                &::before{
+                    opacity: 1;
+                }
+            }
+
+            &:hover{
+                &::before{
+                    opacity: 1;
+                }
+            }
+
+            &.is-page-orange{
+                &::before{
+                    background-image: url('/img/appereance_menu_blue.png');
+                }
+            }
+        }
+    }
+}
+
+.banner-section, .about-section.page, .article-section.page, .contact-section.page, .variant-section.page{
+    padding-top: calc(calc(106px) + calc(16px * 2));
+}
+
+.btn{
+    &.text-shadow{
+        text-shadow: 5px 4px 3px rgba(0,0,0,0.51);
+    }
+
+    &.btn-doodle{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        background-image: url('/img/appereance_1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &.btn-doodle-basic{
+            background-image: url('/img/appereance_orange_basic.png');
+        }
+
+        &.btn-doodle-blue{
+            background-image: url('/img/appereance_menu_blue.png');
+        }
+    }
+}
+
+.nav-artikel-wrapper{
+    .nav-artikel{
+        z-index: 2;
+        &::before{
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/appereance_menu_blue.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index: -1;
+            transition: all 0.5s ease-in;
+        }
+
+        &:hover{
+            &::before{
+                background-image: url('/img/appereance_menu_white.png');
+            }
+        }
+
+        &.active{
+            &::before{
+                background-image: url('/img/appereance_menu_white.png');
+            }
+        }
+    }
+}
+
+.nav-misc-wrapper{
+    .nav-misc{
+        z-index: 2;
+        &::before{
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/appereance_menu_blue.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index: -1;
+            transition: all 0.5s ease-in;
+        }
+
+        &:hover{
+            &::before{
+                background-image: url('/img/appereance_menu_white.png');
+            }
+        }
+
+        &.active{
+            &::before{
+                background-image: url('/img/appereance_menu_white.png');
+            }
+        }
+    }
+}
+
+.explore-rope-image{
+    .thumb-wrapper{
+        opacity: 0;
+    }
+}
+.anim-fade-in{
+    opacity: 0;
+}
+
+// splide trigger by .is-visible class
+.is-visible {
+    .explore-rope-image{
+        .thumb-wrapper{
+            animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+        }
+    }
+
+    .anim-fade-in{
+        opacity: 1;
+        animation: fade-in 1.2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    }
+
+}
+
+// splide customizer
+
+// variant splide
+#variant-splide {
+    .splide__arrow svg{
+        display: none;
+    }
+    button.splide__arrow.splide__arrow--next{
+        right: -4em;
+        width: 50px;
+        height: 50px;
+        &::after{
+            content: ' ';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/icons/Panah Kanan.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+    button.splide__arrow.splide__arrow--prev{
+        left: -4em;
+        width: 50px;
+        height: 50px;
+        &::after{
+            content: ' ';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/icons/Panah Kiri.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
