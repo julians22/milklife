@@ -314,6 +314,9 @@
         document.addEventListener( 'DOMContentLoaded', function() {
             scrollFunction();
 
+            const navBadge = document.querySelector('.toggler-nav-badge');
+            const navCloseBagde = document.querySelector('.toggler-nav-close');
+
             var bannerSplide = new Splide( '#banner-splide' ,{
                 type: 'fade',
                 speed: 2000,
@@ -358,8 +361,11 @@
                 const index = e.index;
                 if (index > 0){
                     document.getElementById("navigation").style.top = "-500px";
+                    document.getElementById("navigation").classList.remove('open-badge');
+                    navBadge.style.top = "0px";
                 }else{
                     document.getElementById("navigation").style.top = "0";
+                    navBadge.style.top = "-500px";
                 }
 
                 document.querySelector('.page-nav-item.active').classList.remove('active');
@@ -391,6 +397,20 @@
             });
 
             variantSplide.mount();
+
+            navBadge.addEventListener('click', function(e){
+                e.preventDefault();
+                document.getElementById("navigation").style.top = "0";
+                document.getElementById("navigation").classList.add('open-badge');
+                navBadge.style.top = "-500px";
+            });
+
+            navCloseBagde.addEventListener('click', function(e){
+                e.preventDefault();
+                document.getElementById("navigation").style.top = "-500px";
+                document.getElementById("navigation").classList.remove('open-badge');
+                navBadge.style.top = "0px";
+            });
         });
 
     </script>

@@ -4,10 +4,16 @@
 
 @layer components {
     .nav{
-        @apply py-4 fixed top-0 left-0 right-0 bg-transparent z-10 transition-all ease-linear duration-75;
+        @apply py-4 fixed top-0 left-0 right-0 bg-transparent z-10 transition-all ease-linear duration-300;
     }
     .nav.scroll{
         @apply top-[-500px] duration-[700ms];
+    }
+    .nav.open-badge{
+        @apply bg-milklife-blue bg-opacity-95 shadow;
+    }
+    .nav.open-badge .toggler-nav-close{
+        @apply block;
     }
     .nav .nav-wrapper{
         @apply flex justify-between items-center max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide;
@@ -16,6 +22,16 @@
     .nav .item-wrapper{
         @apply flex flex-col items-center justify-center text-lg font-semibold;
     }
+
+    .toggler-nav-badge{
+        @apply  fixed inset-x-0 z-[9] transition-all ease-linear duration-75 top-[-500px] cursor-pointer;
+    }
+
+    .toggler-nav-close{
+        @apply absolute inset-x-0 bg-transparent hidden;
+    }
+
+
 
     .btn{
         @apply px-2 py-1 text-white rounded-sm transition-all ease-linear duration-300 inline-block;
@@ -98,6 +114,10 @@
 
     .about-section.page .about-content, .explore-section.page .explore-content, .variant-section.page .variant-content, .explore-section.page .explore-content{
         @apply max-w-5xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto;
+    }
+
+    ..explore-section.page{
+        @apply min-h-0 h-auto;
     }
 
     .article-section.page .article-content{

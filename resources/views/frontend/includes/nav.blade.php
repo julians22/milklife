@@ -25,4 +25,16 @@
             <a href="{{ route('frontend.article') }}">Artikel & Resep</a>
         </div>
     </div>
+
+    <div class="toggler-nav-close">
+        <div class="w-11 rounded-b-sm mx-auto text-white text-center cursor-pointer">
+            <i class="fas fa-chevron-circle-up"></i>
+        </div>
+    </div>
+</nav>
+
+<nav class="toggler-nav-badge">
+    <div class="w-11 bg-black bg-opacity-30 rounded-b-sm mx-auto text-white text-center">
+        <i class="fas fa-chevron-circle-down"></i>
+    </div>
 </nav>
