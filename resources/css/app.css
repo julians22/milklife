@@ -116,6 +116,10 @@
         @apply max-w-5xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto;
     }
 
+    .variant-section.page .variant-content{
+        @apply max-w-5xl xl:max-w-[70rem] 2xl:max-w-[90rem] mx-auto;
+    }
+
     ..explore-section.page{
         @apply min-h-0 h-auto;
     }

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="h-[332px] mb-9">
+        <div class="h-[270px] 2xl:h-[332px] mb-9">
             <image-wrapper :products="product_shows" :nav_selected="nav_selected"></image-wrapper>
         </div>
         <navigation :navigations="navigations" @clickedNav="navAct" v-if="nav_selected >= 0"></navigation>
