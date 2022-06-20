@@ -7,7 +7,7 @@
 @section('content')
     <div class="article-section page" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')">
 
-        <div class="article-content">
+        <div class="article-content pb-20">
             <h1 class="article-title text-white font-koara-bold text-3xl mt-10 text-center">Cari Tahu yang Kamu Mau!</h1>
 
             <div class="nav-artikel-wrapper">
