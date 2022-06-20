@@ -89,16 +89,16 @@
 
 
                                 <div class="z-[4] grid-instax row-start-2">
-                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
+                                    <img class="max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
                                 </div>
                                 <div class="z-[3] grid-instax row-start-1">
-                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
+                                    <img class="max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
                                 </div>
                                 <div class="z-[2] grid-instax row-start-2">
-                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
+                                    <img class="max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
                                 </div>
                                 <div class="z-[1] grid-instax row-start-1">
-                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
+                                    <img class="max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
