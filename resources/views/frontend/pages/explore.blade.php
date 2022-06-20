@@ -49,16 +49,22 @@
     <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
     <script type="text/javascript">
         /* curator-feed-development-feed-layout */
-        (function(){
-        var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-        i.src="https://cdn.curator.io/published/82509610-e73b-428d-a6ce-e0b390f63a69.js";
-        e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-        })();
-        </script>
+        // (function(){
+        // var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+        // i.src="https://cdn.curator.io/published/82509610-e73b-428d-a6ce-e0b390f63a69.js";
+        // e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        // })();
+    </script>
 
-    <script>
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             alert('Halaman ini masih dalam pengembangan. Feed instagram yang ditampilkan tidak 100% sesuai dengan feed Instagram yang ada di DuniaMilkLife Feed. Mohon maaf atas ketidaknyamanan ini.');
+
+            (function(){
+            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+            i.src="https://cdn.curator.io/published/82509610-e73b-428d-a6ce-e0b390f63a69.js";
+            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+            })();
         })
     </script>
 @endpush
