@@ -70,7 +70,7 @@
     }
 
     .article-box{
-        @apply w-[370px] 3xl:w-[460px];
+        @apply w-[310px] 2xl:w-[370px] 3xl:w-[460px];
     }
 
     .article-image-wrapper{
@@ -103,7 +103,7 @@
     }
 
     .article-section.page .article-content{
-        @apply max-w-4xl lg:max-w-5xl 2xl:max-w-7xl mx-auto;
+        @apply max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto;
     }
 
     .about-title{
