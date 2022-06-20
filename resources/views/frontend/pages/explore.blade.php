@@ -16,7 +16,7 @@
 @section('content')
     <div class="explore-section page" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
 
-        <div class="explore-content">
+        <div class="explore-content pb-20">
 
             {{-- top left bug_2 doodle --}}
             <div class="absolute top-[12%] left-[10%] md:w-20 w-6">
