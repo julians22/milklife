@@ -75,7 +75,7 @@
                     <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
 
                     <div class="about-content w-full h-full">
-                        <div class="flex items-center justify-center h-[600px]">
+                        <div class="flex items-center justify-center h-[600px] 2xl:mt-24 3xl:mt-48">
                             <div class="grid grid-cols-2 grid-rows-2 relative">
                                 {{-- doodle stright right --}}
                                 <div class="absolute right-[-2em] top-[50%] -translate-y-1/2 w-12">
@@ -89,16 +89,16 @@
 
 
                                 <div class="z-[4] grid-instax row-start-2">
-                                    <img class="max-w-[300px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
+                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
                                 </div>
                                 <div class="z-[3] grid-instax row-start-1">
-                                    <img class="max-w-[300px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
+                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
                                 </div>
                                 <div class="z-[2] grid-instax row-start-2">
-                                    <img class="max-w-[300px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
+                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
                                 </div>
                                 <div class="z-[1] grid-instax row-start-1">
-                                    <img class="max-w-[300px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
+                                    <img class="max-w-[300px] 3xl:max-w-[450px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in" src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
 
                 <div class="variant-content w-full h-full">
                     <h2 class="page-title mb-10" >Variant MilkLife</h2>
-                    <div class="max-w-4xl lg:max-w-5xl mx-auto mb-3">
+                    <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl mx-auto mb-3 2xl:mt-24">
 
                         <div class="splide " id="variant-splide">
                             <div class="splide__track">
@@ -187,7 +187,7 @@
                 <div class="article-content h-full">
                     <h2 class="page-title relative">Artikel & Resep</h2>
 
-                    <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl mx-auto flex flex-col justify-center mt-32">
+                    <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto flex flex-col justify-center mt-32 2xl:mt-40 3xl:mt-48">
                         <div class="flex justify-center space-x-10 space-y-5 items-baseline">
                             @foreach ($posts as $post)
                                 <div class="article-box ">
@@ -223,10 +223,10 @@
                     <img src="{{ asset('img/orange_bottom_rdoodle.png') }}" alt="">
                 </div>
                 <div class="explore-content">
-                    <h2 class="page-title page-title-lg explore-title mb-8">#DuniaMilkLife</h2>
+                    <h2 class="page-title page-title-lg explore-title mb-8 2xl:mb-20">#DuniaMilkLife</h2>
                     <div class="max-w-[60%] text-center text-white mx-auto">
-                        <h4 class="text-2xl font-koara-bold mb-4">Semua Tentang MilkLife</h4>
-                        <p class="font-gotham-light text-lg">Beragam informasi dan kegiatan seru MilkLife sehari-hari. Kenali
+                        <h4 class="text-2xl 2xl:text-4xl font-koara-bold mb-4">Semua Tentang MilkLife</h4>
+                        <p class="font-gotham-light text-lg 2xl:text-xl">Beragam informasi dan kegiatan seru MilkLife sehari-hari. Kenali
                             MilkLife lebih dekat dengan mengunjungi Instagram @milklife.id.
                             Jangan lupa, pakai hashtag #TentangMilkLife untuk tampil
                             bersama kita, Milk People.
@@ -253,7 +253,7 @@
                 </div>
 
                 <div class="text-center">
-                    <a href="{{ route('frontend.variant') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
+                    <a href="{{ route('frontend.explore') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
                 </div>
             </section>
 

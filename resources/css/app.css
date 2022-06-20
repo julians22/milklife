@@ -59,10 +59,10 @@
     }
 
     .variant-item{
-        @apply flex flex-col items-center justify-end text-lg font-semibold text-white py-2 border-8 border-white rounded-md mx-auto space-y-3 w-48 h-full;
+        @apply flex flex-col items-center justify-end text-lg 2xl:text-xl font-semibold text-white py-2 border-8 border-white rounded-md mx-auto space-y-3 w-48 3xl:w-56 h-full;
     }
     .variant-item .variant-img{
-        @apply w-32 h-auto;
+        @apply w-14 lg:w-24 xl:w-[7.5rem] 2xl:w-32 3xl:w-44 h-auto;
     }
 
     .variant-title{
@@ -70,7 +70,7 @@
     }
 
     .article-box{
-        @apply w-[370px];
+        @apply w-[370px] 3xl:w-[460px];
     }
 
     .article-image-wrapper{
@@ -78,7 +78,7 @@
     }
 
     .article-image-wrapper .article-image{
-        @apply w-full h-48 2xl:h-56 object-center object-cover;
+        @apply w-full h-48 2xl:h-56 3xl:h-72 object-center object-cover;
     }
 
 
@@ -180,17 +180,17 @@
     }
 
     .is-visible .grid-instax{
-        @apply w-[260px] h-[260px];
+        @apply w-[260px] h-[260px] 3xl:w-[400px] 3xl:h-[400px];
     }
     .is-visible .grid-instax img{
         @apply scale-100;
     }
 
     .explore-rope-image{
-        @apply relative inset-x-0 top-12 mb-40;
+        @apply relative inset-x-0 top-12 2xl:top-16 3xl:top-32 mb-40;
     }
     .explore-rope-image .img-thumbnail{
-        @apply border-[12px] shadow-xl border-white w-[164px] h-[164px] 2xl:w-48 2xl:h-48;
+        @apply border-[12px] shadow-xl border-white w-[164px] h-[164px] 3xl:w-[220px] 3xl:h-[220px] 2xl:w-48 2xl:h-48;
     }
 
     .shop-link{

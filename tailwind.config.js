@@ -25,7 +25,10 @@ module.exports = {
                 'gotham-bold': ['Gotham Bold'],
                 'koara-light': ['Koara Light', 'sans-serif'],
                 'koara-bold': ['Koara Bold'],
-            }
+            },
+            screens: {
+                '3xl': '1920px',
+            },
         },
     },
     plugins: [],
