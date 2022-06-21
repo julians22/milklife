@@ -10,22 +10,22 @@
         <div class="about-content">
 
             {{-- top right doodle --}}
-            <div class="absolute top-0 right-0 md:w-44 w-6">
-                <img src="{{ asset('img/bottom_about.png') }}" alt="" class="rotate-180">
+            <div class="absolute top-0 right-0 md:w-40 w-6">
+                <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="w-full rotate-180">
             </div>
             {{-- bottom left doodle --}}
-            <div class="absolute bottom-0 left-0 md:w-36 w-6">
-                <img src="{{ asset('img/bottom_about.png') }}" alt="">
+            <div class="absolute bottom-0 left-0 md:w-40 w-6">
+                <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="w-full">
             </div>
 
             {{-- bottom left 2 --}}
             <div class="absolute bottom-0 left-72 md:w-20 w-6">
-                <img src="{{ asset('img/flower_2.png') }}" alt="">
+                <img src="{{ asset('img/doodle/flower_2.png') }}" alt="" class="w-full">
             </div>
 
             {{-- bottom right doodle --}}
             <div class="absolute bottom-0 right-0 md:w-20 w-6">
-                <img src="{{ asset('img/flower.png') }}" alt="">
+                <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
             </div>
 
             <h1 class="about-title mb-2">
@@ -38,7 +38,7 @@
                         <div class="image-1 relative -left-7 z-[1]">
                             <img src="{{ asset('img/thumbnail/thumbs_1.png') }}" alt="" class="max-w-[190px] w-full">
                             <div class="absolute top-10 right-[110%] w-max">
-                                <img src="{{ asset('img/arrow_left.png') }}" alt="" width="100%">
+                                <img src="{{ asset('img/doodle/arrow_left.png') }}" alt="" width="100%">
                             </div>
                             <div class="detail absolute right-[100%] top-1/2 bottom-1/2 block  w-[400px]">
                                 <h4 class="title">Kolaborasi Kelas Dunia</h4>
@@ -52,7 +52,7 @@
                         <div class="image-2 relative right-[-65px] top-[-65px] z-[2]">
                             <img src="{{ asset('img/thumbnail/thumbs_2.png') }}" alt="" class="max-w-[190px] w-full">
                             <div class="absolute top-[-25%] left-[90%] w-max">
-                                <img src="{{ asset('img/arrow_right.png') }}" alt="" width="100%">
+                                <img src="{{ asset('img/doodle/arrow_right.png') }}" alt="" width="100%">
                             </div>
                             <div class="detail absolute left-[100%] top-0 w-[400px]">
                                 <h4 class="title">The Milk People</h4>
@@ -66,7 +66,7 @@
                         <div class="image-3 relative left-[-40px] top-[-110px] z-[3]">
                             <img src="{{ asset('img/thumbnail/thumbs_3.png') }}" alt="" class="max-w-[190px] w-full">
                             <div class="absolute top-10 right-[110%] w-max">
-                                <img src="{{ asset('img/arrow_left.png') }}" alt="" width="100%">
+                                <img src="{{ asset('img/doodle/arrow_left.png') }}" alt="" width="100%">
                             </div>
                             <div class="detail absolute right-[100%] top-1/2 bottom-1/2 block  w-[400px]">
                                 <h4 class="title">Peternakan Kami</h4>
@@ -81,7 +81,7 @@
                         <div class="image-4 relative top-[-150px] right-[-50px] z-[2]">
                             <img src="{{ asset('img/thumbnail/thumbs_4.png') }}" alt="" class="max-w-[190px] w-full">
                             <div class="absolute top-[-20%] left-[90%] w-max">
-                                <img src="{{ asset('img/arrow_right.png') }}" alt="" width="100%">
+                                <img src="{{ asset('img/doodle/arrow_right.png') }}" alt="" width="100%">
                             </div>
                             <div class="detail absolute left-[100%] top-4 w-[400px]">
                                 <h4 class="title">Sustainability</h4>

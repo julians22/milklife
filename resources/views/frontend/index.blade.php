@@ -11,19 +11,19 @@
             <section class="splide__slide banner-section" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')" >
                 {{-- top left doodle --}}
                 <div class="absolute top-0 right-0 md:w-28 w-6">
-                    <img src="{{ asset('img/white_top_rdoodle.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/white_top_rdoodle.png') }}" alt="">
                 </div>
                 {{-- bottom right doodle --}}
                 <div class="absolute bottom-0 right-0 md:w-36 w-6">
-                    <img src="{{ asset('img/orange_bottom_rdoodle.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt="">
                 </div>
                 {{-- left bottom orange --}}
                 <div class="absolute bottom-1/4 left-0 md:w-36 w-6">
-                    <img src="{{ asset('img/doodle_left_bottom_1.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="">
                 </div>
                 {{-- bottom --}}
                 <div class="absolute bottom-0 left-1/3 md:w-36 w-6">
-                    <img src="{{ asset('img/doodle_bottom_left.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/doodle_bottom_left.png') }}" alt="">
                 </div>
 
                 <div class="banner-content">
@@ -54,21 +54,21 @@
             <section class="about-section splide__slide" style="background-image: url('{{ asset('img/bg/gray_yellbg.jpg') }}')" data-splide-hash="about">
                 {{-- top right doodle --}}
                 <div class="absolute top-0 right-0 md:w-44 w-6">
-                    <img src="{{ asset('img/bottom_about.png') }}" alt="" class="rotate-180">
+                    <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="rotate-180">
                 </div>
                 {{-- bottom left doodle --}}
                 <div class="absolute bottom-0 left-0 md:w-36 w-6">
-                    <img src="{{ asset('img/bottom_about.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="">
                 </div>
 
                 {{-- bug doodle --}}
                 <div class="absolute top-40 left-24 md:w-36 w-6">
-                    <img src="{{ asset('img/bug_1.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/bug_1.png') }}" alt="">
                 </div>
 
                 {{-- flower right bottom --}}
                 <div class="absolute bottom-0 right-0 md:w-28 w-6">
-                    <img src="{{ asset('img/flower.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/flower.png') }}" alt="">
                 </div>
 
                 <div class="about-content w-full">
@@ -79,12 +79,12 @@
                             <div class="grid grid-cols-2 grid-rows-2 relative">
                                 {{-- doodle stright right --}}
                                 <div class="absolute right-[-2em] top-[50%] -translate-y-1/2 w-12">
-                                    <img src="{{ asset('img/staright_right.png') }}" alt="" class="w-full anim-fade-in">
+                                    <img src="{{ asset('img/doodle/staright_right.png') }}" alt="" class="w-full anim-fade-in">
                                 </div>
 
                                 {{-- doodle stright left --}}
                                 <div class="absolute left-[-2em] top-[50%] -translate-y-1/2 w-12">
-                                    <img src="{{ asset('img/staright_left.png') }}" alt="" class="w-full anim-fade-in">
+                                    <img src="{{ asset('img/doodle/staright_left.png') }}" alt="" class="w-full anim-fade-in">
                                 </div>
 
 
@@ -111,17 +111,17 @@
 
                 {{-- top right doodle straight--}}
                 <div class="absolute top-12 -right-3 md:w-36 w-6">
-                    <img src="{{ asset('img/straight1.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/straight1.png') }}" alt="">
                 </div>
 
                 {{-- top left doodle rocket --}}
                 <div class="absolute -top-12 left-40 md:w-36 w-6">
-                    <img src="{{ asset('img/rocket.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/rocket.png') }}" alt="">
                 </div>
 
                 {{-- left doodle --}}
                 <div class="absolute left-0 top-1/4 md:w-36 w-6">
-                    <img src="{{ asset('img/doodle_left_bottom_1.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="">
                 </div>
 
                 <div class="variant-content w-full h-full">
@@ -154,33 +154,33 @@
             <section class="article-section splide__slide" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')" data-splide-hash="artikel">
                 {{-- planet top right --}}
                 <div class="absolute -top-10 right-28 md:w-40 w-10">
-                    <img src="{{ asset('img/Planet.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/Planet.png') }}" alt="">
                 </div>
 
                 {{-- moon top left --}}
                 <div class="absolute -top-16 left-40 md:w-32 w-6">
-                    <img src="{{ asset('img/Moon.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/Moon.png') }}" alt="">
                 </div>
 
                 {{-- doodle cloud left --}}
                 <div class="absolute left-20 top-[20%] md:w-32 w-6">
-                    <img src="{{ asset('img/Cloud.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/Cloud.png') }}" alt="">
                 </div>
 
                 {{-- doodle right --}}
                 <div class="absolute right-0 top-1/4 md:w-32 w-6">
-                    <img src="{{ asset('img/doodle_left_bottom_1.png') }}" alt="" class="w-full -scale-100">
+                    <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full -scale-100">
                 </div>
 
 
                 {{-- doodle love --}}
                 <div class="absolute right-[30%] top-24 md:w-10 w-3">
-                    <img src="{{ asset('img/love.png') }}" alt="" class="w-full">
+                    <img src="{{ asset('img/doodle/love.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- doodle star --}}
                 <div class="absolute right-[35%] bottom-24 md:w-16 w-3">
-                    <img src="{{ asset('img/star_orange.png') }}" alt="" class="w-full">
+                    <img src="{{ asset('img/doodle/star_orange.png') }}" alt="" class="w-full">
                 </div>
 
 
@@ -216,20 +216,20 @@
             <section class="explore-section splide__slide" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')" data-splide-hash="explore">
                 {{-- top right doodle --}}
                 <div class="absolute top-0 left-0 md:w-40 w-6">
-                    <img src="{{ asset('img/orange_bottom_rdoodle.png') }}" alt="" class="rotate-180">
+                    <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt="" class="rotate-180">
                 </div>
                 {{-- bottom right doodle --}}
                 <div class="absolute bottom-0 right-0 md:w-40 w-6">
-                    <img src="{{ asset('img/orange_bottom_rdoodle.png') }}" alt="">
+                    <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt="">
                 </div>
                 {{-- flower left --}}
                 <div class="absolute left-0 bottom-[20%] md:w-20 w-6">
-                    <img src="{{ asset('img/flower.png') }}" alt="" class="w-full -scale-x-100">
+                    <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full -scale-x-100">
                 </div>
 
                 {{-- butterfly top --}}
                 <div class="absolute -top-[5%] left-[20%] md:w-20 w-6">
-                    <img src="{{ asset('img/bug_1.png') }}" alt="" class="w-full">
+                    <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full">
                 </div>
 
                 <div class="explore-content">
@@ -274,36 +274,36 @@
                 <div class="flex w-full h-full justify-center items-center relative">
                     {{-- line left doodle --}}
                     <div class="absolute bottom-28 lg:bottom-16 left-0 w-20 lg:w-40">
-                        <img src="{{ asset('img/doodle_orange.png') }}" alt="" class="w-full">
+                        <img src="{{ asset('img/doodle/doodle_orange.png') }}" alt="" class="w-full">
                     </div>
                     {{-- line right doodle --}}
                     <div class="absolute top-28 lg:top-16 right-0 w-20 lg:w-40">
-                        <img src="{{ asset('img/doodle_orange.png') }}" alt="" class="w-full -scale-100">
+                        <img src="{{ asset('img/doodle/doodle_orange.png') }}" alt="" class="w-full -scale-100">
                     </div>
 
                     {{-- star top left doodle --}}
                     <div class="absolute -top-[10%] left-[20%] md:w-16 w-6">
-                        <img src="{{ asset('img/star_2.png') }}" alt="" class="w-full">
+                        <img src="{{ asset('img/doodle/star_2.png') }}" alt="" class="w-full">
                     </div>
 
                     {{-- star top right doodle --}}
                     <div class="absolute -top-[8%] right-[20%] md:w-16 w-6">
-                        <img src="{{ asset('img/star.png') }}" alt="" class="w-full">
+                        <img src="{{ asset('img/doodle/star.png') }}" alt="" class="w-full">
                     </div>
 
                     {{-- love right doodle --}}
                     <div class="absolute right-[10%] top-32 lg:w-16 w-3">
-                        <img src="{{ asset('img/love_doodle.png') }}" alt="" class="w-full -scale-x-100">
+                        <img src="{{ asset('img/doodle/love_doodle.png') }}" alt="" class="w-full -scale-x-100">
                     </div>
 
                     {{-- star left doodle --}}
                     <div class="absolute left-[10%] top-36 lg:w-16 w-3">
-                        <img src="{{ asset('img/star.png') }}" alt="" class="w-full -scale-x-100">
+                        <img src="{{ asset('img/doodle/star.png') }}" alt="" class="w-full -scale-x-100">
                     </div>
 
                     {{-- star bottom doodle --}}
                     <div class="absolute bottom-0 left-[20%] lg:w-24 w-3">
-                        <img src="{{ asset('img/star_fall.png') }}" alt="" class="w-full">
+                        <img src="{{ asset('img/doodle/star_fall.png') }}" alt="" class="w-full">
                     </div>
 
                     <div class="the-content max-w-screen-md w-full text-center">

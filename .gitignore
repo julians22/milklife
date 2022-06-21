@@ -4,6 +4,8 @@
 /public/storage
 /public/media
 /public/img
+/public/img/original
+/public/img/doodle
 /storage/*.key
 /public/vendor/tinymce
 /vendor

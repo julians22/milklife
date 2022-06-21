@@ -4,7 +4,43 @@
 @section('meta_description', $metas['meta_description'])
 
 @section('content')
-    <div class="variant-section page min-h-max pb-8 antialiased" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
+    <div class="variant-section page min-h-max pb-8 antialiased overflow-hidden" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
+
+        {{-- doodle right straight 1 --}}
+        <div class="absolute top-[8%] right-0 w-28">
+            <img src="{{ asset('img/doodle/straight1.png') }}" alt="" class="w-full">
+        </div>
+
+        {{-- doodle right rounds  --}}
+        <div class="absolute top-[20%] -right-[20px] w-28">
+            <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full -scale-x-100">
+        </div>
+
+        {{-- doodle bug bottom right --}}
+        <div class="absolute bottom-[20%] right-[40px] w-20">
+            <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full -scale-x-100">
+        </div>
+
+        {{-- doodle rounds left --}}
+        <div class="absolute bottom-[20%] -left-[40px] w-28">
+            <img src="{{ asset('img/doodle/round.png') }}" alt="" class="w-full rotate-6">
+        </div>
+
+        {{-- doodle bug left --}}
+        <div class="absolute bottom-[40%] left-[20%] w-28">
+            <img src="{{ asset('img/doodle/bug_2.png') }}" alt="" class="w-full">
+        </div>
+
+        {{-- doodle flower bottom right --}}
+        <div class="absolute -bottom-[3%] right-0 w-28">
+            <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
+        </div>
+
+        {{-- doodle flower --}}
+        <div class="absolute -bottom-[6%] left-[20%] w-28">
+            <img src="{{ asset('img/doodle/flower_full.png') }}" alt="" class="w-full">
+        </div>
+
         <div class="variant-content">
             {{-- product showcase --}}
             <div class="product-show-case mt-5">
@@ -57,6 +93,21 @@
         </div>
     </div>
     <div class="variant-section page py-8 2xl:py-14 min-h-max overflow-hidden" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')">
+        {{-- doodle flower top right --}}
+        <div class="absolute -top-[19%] right-0 w-28">
+            <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
+        </div>
+
+        {{-- doodle flower --}}
+        <div class="absolute -top-[9%] left-[20%] w-28">
+            <img src="{{ asset('img/doodle/flower_full.png') }}" alt="" class="w-full">
+        </div>
+
+        {{-- doodle right rounds  --}}
+        <div class="absolute bottom-[20%] -right-[30px] w-28">
+            <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full -scale-x-100 h-28">
+        </div>
+
         <div class="absolute w-full bottom-0 2xl:-bottom-8">
             <img src="{{ asset('img/milk.png') }}" alt="" class="w-full">
         </div>
