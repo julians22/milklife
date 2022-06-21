@@ -222,6 +222,16 @@
                 <div class="absolute bottom-0 right-0 md:w-40 w-6">
                     <img src="{{ asset('img/orange_bottom_rdoodle.png') }}" alt="">
                 </div>
+                {{-- flower left --}}
+                <div class="absolute left-0 bottom-[20%] md:w-20 w-6">
+                    <img src="{{ asset('img/flower.png') }}" alt="" class="w-full -scale-x-100">
+                </div>
+
+                {{-- butterfly top --}}
+                <div class="absolute -top-[5%] left-[20%] md:w-20 w-6">
+                    <img src="{{ asset('img/bug_1.png') }}" alt="" class="w-full">
+                </div>
+
                 <div class="explore-content">
                     <h2 class="page-title page-title-lg explore-title mb-8 2xl:mb-20">#DuniaMilkLife</h2>
                     <div class="max-w-[60%] text-center text-white mx-auto">
@@ -259,12 +269,41 @@
 
             {{-- Contact --}}
             <section class="contact-section splide__slide" style="background-image: url('{{ asset('img/bg/gray_yellbg.jpg') }}')" data-splide-hash="contact">
+
+
                 <div class="flex w-full h-full justify-center items-center relative">
+                    {{-- line left doodle --}}
                     <div class="absolute bottom-28 lg:bottom-16 left-0 w-20 lg:w-40">
                         <img src="{{ asset('img/doodle_orange.png') }}" alt="" class="w-full">
                     </div>
+                    {{-- line right doodle --}}
                     <div class="absolute top-28 lg:top-16 right-0 w-20 lg:w-40">
                         <img src="{{ asset('img/doodle_orange.png') }}" alt="" class="w-full -scale-100">
+                    </div>
+
+                    {{-- star top left doodle --}}
+                    <div class="absolute -top-[10%] left-[20%] md:w-16 w-6">
+                        <img src="{{ asset('img/star_2.png') }}" alt="" class="w-full">
+                    </div>
+
+                    {{-- star top right doodle --}}
+                    <div class="absolute -top-[8%] right-[20%] md:w-16 w-6">
+                        <img src="{{ asset('img/star.png') }}" alt="" class="w-full">
+                    </div>
+
+                    {{-- love right doodle --}}
+                    <div class="absolute right-[10%] top-32 lg:w-16 w-3">
+                        <img src="{{ asset('img/love_doodle.png') }}" alt="" class="w-full -scale-x-100">
+                    </div>
+
+                    {{-- star left doodle --}}
+                    <div class="absolute left-[10%] top-36 lg:w-16 w-3">
+                        <img src="{{ asset('img/star.png') }}" alt="" class="w-full -scale-x-100">
+                    </div>
+
+                    {{-- star bottom doodle --}}
+                    <div class="absolute bottom-0 left-[20%] lg:w-24 w-3">
+                        <img src="{{ asset('img/star_fall.png') }}" alt="" class="w-full">
                     </div>
 
                     <div class="the-content max-w-screen-md w-full text-center">
