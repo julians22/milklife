@@ -193,7 +193,7 @@
                                 <div class="article-box ">
                                     <div class="article-image-wrapper">
                                         <a href="{{ route('frontend.article.show', $post->slug) }}">
-                                            <img src="{{ $post->image_thumb_url ?? '' }}" alt="{{ $post->title }}" class="article-image">
+                                            <img src="{{ $post->image ?? '' }}" alt="{{ $post->title }}" class="article-image">
                                         </a>
                                     </div>
                                     <div class="text-xl text-white text-center font-koara-bold">
