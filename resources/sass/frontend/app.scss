@@ -69,7 +69,9 @@
 }
 
 .banner-section, .about-section.page, .article-section.page, .contact-section.page, .variant-section.page, .explore-section.page{
-    padding-top: calc(calc(106px) + calc(16px * 2));
+    @media (min-width: 1024px) {
+        padding-top: calc(calc(106px) + calc(16px * 2));
+    }
 }
 
 .btn{
