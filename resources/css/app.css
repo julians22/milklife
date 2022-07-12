@@ -63,7 +63,7 @@
 
 
     .banner-section, .about-section, .variant-section, .article-section, .explore-section, .contact-section{
-        @apply h-screen w-full bg-cover bg-left-top bg-no-repeat;
+        @apply h-full w-full bg-cover bg-left-top bg-no-repeat;
     }
 
     .about-section, .variant-section, .article-section, .explore-section, .contact-section, .variant-section{
@@ -129,7 +129,7 @@
     }
 
     .page-title{
-        @apply font-koara-bold text-4xl mt-24 md:mt-0 md:text-5xl text-center text-white tracking-wider leading-tight;
+        @apply font-koara-bold text-4xl mt-12 md:mt-0 md:text-5xl text-center text-white tracking-wider leading-tight;
     }
 
     .page-title.page-title-lg{
