@@ -4,7 +4,10 @@
 
 @layer components {
     .nav{
-        @apply py-4 fixed top-0 left-0 right-0 bg-transparent z-10 transition-all ease-linear duration-300;
+        @apply py-4 fixed top-0 bottom-0 md:bottom-auto left-[-500px] md:left-0 right-auto md:right-0 bg-transparent z-10 transition-all ease-linear duration-300;
+    }
+    .nav.open-mobile{
+        @apply left-0;
     }
     .nav.scroll{
         @apply top-[-500px] duration-[700ms];
@@ -16,11 +19,11 @@
         @apply block;
     }
     .nav .nav-wrapper{
-        @apply flex justify-between items-center max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide;
+        @apply flex justify-between items-start max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide flex-col md:flex-row md:items-center;
     }
 
     .nav .item-wrapper{
-        @apply flex flex-col items-center justify-center text-lg font-semibold;
+        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold;
     }
 
     .toggler-nav-badge{
@@ -59,11 +62,11 @@
     }
 
     .about-section, .variant-section, .article-section, .explore-section, .contact-section, .variant-section{
-        @apply pt-4 relative px-2 md:px-0;
+        @apply pt-4 relative px-2 md:px-0 overflow-hidden;
     }
 
     .banner-content{
-        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center;
+        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center flex-col md:flex-row justify-end md:justify-start;
     }
 
     .banner-content .splide__pagination__page{
@@ -78,7 +81,7 @@
         @apply flex flex-col items-center justify-end text-lg 2xl:text-xl font-semibold text-white py-2 border-8 border-white rounded-md mx-auto space-y-1 w-[16rem] md:w-48 3xl:w-56 h-full;
     }
     .variant-item .variant-img{
-        @apply w-[6.5rem] md:w-14 lg:w-16 xl:w-20 2xl:w-32 3xl:w-44 h-auto;
+        @apply w-[4rem] sm:w-[6.25rem] md:w-14 lg:w-16 xl:w-20 2xl:w-32 3xl:w-44 h-auto;
     }
 
     .variant-title{

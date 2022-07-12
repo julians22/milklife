@@ -95,6 +95,13 @@
         document.addEventListener('DOMContentLoaded', () => {
             scrollFunction()
         })
+
+        const mobileNav = () => {
+            const x = document.getElementById("navigation");
+            const xx = document.getElementById('hamburger');
+            x.classList.toggle("open-mobile");
+            xx.classList.toggle("open");
+        }
     </script>
 </body>
 </html>
