@@ -26,7 +26,7 @@
 <body>
     {{-- Loading  --}}
 
-    <div id="loading" class="fixed inset-0 bg-milklife-blue z-50">
+    <div id="loading" class="fixed inset-0 bg-milklife-blue" style="z-index: 99999">
         <div class="flex items-center justify-center h-full w-full">
             <div class="loading-item flex flex-col space-y-4 items-center text-center">
                 <img src="{{ asset('img/logo.png') }}" alt="" class="max-w-xs">

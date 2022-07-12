@@ -7,7 +7,8 @@
         @apply py-4 fixed top-0 bottom-0 md:bottom-auto left-[-500px] md:left-0 right-auto md:right-0 bg-transparent z-10 transition-all ease-linear duration-300;
     }
     .nav.open-mobile{
-        @apply left-0;
+        @apply left-0 right-0;
+        z-index: 9999;
     }
     .nav.scroll{
         @apply top-[-500px] duration-[700ms];
@@ -19,11 +20,11 @@
         @apply block;
     }
     .nav .nav-wrapper{
-        @apply flex justify-between items-start max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide flex-col md:flex-row md:items-center;
+        @apply flex justify-between items-start max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide flex-col md:flex-row md:items-center divide-y-reverse divide-y-2 md:divide-y-0;
     }
 
     .nav .item-wrapper{
-        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold;
+        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold my-4 md:my-0;
     }
 
     .toggler-nav-badge{
@@ -32,6 +33,10 @@
 
     .toggler-nav-close{
         @apply absolute inset-x-0 bg-transparent hidden;
+    }
+
+    .nav .logo-mobile{
+        @apply block md:hidden mx-auto mb-4;
     }
 
 

@@ -9,6 +9,9 @@
 
 <nav class="nav bg-milklife-orange md:bg-transparent" id="navigation">
     <div class="nav-wrapper">
+        <a href="{{ route('frontend.index') }}" class="logo-mobile">
+            <img src="{{ asset('img/logo.png') }}" alt="" width="125">
+        </a>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass((Route::is('frontend.variant') || Route::is('frontend.product*')), 'active') }}">
             <a href="{{ route('frontend.variant') }}">Varian</a>
         </div>

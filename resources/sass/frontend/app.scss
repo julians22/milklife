@@ -269,7 +269,15 @@ $stroke-color: #fff;
     height: 50px;
     border-radius: 50%;
     z-index: 9999;
+    display: block;
+
+    @media (min-width: 768px){
+        display: none;
+    }
+
 }
+
+
 
 #hamburger {
 	background-color: transparent;
