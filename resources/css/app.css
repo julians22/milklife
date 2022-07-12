@@ -24,11 +24,11 @@
     }
 
     .nav .item-wrapper{
-        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold my-4 md:my-0;
+        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold;
     }
 
     .toggler-nav-badge{
-        @apply  fixed inset-x-0 z-[9] transition-all ease-linear duration-75 cursor-pointer;
+        @apply hidden md:block fixed inset-x-0 z-[9] transition-all ease-linear duration-75 cursor-pointer;
     }
 
     .toggler-nav-close{
@@ -70,8 +70,12 @@
         @apply pt-4 relative px-2 md:px-0 overflow-hidden;
     }
 
+    .about-section.page{
+        @apply h-auto overflow-auto;
+    }
+
     .banner-content{
-        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center flex-col md:flex-row justify-end md:justify-start;
+        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center flex-col md:flex-row justify-center md:justify-start;
     }
 
     .banner-content .splide__pagination__page{
@@ -125,7 +129,7 @@
     }
 
     .page-title{
-        @apply font-koara-bold text-4xl md:text-5xl text-center text-white tracking-wider leading-tight;
+        @apply font-koara-bold text-4xl mt-24 md:mt-0 md:text-5xl text-center text-white tracking-wider leading-tight;
     }
 
     .page-title.page-title-lg{
@@ -148,8 +152,12 @@
         @apply max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto;
     }
 
+    .article-section.page{
+        @apply min-h-screen h-auto overflow-auto;
+    }
+
     .about-title{
-        @apply text-center font-gotham-bold text-3xl text-milklife-orange;
+        @apply text-center font-gotham-bold text-xl md:text-3xl text-milklife-orange mt-10 md:mt-0;
     }
 
     .about-body .detail .title{

@@ -61,7 +61,7 @@
                 <div class="about-content w-full">
                     <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
 
-                    <div class="about-content w-full h-full">
+                    <div class="about-grid w-full">
                         <div class="flex items-center justify-center h-[600px] 2xl:mt-24 3xl:mt-48">
                             <div class="grid grid-cols-2 grid-rows-2 relative">
                                 {{-- doodle stright right --}}
@@ -207,7 +207,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full md:hidden block">
+                    <div class="w-full md:hidden block mt-12">
                         <div class="splide" id="article__splide">
                             <div class="splide__track">
                                 <div class="splide__list">
@@ -528,6 +528,7 @@
                 pagination: false,
                 speed: 1500,
                 perPage: 4,
+                arrows: true,
                 breakpoints: {
                     // Mobile.
                     640: {
