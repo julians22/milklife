@@ -1,10 +1,10 @@
 {
-    "/js/frontend.js": "/js/frontend.js",
-    "/js/backend.js": "/js/backend.js",
-    "/js/manifest.js": "/js/manifest.js",
-    "/css/frontend.css": "/css/frontend.css",
-    "/css/backend.css": "/css/backend.css",
-    "/css/pagepiling.css": "/css/pagepiling.css",
-    "/css/tailwind.css": "/css/tailwind.css",
-    "/js/vendor.js": "/js/vendor.js"
+    "/js/frontend.js": "/js/frontend.js?id=99effee505d944c63a37fb003254f8cc",
+    "/js/backend.js": "/js/backend.js?id=58f73b8d25a25f24c0a3d89553648afd",
+    "/js/manifest.js": "/js/manifest.js?id=43032d855be6193835b73015f586bccd",
+    "/css/frontend.css": "/css/frontend.css?id=94ebba1b325981e974532ec167e12c26",
+    "/css/backend.css": "/css/backend.css?id=f0f1d5889a520f6376ca9ce85909d96b",
+    "/css/pagepiling.css": "/css/pagepiling.css?id=b735460120b147428cee09df432c560b",
+    "/css/tailwind.css": "/css/tailwind.css?id=0e02b6bbe9fce3753ff0e9f1f0a4c811",
+    "/js/vendor.js": "/js/vendor.js?id=a1e66c831b3e883aeabd644226976f55"
 }

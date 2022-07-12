@@ -55,11 +55,11 @@
 
 
     .banner-section, .about-section, .variant-section, .article-section, .explore-section, .contact-section{
-        @apply min-h-0 lg:min-h-screen w-full bg-cover bg-left-top bg-no-repeat;
+        @apply h-screen w-full bg-cover bg-left-top bg-no-repeat;
     }
 
     .about-section, .variant-section, .article-section, .explore-section, .contact-section, .variant-section{
-        @apply pt-4 relative;
+        @apply pt-4 relative px-2 md:px-0;
     }
 
     .banner-content{
@@ -85,8 +85,20 @@
         @apply text-center font-gotham-black text-lg;
     }
 
+    .section .article-content{
+        @apply h-full flex justify-between items-center flex-col md:block;
+    }
+
     .article-box{
         @apply w-[40%] md:w-[310px] 2xl:w-[370px] 3xl:w-[460px];
+
+    }
+    .splide__slide .article-box{
+        @apply w-full;
+    }
+
+    .splide__slide .article-image-wrapper .article-image{
+        @apply w-full h-48;
     }
 
     .article-image-wrapper{
@@ -120,7 +132,7 @@
         @apply max-w-5xl xl:max-w-[70rem] 2xl:max-w-[90rem] mx-auto;
     }
 
-    ..explore-section.page{
+    .explore-section.page{
         @apply min-h-0 h-auto;
     }
 

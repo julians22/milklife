@@ -4,6 +4,28 @@
 
 @push('after-styles')
     <link rel="stylesheet" href="{{ mix('css/pagepiling.css') }}">
+    <style>
+        .crt-logo.crt-tag{
+            display: none !important;
+        }
+
+        .crt-post-text{
+            display: none !important;
+        }
+
+        .crt-post-header{
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+        }
+        .crt-post .crt-post-header .crt-social-icon{
+            margin-bottom: 0 !important;
+        }
+
+        .crt-widget.crt-widget-carousel{
+            min-height: auto !important;
+        }
+    </style>
 @endpush
 
 @section('content')
@@ -167,7 +189,7 @@
                     <h2 class="page-title relative">Artikel & Resep</h2>
 
                     <div
-                        class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto flex flex-col justify-center mt-12 md:mt-32 2xl:mt-40 3xl:mt-48">
+                        class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto flex-col justify-center mt-12 md:mt-32 2xl:mt-40 3xl:mt-48 hidden md:flex">
                         <div class="flex flex-row flex-wrap md:flex-nowrap justify-center space-x-10 space-y-5 items-baseline">
                             @foreach ($posts as $post)
                                 <div class="article-box ">
@@ -182,6 +204,30 @@
                                     </div>
                                 </div>
                             @endforeach
+                        </div>
+                    </div>
+
+                    <div class="w-full md:hidden block">
+                        <div class="splide" id="article__splide">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    @foreach ($posts as $post)
+                                        <div class="splide__slide">
+                                            <div class="article-box ">
+                                                <div class="article-image-wrapper">
+                                                    <a href="{{ route('frontend.article.show', $post->slug) }}">
+                                                        <img src="{{ $post->image ?? '' }}" alt="{{ $post->title }}"
+                                                            class="article-image">
+                                                    </a>
+                                                </div>
+                                                <div class="text-xl text-white text-center font-koara-bold">
+                                                    <h2>{{ $post->title }}</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -220,7 +266,7 @@
 
                 <div class="explore-content">
                     <h2 class="page-title page-title-lg explore-title mb-8 2xl:mb-20">#DuniaMilkLife</h2>
-                    <div class="max-w-full lg:max-w-[60%] text-center text-white mx-auto">
+                    <div class="max-w-full lg:max-w-[60%] text-center text-white mx-auto hidden">
                         <h4 class="text-2xl 2xl:text-4xl font-koara-bold mb-4">Semua Tentang MilkLife</h4>
                         <p class="font-gotham-light text-lg 2xl:text-xl">Beragam informasi dan kegiatan seru MilkLife
                             sehari-hari. Kenali
@@ -231,7 +277,7 @@
                     </div>
                 </div>
 
-                <div class="explore-rope-image">
+                <div class="explore-rope-image hidden">
                     <img src="{{ asset('img/rope.png') }}" alt="" class="w-full absolute inset-x-0 bottom-[85%]">
                     <div class="flex items-center space-x-12 justify-center">
                         <div class="relative thumb-wrapper">
@@ -251,6 +297,11 @@
                                 class="img-thumbnail -translate-y-7 -rotate-12">
                         </div>
                     </div>
+                </div>
+
+                <!-- Place <div> tag where you want the feed to appear -->
+                <div class="">
+                    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div><!-- The Javascript can be moved to the end of the html page before the </body> tag -->
                 </div>
 
                 <div class="text-center">
@@ -385,6 +436,11 @@
                 afterLoad: function(anchorLink, index){
                     // console.log('afterLoad' + index);
                     navigationListen(index);
+
+                    // if (index == 5) {
+                    //     /* curator-feed-default-feed-layout */
+
+                    // }
                 },
                 afterRender: function(){
                     navigationListen(0)
@@ -408,6 +464,12 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             scrollFunction();
+
+            (function(){
+            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+            i.src="https://cdn.curator.io/published/b04875f5-494c-40e1-b9ce-fd12246756c9.js";
+            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+            })();
 
 
             const navCloseBagde = document.querySelector('.toggler-nav-close');
@@ -436,31 +498,6 @@
 
 
             var pageNav = document.querySelectorAll('.page-nav-item');
-
-            // pageSplide.on( 'active', function(e) {
-            //     const index = e.index;
-            //     if (index > 0){
-            //         document.getElementById("navigation").classList.add('down');
-            //         document.getElementById("navigation").classList.remove('open-badge');
-            //         navBadge.classList.remove('down');
-            //     }else{
-            //         document.getElementById("navigation").classList.remove('down');
-            //         navBadge.classList.add('down');
-            //     }
-
-            //     document.querySelector('.page-nav-item.active').classList.remove('active');
-            //     pageNav[index].classList.add('active');
-            // });
-
-            // pageSplide.on('move', (index) => {
-            //     if (index == 2) {
-            //         // console.log(pageSplide);
-            //     }
-            // });
-
-            // pageSplide.on('destroy', () => {
-            //     variantSplide.mount();
-            // })
 
 
             pageNav.forEach(element => {
@@ -498,6 +535,15 @@
                     },
                 }
             });
+
+            const articleSplide = new Splide('#article__splide', {
+                pagination: false,
+                speed: 1500,
+                perPage: 1,
+                gap: 15,
+            });
+
+            articleSplide.mount();
 
             variantSplide.mount();
         });
