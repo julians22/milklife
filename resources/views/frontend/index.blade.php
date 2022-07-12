@@ -422,9 +422,9 @@
                     'position': 'right',
                     'tooltips': ['Beranda', 'Tentang MilkLife', 'Varian', 'Artikel', 'DuniaMilkLife', 'Kontak']
                 },
-                normalScrollElements: null,
+                normalScrollElements: '#variant__splide, #article__splide, #banner__splide',
                 normalScrollElementTouchThreshold: 10,
-                touchSensitivity: 10,
+                touchSensitivity: 5,
                 keyboardScrolling: true,
                 sectionSelector: '.section',
                 animateAnchor: true,
@@ -474,7 +474,7 @@
 
             const navCloseBagde = document.querySelector('.toggler-nav-close');
 
-            var bannerSplide = new Splide('#banner-splide', {
+            var bannerSplide = new Splide('#banner__splide', {
                 type: 'fade',
                 speed: 2000,
                 arrows: false
