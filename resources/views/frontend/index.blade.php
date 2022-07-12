@@ -423,8 +423,8 @@
                     'tooltips': ['Beranda', 'Tentang MilkLife', 'Varian', 'Artikel', 'DuniaMilkLife', 'Kontak']
                 },
                 normalScrollElements: null,
-                normalScrollElementTouchThreshold: 1,
-                touchSensitivity: 1,
+                normalScrollElementTouchThreshold: 10,
+                touchSensitivity: 10,
                 keyboardScrolling: true,
                 sectionSelector: '.section',
                 animateAnchor: true,
