@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Models\Post;
 use App\Models\ProductVariant;
 use App\Services\Frontend\ProductService;
+use Illuminate\Contracts\View\View;
 use Request;
 
 /**
@@ -28,7 +29,8 @@ class HomeController
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     *
+     * @return View
      */
     public function index()
     {
@@ -39,7 +41,8 @@ class HomeController
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     *
+     * @return View
      */
     public function about()
     {
@@ -48,7 +51,7 @@ class HomeController
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return View
      */
     public function variant()
     {
@@ -58,7 +61,7 @@ class HomeController
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return View
      */
     public function product(Request $request, $slug)
     {
@@ -75,7 +78,7 @@ class HomeController
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return View
      */
     public function article()
     {
@@ -89,7 +92,7 @@ class HomeController
 
     /**
      * @param String $article
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return View
      */
     public function article_show($slug){
 
@@ -105,7 +108,7 @@ class HomeController
     }
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return View
      */
     public function explore()
     {

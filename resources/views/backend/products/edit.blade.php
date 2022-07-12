@@ -62,7 +62,7 @@
                     <x-slot name="body">
                         <div class="form-group">
                             <label for="variant">@lang('Variant')</label>
-                            <select name="variant" id="variant" class="form-control">
+                            <select name="product_variant_id" id="variant" class="form-control">
                                 @foreach ($product_variants as $variant)
                                     <option value="{{ $variant->id }}" {{ $variant->id == $product->product_variant_id ? 'selected' : '' }} >{{ $variant->name }}</option>
                                 @endforeach

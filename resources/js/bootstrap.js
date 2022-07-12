@@ -1,7 +1,6 @@
 window._ = require('lodash');
 window.Swal = require('sweetalert2');
 window.AOS = require('aos');
-
 // splide js
 import Splide from '@splidejs/splide';
 import { URLHash } from '@splidejs/splide-extension-url-hash';
@@ -18,6 +17,9 @@ try {
 
     window.Splide = Splide;
     window.URLHash = URLHash;
+    require('pagepiling.js/jquery.pagepiling.min.js');
+
+    // window.onePageScroll = onePageScroll
 
     require('bootstrap');
     require('../vendor/loading-bar/dist/loading-bar');

@@ -31,6 +31,7 @@ mix.setPublicPath('public')
         'lodash'
     ])
     .copy('node_modules/tinymce/skins', 'public/vendor/tinymce/skins')
+    .sass('resources/vendor/pagepiling.scss', 'css/pagepiling.css')
     .sourceMaps();
 
 if (mix.inProduction()) {

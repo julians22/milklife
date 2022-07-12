@@ -4,6 +4,7 @@
     "/js/manifest.js": "/js/manifest.js",
     "/css/frontend.css": "/css/frontend.css",
     "/css/backend.css": "/css/backend.css",
+    "/css/pagepiling.css": "/css/pagepiling.css",
     "/css/tailwind.css": "/css/tailwind.css",
     "/js/vendor.js": "/js/vendor.js"
 }
