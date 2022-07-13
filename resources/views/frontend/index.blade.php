@@ -37,7 +37,7 @@
         {{-- About --}}
         <div class="section">
 
-            <section class="about-section " style="background-image: url('{{ asset('img/bg/gray_yellbg.jpg') }}')"
+            <section class="about-section relative" style="background-image: url('{{ asset('img/bg/gray_yellbg.jpg') }}')"
                 data-splide-hash="about">
                 {{-- top right doodle --}}
                 <div class="absolute top-0 right-0 md:w-44 w-40">
@@ -49,16 +49,16 @@
                 </div>
 
                 {{-- bug doodle --}}
-                <div class="absolute top-40 left-24 md:w-36 w-6">
+                <div class="absolute md:top-40 top-28 left-24 md:w-36 w-24">
                     <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- flower right bottom --}}
-                <div class="absolute bottom-0 right-0 md:w-28 w-6">
+                <div class="absolute bottom-0 right-0 md:w-28 w-40">
                     <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
                 </div>
 
-                <div class="about-content w-full">
+                <div class="about-content w-full relative">
                     <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
 
                     <div class="about-grid w-full">
@@ -107,17 +107,17 @@
                 data-splide-hash="variant">
 
                 {{-- top right doodle straight --}}
-                <div class="absolute top-12 -right-3 md:w-36 w-6">
+                <div class="absolute top-40 md:top-12 -right-3 md:w-36 w-40">
                     <img src="{{ asset('img/doodle/straight1.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- top left doodle rocket --}}
-                <div class="absolute -top-12 left-40 md:w-36 w-6">
+                <div class="absolute -top-12 left-40 md:w-36 w-40">
                     <img src="{{ asset('img/doodle/rocket.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- left doodle --}}
-                <div class="absolute left-0 top-1/4 md:w-36 w-6">
+                <div class="absolute left-0 top-1/4 md:w-36 w-40">
                     <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full">
                 </div>
 
@@ -154,22 +154,22 @@
             <section class="article-section" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')"
                 data-splide-hash="artikel">
                 {{-- planet top right --}}
-                <div class="absolute -top-10 right-28 md:w-40 w-10">
+                <div class="absolute md:-top-10 top-0 right-4 md:right-28 md:w-40 w-24">
                     <img src="{{ asset('img/doodle/Planet.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- moon top left --}}
-                <div class="absolute -top-16 left-40 md:w-32 w-6">
+                <div class="absolute top-4 left-4 md:-top-16 md:left-40 md:w-32 w-24">
                     <img src="{{ asset('img/doodle/Moon.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- doodle cloud left --}}
-                <div class="absolute left-20 top-[20%] md:w-32 w-6">
+                <div class="absolute left-20 top-[80%] md:top-[20%] md:w-32 w-40">
                     <img src="{{ asset('img/doodle/Cloud.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- doodle right --}}
-                <div class="absolute right-0 top-1/4 md:w-32 w-6">
+                <div class="absolute right-0 top-1/4 md:w-32 w-40">
                     <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full -scale-100">
                 </div>
 
@@ -231,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center relative">
                         <a href="{{ route('frontend.article') }}"
                             class="btn btn-doodle btn-doodle-blue text-shadow">Eksplor Lebih</a>
                     </div>
@@ -246,21 +246,21 @@
             <section class="explore-section" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')"
                 data-splide-hash="explore">
                 {{-- top right doodle --}}
-                <div class="absolute top-0 left-0 md:w-40 w-6">
+                <div class="absolute top-0 left-0 md:w-40 w-40">
                     <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt=""
                         class="rotate-180 w-full">
                 </div>
                 {{-- bottom right doodle --}}
-                <div class="absolute bottom-0 right-0 md:w-40 w-6">
+                <div class="absolute bottom-0 right-0 md:w-40 w-40">
                     <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt="" class="w-full">
                 </div>
                 {{-- flower left --}}
-                <div class="absolute left-0 bottom-[20%] md:w-20 w-6">
+                <div class="absolute left-0 bottom-[20%] md:w-20 w-40">
                     <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full -scale-x-100">
                 </div>
 
                 {{-- butterfly top --}}
-                <div class="absolute -top-[5%] left-[20%] md:w-20 w-6">
+                <div class="absolute top-[20%] md:-top-[5%] left-[5%] md:left-[20%] md:w-20 w-40">
                     <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full">
                 </div>
 
@@ -304,7 +304,7 @@
                     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div><!-- The Javascript can be moved to the end of the html page before the </body> tag -->
                 </div>
 
-                <div class="text-center">
+                <div class="text-center relative">
                     <a href="{{ route('frontend.explore') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
                 </div>
             </section>
@@ -533,6 +533,9 @@
                     // Mobile.
                     640: {
                         perPage: 1,
+                    },
+                    1024: {
+                        perPage: 3,
                     },
                 }
             });

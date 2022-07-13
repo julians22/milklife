@@ -27,6 +27,7 @@ module.exports = {
                 'koara-bold': ['Koara Bold'],
             },
             screens: {
+                'xs' : {'min' : '390px', 'max' : '424px'},
                 '3xl': '1920px',
             },
         },

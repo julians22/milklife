@@ -90,7 +90,7 @@
         @apply flex flex-col items-center justify-end text-lg 2xl:text-xl font-semibold text-white py-2 border-8 border-white rounded-md mx-auto space-y-1 w-[16rem] md:w-48 3xl:w-56 h-full;
     }
     .variant-item .variant-img{
-        @apply w-[4rem] sm:w-[6.25rem] md:w-14 lg:w-16 xl:w-20 2xl:w-32 3xl:w-44 h-auto;
+        @apply w-[5rem] xs:w-[9rem] sm:w-[6.25rem] md:w-14 lg:w-16 xl:w-20 2xl:w-32 3xl:w-44 h-auto;
     }
 
     .variant-title{
