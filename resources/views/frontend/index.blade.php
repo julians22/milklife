@@ -422,7 +422,7 @@
                     'position': 'right',
                     'tooltips': ['Beranda', 'Tentang MilkLife', 'Varian', 'Artikel', 'DuniaMilkLife', 'Kontak']
                 },
-                normalScrollElements: '#variant__splide, #article__splide, #banner__splide',
+                normalScrollElements: '.splide__slide, #curator-feed-default-feed-layout',
                 normalScrollElementTouchThreshold: 10,
                 touchSensitivity: 5,
                 keyboardScrolling: true,
