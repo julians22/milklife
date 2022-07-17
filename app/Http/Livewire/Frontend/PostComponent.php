@@ -21,7 +21,7 @@ class PostComponent extends Component
     public function render()
     {
         return view('livewire.frontend.post-component', [
-            'posts' => Post::where('post_type', $this->post_type)->ordeBy('post_date', 'desc')->paginate($this->perPage),
+            'posts' => Post::where('post_type', $this->post_type)->orderBy('post_date', 'desc')->paginate($this->perPage),
             'post_type' => $this->post_type,
         ]);
     }
