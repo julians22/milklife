@@ -22,7 +22,7 @@
         // set or change the preview image src
         items.forEach(function (item) {
           target_preview.append(
-            $('<img>').attr('src', item.thumb_url)
+            $('<img>').attr('src', item.thumb_url).addClass((options && options.preview_class) ? options.preview_class : 'img-fluid')
           );
         });
 

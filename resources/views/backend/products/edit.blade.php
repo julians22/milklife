@@ -79,7 +79,7 @@
                             <div class="input-group mb-2">
                                 <input value="{{ $product->image }}" readonly type="text" name="image" id="image" class="form-control" placeholder="Image" aria-label="Select Image" aria-describedby="button-select-image">
                                 <div class="input-group-append">
-                                    <button data-input="image" data-preview="image-holder" class="btn btn-primary" type="button" id="button-select-image">@lang('Select Image')</button>
+                                    <button data-input="image" data-preview="image-holder" class="btn btn-secondary" type="button" id="button-select-image">@lang('Select Image')</button>
                                 </div>
                             </div>
                             <div id="image-holder" style="max-width: 100px">
@@ -92,7 +92,7 @@
                             <div class="input-group mb-2">
                                 <input value="{{ $product->nutrition }}" readonly type="text" name="nutrition" id="nutrition" class="form-control" placeholder="Image" aria-label="Select Image" aria-describedby="button-select-nutrition">
                                 <div class="input-group-append">
-                                    <button data-input="nutrition" data-preview="nutrition-holder" class="btn btn-primary" type="button" id="button-select-nutrition">@lang('Select Nutrition Image')</button>
+                                    <button data-input="nutrition" data-preview="nutrition-holder" class="btn btn-secondary" type="button" id="button-select-nutrition">@lang('Select Nutrition Image')</button>
                                 </div>
                             </div>
                             <div id="nutrition-holder">

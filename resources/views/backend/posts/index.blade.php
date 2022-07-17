@@ -21,31 +21,7 @@
         <x-slot name="body">
             <div class="row">
                 <div class="col-md-12">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th width="25%">Title</th>
-                                <th width="25%">Slug</th>
-                                <th>Type</th>
-                                <th>Last Update</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            @foreach ($posts as $post)
-                                <tr>
-                                    <td>{{ $post->title }}</td>
-                                    <td>{{ $post->slug }}</td>
-                                    <td>{{ $post->post_type }}</td>
-                                    <td>@displayDate($post->updated_at, 'Y-m-d')</td>
-                                    <td>
-                                        @include('backend.posts.includes.actions', ['post' => $post])
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                    @livewire('backend.post-table')
                 </div>
             </div>
         </x-slot>

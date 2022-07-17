@@ -29,7 +29,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.posts.create');
     }
 
     /**
@@ -40,7 +40,25 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required|max:255',
+            'slug' => 'required|unique:posts|max:255',
+            'body' => 'required',
+            'post_type' => 'required',
+        ]);
+
+        $post = Post::create([
+            'title' => $request->title,
+            'slug' => $request->slug,
+            'body' => $request->body,
+            'image' => $request->image,
+            'image_thumb' => $request->image_thumb,
+            'post_type' => $request->post_type,
+            'post_date' => $request->post_date,
+            'user_id' => auth()->user()->id,
+        ]);
+
+        return redirect()->route('admin.post.edit', ['post' => $post])->with('success', 'Post created successfully.');
     }
 
     /**
@@ -62,9 +80,9 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        $image = $post->getMedia('post_image');
-        $thumbnail = $post->getMedia('post_thumbnail');
-        return view('backend.posts.edit', compact('post', 'thumbnail', 'image'));
+        // $image = $post->getMedia('post_image');
+        // $thumbnail = $post->getMedia('post_thumbnail');
+        return view('backend.posts.edit', compact('post'));
     }
 
     /**
@@ -77,21 +95,7 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         //update post
-        $post->update($request->only('title', 'slug', 'post_type', 'body'));
-
-        //update image
-        if ($request->hasFile('image')) {
-            $post->clearMediaCollection('post_image');
-
-            $post->addMedia($request->file('image'))->toMediaCollection('post_image');
-        }
-
-        // update thumbnail
-        if ($request->hasFile('thumbnail')) {
-            $post->clearMediaCollection('post_thumbnail');
-
-            $post->addMedia($request->file('thumbnail'))->toMediaCollection('post_thumbnail');
-        }
+        $post->update($request->only('title', 'slug', 'post_type', 'body', 'image', 'image_thumb', 'post_date'));
 
         return redirect()->route('admin.post.edit', $post)->withFlashSuccess(__('Post updated successfully.'));
     }
@@ -104,7 +108,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('admin.post.index')->withFlashSuccess(__('Post deleted successfully.'));
     }
 
     public function checkSlug()

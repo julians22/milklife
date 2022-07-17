@@ -84,8 +84,8 @@ class HomeController
     {
         $pageColour = "orange";
         $content = [
-            'articles' => Post::article()->take(5)->get(),
-            'recipes' => Post::recipe()->take(5)->get(),
+            'articles' => Post::article()->take(5)->orderBy('post_date', 'desc')->get(),
+            'recipes' => Post::recipe()->take(5)->orderBy('post_date', 'desc')->get(),
         ];
         return view('frontend.pages.article', compact('pageColour', 'content'));
     }

@@ -12,6 +12,9 @@ Route::group(['prefix' => 'post', 'as' => 'post.'], function() {
                 ->push(__('Posts'), route('admin.post.index'));
         });
 
+    Route::post('/', [PostController::class, 'store'])
+        ->name('store');
+
     Route::get('create', [PostController::class, 'create'])
         ->name('create')
         ->breadcrumbs(function (Trail $trail) {

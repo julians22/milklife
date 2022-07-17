@@ -2,6 +2,7 @@ import 'alpinejs'
 
 window.$ = window.jQuery = require('jquery');
 window.Swal = require('sweetalert2');
+// window.lfm = require('./lfm');
 
 // CoreUI
 require('@coreui/coreui');

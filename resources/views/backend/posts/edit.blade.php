@@ -53,33 +53,34 @@
                 <x-backend.card>
                     <x-slot name="body">
                         <div class="form-group">
-                            <label for="thumbnail">@lang('Post Image')</label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="image" name="image" />
-                                <label class="custom-file-label" for="image">@lang('Choose Image')</label>
-                            </div>
-
-                            @if ($post->hasImage())
-                                <div class="mt-2 mx-auto" style="max-width: 300px;">
-                                    <img src="{{ $post->image_url }}" alt="{{ $post->image_name }}" class="img-thumbnail">
+                            <label for="image">@lang('Post Image')</label>
+                            <div class="input-group">
+                                <input type="text" name="image" id="image_input" value="{{ $post->image }}" class="form-control" placeholder="@lang('Post Image')" aria-label="@lang('Post Image')" aria-describedby="button-image">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" data-preview="image-holder" type="button" data-input="image_input" id="image">@lang('Select')</button>
                                 </div>
-                            @endif
-
+                            </div>
+                            <div class="mt-2 mx-auto" id="image-holder" style="max-width: 300px;">
+                                <img src="{{ asset($post->image) }}" alt="Select Post Image" class="img-thumbnail w-100">
+                            </div>
                         </div>
 
                         <div class="form-group">
                             <label for="thumbnail">@lang('Thumbnail')</label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="thumbnail" name="thumbnail" />
-                                <label class="custom-file-label" for="thumbnail">@lang('Choose Image')</label>
-                            </div>
-
-                            @if ($post->hasThumbnail())
-                                <div class="mt-2 mx-auto" style="max-width: 300px;">
-                                    <img src="{{ $post->image_thumb_url }}" alt="{{ $post->image_thumb_name }}" class="img-thumbnail">
+                            <div class="input-group">
+                                <input type="text" name="image_thumb" value="{{ $post->image_thumb }}" id="image_thumb_input" class="form-control" placeholder="@lang('Post Thumbnail')" aria-label="@lang('Post Thumbnail')" aria-describedby="button-image">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" data-preview="image-thumb-holder" type="button" data-input="image_thumb_input" id="image-thumb">@lang('Select')</button>
                                 </div>
-                            @endif
+                            </div>
+                            <div class="mt-2 mx-auto" id="image-thumb-holder" style="max-width: 300px;">
+                                <img src="{{ asset($post->image_thumb) }}" alt="Select Post Image Thumbnail" class="img-thumbnail w-100">
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="post_date">@lang('Post Date')</label>
+                            <input type="date" class="form-control" id="post_date" name="post_date" value="{{ $post->post_date ? $post->post_date->format('Y-m-d') : "" }}" />
                         </div>
 
                         <button class="btn btn-primary" type="submit">@lang('Update Post')</button>
@@ -89,9 +90,45 @@
 
         </div> <!-- row -->
     </x-forms.patch>
+
+
+    <x-backend.card>
+        <x-slot name="header">
+            @lang('All Posts')
+        </x-slot>
+
+        <x-slot name="body">
+            <div class="row">
+                <div class="col-md-12">
+            @livewire('backend.post-table', ['editOnId' => $post->id])
+                </div>
+            </div>
+        </x-slot>
+    </x-backend.card>
 @endsection
 
 @push('after-scripts')
+    <script src="{{ asset('vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>
+
+    <script>
+        const route_prefix = "{{ config('app.url') }}/admin/laravel-filemanager";
+        $('#image').filemanager('image', {prefix: route_prefix, preview_class: "img-thumbnail w-100"});
+        $('#image_input').change(function(){
+            let value = this.value;
+            // remove domain from value
+            let url = new URL(value);
+            $(this).val(url.pathname)
+        });
+
+        $('#image-thumb').filemanager('image', {prefix: route_prefix, preview_class: "img-thumbnail w-100"});
+        $('#image_thumb_input').change(function(){
+            let value = this.value;
+            // remove domain from value
+            let url = new URL(value);
+            $(this).val(url.pathname)
+        });
+    </script>
+
     <script>
         'use strict';
         const slugable = document.querySelector('[data-slugable]');
