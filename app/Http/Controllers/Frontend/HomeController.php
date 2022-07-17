@@ -83,11 +83,11 @@ class HomeController
     public function article()
     {
         $pageColour = "orange";
-        $content = [
-            'articles' => Post::article()->take(5)->orderBy('post_date', 'desc')->get(),
-            'recipes' => Post::recipe()->take(5)->orderBy('post_date', 'desc')->get(),
-        ];
-        return view('frontend.pages.article', compact('pageColour', 'content'));
+        // $content = [
+        //     'articles' => Post::article()->take(5)->orderBy('post_date', 'desc')->get(),
+        //     'recipes' => Post::recipe()->take(5)->orderBy('post_date', 'desc')->get(),
+        // ];
+        return view('frontend.pages.article', compact('pageColour'));
     }
 
     /**

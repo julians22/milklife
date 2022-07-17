@@ -11,7 +11,7 @@
 
             <img src="{{ $article->image }}" alt="" class="max-w-2xl mx-auto mb-10 border-x-8 border-y-[10px] -rotate-3 shadow-md">
 
-            <div class="text-left text-white 2xl:text-lg">
+            <div class="article-text">
                 {!! $article->body !!}
             </div>
         </div>

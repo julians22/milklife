@@ -250,4 +250,17 @@
     .about-textbox{
         @apply hidden lg:block absolute text-center;
     }
+
+    .article-text{
+        @apply text-left text-white 2xl:text-lg font-gotham-light;
+    }
+
+    .article-text strong, .article-text b{
+        @apply font-gotham-black;
+    }
+
+    .article-text p{
+        @apply font-gotham-light;
+    }
+
 }

@@ -45,40 +45,10 @@
             </div>
 
             <div class="article-body pb-10" v-cloak v-show="articleShow == 'article'">
-                <div class="article-post-container w-full">
-                    <div class="flex justify-center space-x-10 space-y-5 items-baseline flex-wrap">
-                    @foreach ($content['articles'] as $article)
-                        <div class="article-box">
-                            <div class="article-image-wrapper">
-                                <a href="{{ route('frontend.article.show', $article->slug) }}">
-                                    <img src="{{ $article->image_thumb ?? '' }}" alt="{{ $article->title }}" class="article-image">
-                                </a>
-                            </div>
-                            <div class="text-xl text-white text-center font-koara-bold">
-                                <h2>{{ $article->title }}</h2>
-                            </div>
-                        </div>
-                    @endforeach
-                    </div>
-                </div>
+               @livewire('frontend.post-component', ['post_type' => 'article'], key('articles-lists'))
             </div>
             <div class="article-body pb-10" v-cloak v-show="articleShow == 'recipe'">
-                <div class="article-post-container">
-                    <div class="flex justify-center space-x-10 space-y-5 items-baseline flex-wrap">
-                    @foreach ($content['recipes'] as $article)
-                        <div class="article-box">
-                            <div class="article-image-wrapper">
-                                <a href="{{ route('frontend.article.show', $article->slug) }}">
-                                    <img src="{{ $article->image_thumb}}" alt="{{ $article->title }}" class="article-image">
-                                </a>
-                            </div>
-                            <div class="text-xl text-white text-center font-koara-bold">
-                                <h2>{{ $article->title }}</h2>
-                            </div>
-                        </div>
-                    @endforeach
-                    </div>
-                </div>
+                @livewire('frontend.post-component', ['post_type' => 'recipe'], key('recipes-lists'))
             </div>
         </div>
 

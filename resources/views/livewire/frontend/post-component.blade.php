@@ -1,0 +1,23 @@
+{{-- <div> --}}
+    <div class="article-post-container w-full">
+        <div class="flex justify-center space-x-6 space-y-5 items-baseline flex-wrap">
+        @foreach ($posts as $post)
+            <div class="article-box">
+                <div class="article-image-wrapper">
+                    <a href="{{ route('frontend.article.show', $post->slug) }}">
+                        <img src="{{ $post->image_thumb ?? '' }}" alt="{{ $post->title }}" class="article-image">
+                    </a>
+                </div>
+                <div class="text-xl text-white text-center font-koara-bold">
+                    <h2>{{ $post->title }}</h2>
+                    <h2>{{ $post->post_type }}</h2>
+                </div>
+            </div>
+        @endforeach
+        </div>
+
+        <div class="text-center relative {{ $perPage < $posts->total() ?: 'hidden'  }}">
+            <a href="#" wire:loading.remove wire:click.prevent="loadMore('{{$post_type}}')" class="btn btn-doodle btn-doodle-blue text-shadow">Muat Lebih</a>
+        </div>
+    </div>
+{{-- </div> --}}
