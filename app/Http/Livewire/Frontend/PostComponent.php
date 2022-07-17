@@ -11,7 +11,7 @@ class PostComponent extends Component
     use WithPagination;
 
     protected string $post_type;
-    public int $perPage = 3;
+    public int $perPage = 6;
 
     public function mount($post_type)
     {
