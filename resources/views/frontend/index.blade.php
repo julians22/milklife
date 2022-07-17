@@ -49,21 +49,21 @@
                 </div>
 
                 {{-- bug doodle --}}
-                <div class="absolute md:top-40 top-28 left-24 md:w-36 w-24">
+                <div class="absolute md:top-40 top-24 left-24 md:w-24 w-20">
                     <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full">
                 </div>
 
                 {{-- flower right bottom --}}
-                <div class="absolute bottom-0 right-0 md:w-28 w-40">
+                <div class="absolute bottom-0 right-0 md:w-28 w-20">
                     <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
                 </div>
 
-                <div class="about-content w-full relative">
+                <div class="about-content w-full h-full relative">
                     <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
 
-                    <div class="about-grid w-full">
-                        <div class="flex items-center justify-center h-[600px] 2xl:mt-24 3xl:mt-48">
-                            <div class="grid grid-cols-2 grid-rows-2 relative">
+                    <div class="about-grid w-full h-full">
+                        <div class="flex items-start md:items-center justify-center h-full">
+                            <div class="grid grid-cols-2 grid-rows-2 relative mt-32 md:mt-0">
                                 {{-- doodle stright right --}}
                                 <div class="absolute right-[-2em] top-[50%] -translate-y-1/2 w-12">
                                     <img src="{{ asset('img/doodle/staright_right.png') }}" alt=""
@@ -77,21 +77,53 @@
                                 </div>
 
 
+                                {{-- bottom-left --}}
                                 <div class="z-[4] grid-instax row-start-2">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in"
-                                        src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
+                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in"
+                                    src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
+                                    <div class="about-textbox bottom-1 w-[350px] right-[120%]">
+                                        <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Kualitas Konsisten</p>
+                                        <p class="text-white font-gotham-black leading-none ">Pengawasan ekstra tanpa henti dalam<br>
+                                            satu kawasan,  memastikan kualitas<br>
+                                            MilkLife terus terjaga</p>
+                                        <img src="{{ asset('img/doodle/arrow_about_bottom_l.png') }}" alt="" class="absolute top-[-3rem] left-[90%] w-[60px]">
+                                    </div>
                                 </div>
+                                {{-- top-left --}}
                                 <div class="z-[3] grid-instax row-start-1">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in"
-                                        src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
+                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in"
+                                    src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
+                                    <div class="about-textbox top-1 w-[350px] right-full">
+                                        <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Kesegaran Murni</p>
+                                        <p class="text-white font-gotham-black leading-none ">Langsung dari peternakan, kesegaran susu<br>
+                                            selalu terjaga dengan ekstra sampai<br>
+                                            ke meja makan anda</p>
+                                        <img src="{{ asset('img/doodle/arrow_about_top_l.png') }}" alt="" class="absolute top-[-15px] left-[90%] w-[85px]">
+                                    </div>
                                 </div>
+                                {{-- bottom-right --}}
                                 <div class="z-[2] grid-instax row-start-2">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in"
-                                        src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
+                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in"
+                                    src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
+                                    <div class="about-textbox bottom-1 w-[350px] left-[120%]">
+                                        <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Rasa yang Luar Biasa</p>
+                                        <p class="text-white font-gotham-black leading-none ">Penuh dengan kenikmatan dan kesegaran<br>
+                                            ekstra, dapat langsung diminum atau<br>
+                                            menjadi bahan dasar makanan</p>
+                                        <img src="{{ asset('img/doodle/arrow_about_bottom_r.png') }}" alt="" class="absolute -bottom-3 right-full w-[85px]">
+                                    </div>
                                 </div>
+                                {{-- top-right --}}
                                 <div class="z-[1] grid-instax row-start-1">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[450px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in"
+                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in"
                                         src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
+                                        <div class="about-textbox top-1 w-[320px] left-[120%]">
+                                            <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Nutrisi <br> Lengkap & Seimbang</p>
+                                            <p class="text-white font-gotham-black leading-none ">Dari sapi -  sapi bahagia yang diberikan<br>
+                                                perhatian ekstra oleh Milk People,<br>
+                                                24 jam tanpa henti </p>
+                                            <img src="{{ asset('img/doodle/arrow_about_top_r.png') }}" alt="" class="absolute -bottom-1 right-full w-[60px]">
+                                        </div>
                                 </div>
                             </div>
                         </div>
