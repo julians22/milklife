@@ -27,8 +27,12 @@
         @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold;
     }
 
-    .toggler-nav-badge{
+    .index-page .toggler-nav-badge{
         @apply hidden md:block fixed inset-x-0 z-[9] transition-all ease-linear duration-75 cursor-pointer;
+    }
+
+    .toggler-nav-badge{
+        @apply hidden;
     }
 
     .toggler-nav-close{

@@ -435,6 +435,7 @@
 @push('after-scripts')
     <script>
         $(document).ready(function() {
+            document.body.classList.add('index-page');
             $('#main').pagepiling({
                 menu: null,
                 direction: 'vertical',

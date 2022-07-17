@@ -188,18 +188,16 @@
 }
 
 // splide customizer
-#navigation{
+.index-page #navigation{
     top: 0px;
     &.down{
         @media (min-width: 768px){
             top: -500px;
         }
     }
-
-
 }
 
-.toggler-nav-badge{
+.index-page .toggler-nav-badge{
     top: 0px;
     &.down{
         top: -500px;
