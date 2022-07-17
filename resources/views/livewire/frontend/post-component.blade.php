@@ -10,7 +10,6 @@
                 </div>
                 <div class="text-xl text-white text-center font-koara-bold">
                     <h2>{{ $post->title }}</h2>
-                    <h2>{{ $post->post_type }}</h2>
                 </div>
             </div>
         @endforeach
