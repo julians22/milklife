@@ -34,8 +34,8 @@
                                 <div class="form-group">
                                     <label for="post_type">@lang('Post Type')</label>
                                     <select class="form-control" id="post_type" name="post_type">
-                                        <option value="post" {{ $post->post_type == $postModel::TYPE_ARTICLE ? 'selected' : '' }}>@lang('Article')</option>
-                                        <option value="recipe" {{ $post->post_type == $postModel::TYPE_RECIPE ? 'selected' : '' }}>@lang('Recipe')</option>
+                                        <option value="{{$postModel::TYPE_ARTICLE}}" {{ $post->post_type == $postModel::TYPE_ARTICLE ? 'selected' : '' }}>@lang('Article')</option>
+                                        <option value="{{$postModel::TYPE_RECIPE}}" {{ $post->post_type == $postModel::TYPE_RECIPE ? 'selected' : '' }}>@lang('Recipe')</option>
                                     </select>
                                 </div>
 
