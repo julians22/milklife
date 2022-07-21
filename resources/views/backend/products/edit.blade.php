@@ -71,7 +71,15 @@
 
                         <div class="form-group">
                             <label for="size">Size</label>
-                            <input type="text" name="size" id="size" value="{{ $product->size }}" class="form-control">
+                            <select name="size" id="size" class="form-control">
+                                @foreach ($sizes as $size)
+                                    <option
+                                        {{ $size['size'] == $product->size ? 'selected' : '' }}
+                                        value="{{$size['size']}}">
+                                    {{ $size['size'] }} {{ $size['unit'] }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
 
                         <div class="form-group">
@@ -79,7 +87,7 @@
                             <div class="input-group mb-2">
                                 <input value="{{ $product->image }}" readonly type="text" name="image" id="image" class="form-control" placeholder="Image" aria-label="Select Image" aria-describedby="button-select-image">
                                 <div class="input-group-append">
-                                    <button data-input="image" data-preview="image-holder" class="btn btn-secondary" type="button" id="button-select-image">@lang('Select Image')</button>
+                                    <button data-input="image" data-preview="image-holder" class="btn btn-secondary" data-defaultPath={{ 'variants'}} type="button" id="button-select-image">@lang('Select Image')</button>
                                 </div>
                             </div>
                             <div id="image-holder" style="max-width: 100px">
@@ -90,9 +98,9 @@
                         <div class="form-group">
                             <label for="nutrition">Nutrition</label>
                             <div class="input-group mb-2">
-                                <input value="{{ $product->nutrition }}" readonly type="text" name="nutrition" id="nutrition" class="form-control" placeholder="Image" aria-label="Select Image" aria-describedby="button-select-nutrition">
+                                <input value="{{ $product->nutrition }}" readonly type="text" name="nutrition" id="nutrition" class="form-control" placeholder="Select Nutrition Image" aria-label="Select Image" aria-describedby="button-select-nutrition">
                                 <div class="input-group-append">
-                                    <button data-input="nutrition" data-preview="nutrition-holder" class="btn btn-secondary" type="button" id="button-select-nutrition">@lang('Select Nutrition Image')</button>
+                                    <button data-input="nutrition" data-preview="nutrition-holder" class="btn btn-secondary" type="button" id="button-select-nutrition">@lang('Select Image')</button>
                                 </div>
                             </div>
                             <div id="nutrition-holder">
@@ -115,6 +123,21 @@
     <script>
         const route_prefix = "{{ config('app.url') }}/admin/laravel-filemanager";
         $('#button-select-image').filemanager('image', {prefix: route_prefix});
+        $('#image').change(function(){
+            let value = this.value;
+            // remove domain from value
+            let url = new URL(value);
+            $(this).val(url.pathname)
+        });
+
         $('#button-select-nutrition').filemanager('image', {prefix: route_prefix});
+        $('#nutrition').change(function(){
+            let value = this.value;
+            // remove domain from value
+            let url = new URL(value);
+            $(this).val(url.pathname)
+        });
+
+
     </script>
 @endpush

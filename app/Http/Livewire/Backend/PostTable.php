@@ -27,7 +27,9 @@ class PostTable extends DataTableComponent
     public function columns(): array
     {
         return [
-            Column::make('Title')->sortable()->searchable(),
+            Column::make('Title')
+                ->sortable()
+                ->searchable(),
             Column::make('Post Type', 'post_type')->sortable(),
             Column::make('Post Date', 'post_date')
                 ->sortable(),

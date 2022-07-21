@@ -45,8 +45,8 @@
             {{-- product showcase --}}
             <div class="product-show-case mt-5">
                 <div class="product-intro">
-                    <h1 class="text-4xl font-koara-bold mb-6">{{ $product->name }}</h1>
-                    <p class="description text-lg">{{ $product->slogan }}</p>
+                    <h1 class="text-4xl font-koara-bold mb-6 mt-4 lg:mt-0 text-center lg:text-left">{{ $product->name }}</h1>
+                    <p class="description text-xl lg:text-lg">{{ $product->slogan }}</p>
                 </div>
                 <div class="product-image w-[150px]">
                     <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="w-full">
@@ -65,7 +65,7 @@
 
             {{-- product links --}}
             <div class="product-links text-center text-white mt-4">
-                <h4 class="text-3xl font-koara-bold mb-4">Tersedia di:</h4>
+                <h4 class="text-xl lg:text-3xl font-koara-bold mb-4">Tersedia di:</h4>
                 <div class="flex flex-row flex-no-wrap items-stretch space-x-2 justify-center">
                     <a class="shop-link" href="#"><img src="{{ asset('img/brand/Tokped.png') }}"></a>
                     <a class="shop-link" href="#"><img src="{{ asset('img/brand/Blibli.png') }}"></a>
@@ -114,22 +114,20 @@
         <div class="variant-content z-10 relative">
             {{-- product misc (nutrition & compotition) --}}
             <div class="product-misc">
-                <div class="product-image w-[170px]">
+                <div class="product-image hidden md:block w-[170px]">
                     <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="w-full">
                 </div>
                 <div class="product-misc-content">
                     <div class="nav-misc-wrapper">
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'komposisi' }" v-on:click.prevent="showMisc('komposisi')">
-                            <span href="#" class="font-gotham-black text-2xl text-center">Komposisi</span>
+                            <span href="#" class="font-gotham-black text-base lg:text-2xl text-center">Komposisi</span>
                         </div>
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'nutrisi' }" v-on:click.prevent="showMisc('nutrisi')">
-                            <span href="#" class="font-gotham-black text-2xl text-center">Informasi Nilai Gizi</span>
+                            <span href="#" class="font-gotham-black text-base lg:text-2xl text-center">Informasi Nilai Gizi</span>
                         </div>
                     </div>
-                    <div class="misc-body pb-10" v-cloak v-show="miscShow == 'komposisi'">
-
-                    </div>
-                    <div class="misc-body pb-10" v-cloak v-show="miscShow == 'nutrisi'">
+                    <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10" v-cloak v-show="miscShow == 'komposisi'"></div>
+                    <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10" v-cloak v-show="miscShow == 'nutrisi'">
                         <img src="{{ $product->nutrition }}" alt="" class="w-full">
                     </div>
                 </div>

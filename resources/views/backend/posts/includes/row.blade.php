@@ -1,5 +1,8 @@
 <x-livewire-tables::bs4.table.cell>
-    {{ $row->title }}
+    <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width:400px"
+        title="{{ $row->title }}">
+        {{ $row->title }}
+    </div>
 </x-livewire-tables::bs4.table.cell>
 
 <x-livewire-tables::bs4.table.cell>

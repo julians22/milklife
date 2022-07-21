@@ -25,6 +25,10 @@
         .crt-widget.crt-widget-carousel{
             min-height: auto !important;
         }
+
+        .crt-panel-prev svg{
+            margin: auto;
+        }
     </style>
 @endpush
 

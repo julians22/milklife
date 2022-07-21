@@ -14,7 +14,6 @@ class EditProductExcelenceComponent extends Component
     public $edit_product_excellence = "";
     public $product_execelence_id = 0;
 
-
     public function mount($product)
     {
         $this->product = $product;
@@ -28,11 +27,21 @@ class EditProductExcelenceComponent extends Component
 
     public function save($id = 0){
         if ($id == 0) {
+            $this->validate([
+                'new_product_excellence' => 'required',
+            ], [
+                'new_product_excellence.required' => 'Please enter product excellence before adding or saving',
+            ]);
             $this->product->productExcelences()->create([
                 'name' => $this->new_product_excellence,
                 'order' => 0
             ]);
         }else{
+            $this->validate([
+                'edit_product_excellence' => 'required',
+            ], [
+                'edit_product_excellence.required' => 'Please enter product excellence before adding or saving',
+            ]);
             $this->product->productExcelences()->where('id', $id)->update([
                 'name' => $this->edit_product_excellence,
             ]);
@@ -45,6 +54,11 @@ class EditProductExcelenceComponent extends Component
         $this->is_edit = true;
         $this->edit_product_excellence = $name;
         $this->product_execelence_id = $id;
+    }
+
+    public function deleteAction($id){
+        $this->product->productExcelences()->where('id', $id)->delete();
+        $this->productExcelenceSaved();
     }
 
     public function cancelEdit(){

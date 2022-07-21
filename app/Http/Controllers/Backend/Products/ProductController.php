@@ -18,15 +18,15 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $product_variants = ProductVariant::orderBy('name', 'asc')->get();
-
         $product->with('productExcelences', 'productCompotition');
 
-        $collections = $product->all();
+        $collections = $product->all(); // collection of all products
+        $next = $collections->where('id', '>', $product->id)->first(); // get next item in collection
 
-        // get next item in collection
-        $next = $collections->where('id', '>', $product->id)->first();
+        $sizes = config('milklife.size_avaliable'); // get sizes from config file
 
-        return view('backend.products.edit', compact('product', 'product_variants', 'next'));
+
+        return view('backend.products.edit', compact('product', 'product_variants', 'next', 'sizes'));
     }
 
     public function update(Request $request, Product $product)
