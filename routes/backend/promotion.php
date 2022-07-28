@@ -19,6 +19,9 @@ Route::group(['prefix' => 'promotion', 'as' => 'promotion.'], function() {
         })
         ->name('create');
 
+    Route::post('store', [PromotionController::class, 'store'])
+        ->name('store');
+
     Route::group(['prefix' => '{promotion}'], function() {
         Route::get('edit', [PromotionController::class, 'edit'])
             ->breadcrumbs(function(Trail $trail, $promotion) {
