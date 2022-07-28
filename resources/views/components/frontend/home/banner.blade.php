@@ -31,7 +31,7 @@
                                         <p class="text-white font-gotham-light text-lg 2xl:text-3xl mb-3 md:block hidden">
                                             {!! nl2br($promotion->exerpt) !!}
                                         </p>
-                                        <img src="{{ asset('img/product/product_1.png') }}" alt="" class="block md:hidden max-w-full w-4/5 mx-auto">
+                                        <img src="{{ $promotion->image }}" alt="" class="block md:hidden max-w-full w-4/5 mx-auto">
                                         <a href="{{ $promotion->url ?? '#' }}" target="_blank" class="btn btn-doodle text-shadow">{{ $promotion->button_label }}</a>
                                     </div>
 
