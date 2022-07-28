@@ -18,4 +18,11 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+
+    # redirect indexed old route to new route
+    Redirect /tentang-gda/peternakan-kami       /about
+    Redirect /hubungi-kami                      /#kontak
+    Redirect /varian-milk-life/bebas-laktosa    /varian-milklife/susu-bebas-laktosa-original
+    Redirect /varian-milk-life/uht              /varian-milklife/susu-murni-penuh-gizi
 </IfModule>

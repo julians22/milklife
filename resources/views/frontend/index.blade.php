@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
-@section('title', __('MilkLife'))
+@section('title', config('milklife.meta.title'))
+@section('meta_description', config('milklife.meta.description'))
 
 @push('after-styles')
     <link rel="stylesheet" href="{{ mix('css/pagepiling.css') }}">
@@ -179,7 +180,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="{{ route('frontend.variant') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
+                        <a href="{{ route('frontend.product.index') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
                     </div>
                 </div>
             </section>

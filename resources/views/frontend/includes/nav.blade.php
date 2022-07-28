@@ -13,7 +13,7 @@
             <img src="{{ asset('img/logo.png') }}" alt="" width="125">
         </a>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass((Route::is('frontend.variant') || Route::is('frontend.product*')), 'active') }}">
-            <a href="{{ route('frontend.variant') }}">Varian</a>
+            <a href="{{ route('frontend.product.index') }}">Varian</a>
         </div>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass(Route::is('frontend.about'), 'active') }}">
             <a href="{{ route('frontend.about') }}">Tentang MilkLife</a>

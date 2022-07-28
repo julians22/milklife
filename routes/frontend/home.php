@@ -14,13 +14,8 @@ Route::get('/', [HomeController::class, 'index'])
         $trail->push(__('Home'), route('frontend.index'));
     });
 
-Route::get('variant', [HomeController::class, 'variant'])
-    ->name('variant')
-    ->breadcrumbs(function (Trail $trail) {
-        $trail->push(__('Variant'), route('frontend.variant'));
-    });
 
-Route::group(['prefix' => 'product', 'as' => 'product.'], function () {
+Route::group(['prefix' => 'varian-milklife', 'as' => 'product.'], function () {
     Route::get('/', [HomeController::class, 'variant'])
         ->name('index')
         ->breadcrumbs(function (Trail $trail) {

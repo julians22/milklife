@@ -79,7 +79,7 @@ export default {
 
         showProduct(product){
             const slug = product.slug;
-            const url = `/product/${slug}`;
+            const url = `/varian-milklife/${slug}`;
             window.location.href = url;
         },
     },

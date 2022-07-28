@@ -32,6 +32,11 @@ return [
             'url' => '',
         ],
     ],
+
+    'meta' => [
+        'title' => 'MilkLife - Jelajahi cerita MilkLife dan The Milk People',
+        'meta_description' => 'Kebaikan alam dan teknologi ramah lingkungan.Peternakan pertama di Indonesia dengan pemrosesan susu berteknologi mutakhir dari Jepang, serta pengolahan limbah bertenaga biogas yang ramah lingkungan, mengolah limbah padat menjadi pupuk dan tempat istirahat sapi-sapi kami.',
+    ]
 ]
 
 ?>
