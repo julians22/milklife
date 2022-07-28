@@ -27,7 +27,7 @@ class ProductService extends BaseService
      */
     public function getBySlug(string $slug)
     {
-        return $this->model::where('slug', $slug)->first();
+        return $this->model::where('slug', $slug)->with('productLinks')->first();
     }
 
     /**

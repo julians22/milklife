@@ -17,7 +17,21 @@ return [
             'unit' => 'ml',
             'size' => '1000'
         ],
-    ]
+    ],
+    'product_links' => [
+        [
+            'name' => 'tokopedia',
+            'url' => '',
+        ],
+        [
+            'name' => 'blibli',
+            'url' => '',
+        ],
+        [
+            'name' => 'shopee',
+            'url' => '',
+        ],
+    ],
 ]
 
 ?>

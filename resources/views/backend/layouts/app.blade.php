@@ -28,7 +28,9 @@
                 <div class="container-fluid">
                     <div class="fade-in">
                         @include('includes.partials.messages')
-                        @yield('content')
+                        <div id="app">
+                            @yield('content')
+                        </div>
                     </div><!--fade-in-->
                 </div><!--container-fluid-->
             </main>

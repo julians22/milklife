@@ -3,6 +3,8 @@
 // Coreui
 @import '~@coreui/coreui/scss/coreui';
 @import '~@coreui/icons/css/free.min.css';
+@import "@fancyapps/ui/dist/fancybox.css";
+
 
 body.mce-content-body{
     padding: .5rem !important;
@@ -11,5 +13,9 @@ body.mce-content-body{
 
 .img-thumbnail.img-thumbnail-orange{
     background-color: #c58d3b;
+}
+
+.image-promotion{
+    cursor: zoom-in;
 }
 

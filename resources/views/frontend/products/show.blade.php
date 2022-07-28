@@ -67,9 +67,19 @@
             <div class="product-links text-center text-white mt-4">
                 <h4 class="text-xl lg:text-3xl font-koara-bold mb-4">Tersedia di:</h4>
                 <div class="flex flex-row flex-no-wrap items-stretch space-x-2 justify-center">
-                    <a class="shop-link" href="#"><img src="{{ asset('img/brand/Tokped.png') }}"></a>
-                    <a class="shop-link" href="#"><img src="{{ asset('img/brand/Blibli.png') }}"></a>
-                    <a class="shop-link" href="#"><img src="{{ asset('img/brand/Shopee.png') }}"></a>
+                    @if ($product->productLinks->count() > 0)
+                        @foreach ($product->productLinks as $productLink)
+                            @if ($productLink->url != null)
+                                @if ($productLink->isTokopedia())
+                                    <a class="shop-link" href="{{ $productLink->url }}" target="BLANK"><img src="{{ asset('img/brand/Tokped.png') }}"></a>
+                                @elseif($productLink->isShopee())
+                                    <a class="shop-link" href="{{ $productLink->url }}" target="BLANK"><img src="{{ asset('img/brand/Shopee.png') }}"></a>
+                                @elseif($productLink->isBlibli())
+                                    <a class="shop-link" href="{{ $productLink->url }}" target="BLANK"><img src="{{ asset('img/brand/Blibli.png') }}"></a>
+                                @endif
+                            @endif
+                        @endforeach
+                    @endif
                 </div>
             </div>
 

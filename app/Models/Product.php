@@ -39,6 +39,11 @@ class Product extends Model
         return $this->hasMany(ProductCompetition::class);
     }
 
+    public function productLinks()
+    {
+        return $this->hasMany(ProductLink::class, 'product_id', 'id');
+    }
+
     /**
      * Get the variant associated with the Product
      *

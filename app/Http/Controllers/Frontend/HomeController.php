@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Models\Post;
 use App\Models\ProductVariant;
+use App\Models\Promotion;
 use App\Services\Frontend\ProductService;
 use Illuminate\Contracts\View\View;
 use Request;
@@ -37,7 +38,8 @@ class HomeController
         $pageColour = "";
         $posts = Post::orderBy('created_at', 'desc')->latest()->take(3)->get();
         $products = $this->productService->getAllPaginated();
-        return view('frontend.index', compact('pageColour', 'posts', 'products'));
+        $promotions = Promotion::orderBy('order', 'asc')->get();
+        return view('frontend.index', compact('pageColour', 'posts', 'products', 'promotions'));
     }
 
     /**
@@ -67,6 +69,9 @@ class HomeController
     {
         $pageColour = "";
         $product = $this->productService->getBySlug($slug);
+        if (!$product) {
+            abort(402, 'Product not found');
+        }
         $relatedProducts = $this->productService->getRelatedProducts($product, 3);
 
         $metas = [
@@ -97,6 +102,9 @@ class HomeController
     public function article_show($slug){
 
         $article = Post::where('slug', $slug)->first();
+        if (!$article) {
+            abort(402, 'Article not found');
+        }
         $pageColour = "blue";
         if ($article->post_type == POST::TYPE_ARTICLE) {
             return view('frontend.articles.article_show', compact('article', 'pageColour'));

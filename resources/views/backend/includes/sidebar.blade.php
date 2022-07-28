@@ -20,10 +20,19 @@
 
         <li class="c-sidebar-nav-title">{{ __('Main') }}</li>
 
+        <li class="c-sidebar-nav-item">
+            <x-utils.link
+                class="c-sidebar-nav-link"
+                :href="route('admin.promotion.index')"
+                :active="activeClass(Route::is('admin.promotion.index'), 'c-active')"
+                icon="c-sidebar-nav-icon fas fa-file-image"
+                :text="__('Promotion')" />
+        </li>
+
         <li class="c-sidebar-nav-dropdown {{ activeClass(Route::is('admin.post.*'), 'c-open c-show') }}">
             <x-utils.link
                 href="#"
-                icon="fas fa-media-play"
+                icon="c-sidebar-nav-icon fas fa-file-alt"
                 class="c-sidebar-nav-dropdown-toggle"
                 :text="__('Posts')" />
 

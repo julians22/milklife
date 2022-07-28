@@ -36,7 +36,7 @@
 
     <div id="main">
         {{-- Banner --}}
-        <x-frontend.home.banner></x-frontend.home.banner>
+        <x-frontend.home.banner :promotions="$promotions"></x-frontend.home.banner>
 
         {{-- About --}}
         <div class="section">
@@ -231,7 +231,7 @@
                                 <div class="article-box ">
                                     <div class="article-image-wrapper">
                                         <a href="{{ route('frontend.article.show', $post->slug) }}">
-                                            <img src="{{ $post->image ?? '' }}" alt="{{ $post->title }}"
+                                            <img src="{{ $post->image ?? asset('img/dummy-milklife.jpg') }}" onerror="this.url = '{{asset('img/dummy-milklife.jpg')}}'" alt="{{ $post->title }}"
                                                 class="article-image">
                                         </a>
                                     </div>
@@ -252,7 +252,7 @@
                                             <div class="article-box ">
                                                 <div class="article-image-wrapper">
                                                     <a href="{{ route('frontend.article.show', $post->slug) }}">
-                                                        <img src="{{ $post->image ?? '' }}" alt="{{ $post->title }}"
+                                                        <img src="{{ $post->image ?? asset('img/dummy-milklife.jpg') }}" onerror="this.url = '{{ asset('img/dummy-milklife.jpg') }}'" alt="{{ $post->title }}"
                                                             class="article-image">
                                                     </a>
                                                 </div>

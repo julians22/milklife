@@ -49,7 +49,27 @@
                         <div class="form-group row">
                             <label for="excelences" class="col-form-label col-md-2">@lang('Excelences')</label>
                             <div class="col-md-10">
-                                @livewire('backend.products.edit-product-excelence-component', ['product' => $product], key($product->id))
+                                <product-excelenece-component :excelences-data='@json($product->productExcelences)'/>
+                                {{-- @livewire('backend.products.edit-product-excelence-component', ['product' => $product], key($product->id)) --}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="links" class="col-form-label col-md-2">@lang('Links')</label>
+                            <div class="col-md-10">
+                                <ul class="list-group mb-3">
+                                @foreach ($product_links as $link)
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div class="form-group row w-100">
+                                            <label for="" class="col-md-3 col-form-label">{{ $link['name'] }}</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="links[{{ $link['name'] }}]" value="{{ $link['url'] ?? '' }}">
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+                                </ul>
+                                {{-- @livewire('backend.products.product-links-component', ['product' => $product], key($product->id)) --}}
                             </div>
                         </div>
 
