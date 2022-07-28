@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('title', config('milklife.meta.title'))
-@section('meta_description', config('milklife.meta.description'))
+@section('meta_description', config('milklife.meta.meta_description'))
 
 @push('after-styles')
     <link rel="stylesheet" href="{{ mix('css/pagepiling.css') }}">
