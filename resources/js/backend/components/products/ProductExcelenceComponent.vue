@@ -16,7 +16,7 @@
 
         <div v-cloak>
             <ul class="list-group mt-3">
-                <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(excelence, index) in excelences" :key="index">
+                <li class="list-group-item justify-content-between align-items-center" :class="excelence.id == 'deleted' ? 'd-none' : ' d-flex'" v-for="(excelence, index) in excelences" :key="index">
                     {{ excelence.name }}
                     <input type="text" class="d-none" :name="`excelence[][${tagId(excelence.id)}]`" :value="excelence.name">
                     <div>
@@ -39,7 +39,11 @@ export default {
     },
     mounted() {
         this.isEdit = false;
-        this.excelences = this.excelencesData;
+        if (this.excelencesData.length > 0) {
+            this.excelences = this.excelencesData;
+        } else {
+            this.excelences = [];
+        }
     },
     data(){
         return {
@@ -74,10 +78,9 @@ export default {
             this.excelences[this.excelence_id].name = this.edit_product_excellence;
             this.edit_product_excellence = '';
             this.excelence_id = null;
-            // this.$emit('update-excellence', this.edit_product_excellence);
         },
         remove(idx){
-            this.excelences.splice(idx, 1);
+            this.excelences[idx].id = 'deleted';
         },
         tagId(idx){
             if (undefined === idx) {

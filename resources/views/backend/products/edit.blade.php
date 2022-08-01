@@ -50,7 +50,12 @@
                             <label for="excelences" class="col-form-label col-md-2">@lang('Excelences')</label>
                             <div class="col-md-10">
                                 <product-excelenece-component :excelences-data='@json($product->productExcelences)'/>
-                                {{-- @livewire('backend.products.edit-product-excelence-component', ['product' => $product], key($product->id)) --}}
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="excelences" class="col-form-label col-md-2">@lang('Compotitions')</label>
+                            <div class="col-md-10">
+                                <product-compotition-component :compotitions-data='@json($product->productCompotitions)'/>
                             </div>
                         </div>
 

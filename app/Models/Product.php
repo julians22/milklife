@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 
 class Product extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, HasSlug;
 
     protected $fillable = [
         'product_variant_id',
@@ -24,6 +26,16 @@ class Product extends Model
         'ingredient'
     ];
 
+    /**
+     * Get the options for generating the slug.
+     */
+    public function getSlugOptions() : SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('name')
+            ->saveSlugsTo('slug');
+    }
+
     public function productVariant()
     {
         return $this->belongsTo(ProductVariant::class);
@@ -34,9 +46,9 @@ class Product extends Model
         return $this->hasMany(ProductExcelence::class);
     }
 
-    public function productCompotition()
+    public function productCompotitions()
     {
-        return $this->hasMany(ProductCompetition::class);
+        return $this->hasMany(ProductCompotition::class);
     }
 
     public function productLinks()

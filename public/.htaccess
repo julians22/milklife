@@ -25,4 +25,7 @@
     Redirect /hubungi-kami                      /#kontak
     Redirect /varian-milk-life/bebas-laktosa    /varian-milklife/susu-bebas-laktosa-original
     Redirect /varian-milk-life/uht              /varian-milklife/susu-murni-penuh-gizi
+
+    # allow cors
+    Header always set Access-Control-Allow-Origin "*"
 </IfModule>

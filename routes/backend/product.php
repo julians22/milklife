@@ -19,6 +19,9 @@ Route::group(['prefix' => 'product', 'as' => 'product.'], function() {
             $trail->push(__('Create Product'), route('admin.product.create'));
         });
 
+    Route::post('store', [ProductController::class, 'store'])
+        ->name('store');
+
     Route::group(['prefix' => '{product}'], function() {
         Route::get('edit', [ProductController::class, 'edit'])
             ->name('edit')

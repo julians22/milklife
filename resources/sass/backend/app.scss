@@ -19,3 +19,8 @@ body.mce-content-body{
     cursor: zoom-in;
 }
 
+.list-group-item.deleted{
+    text-decoration: line-through;
+    color: #c53b3b;
+}
+

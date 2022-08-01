@@ -127,7 +127,7 @@
                 <div class="product-image hidden md:block w-[170px]">
                     <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="w-full">
                 </div>
-                <div class="product-misc-content">
+                <div class="product-misc-content flex flex-col">
                     <div class="nav-misc-wrapper">
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'komposisi' }" v-on:click.prevent="showMisc('komposisi')">
                             <span href="#" class="font-gotham-black text-base lg:text-2xl text-center">Komposisi</span>
@@ -136,8 +136,17 @@
                             <span href="#" class="font-gotham-black text-base lg:text-2xl text-center">Informasi Nilai Gizi</span>
                         </div>
                     </div>
-                    <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10" v-cloak v-show="miscShow == 'komposisi'"></div>
-                    <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10" v-cloak v-show="miscShow == 'nutrisi'">
+                    <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10 flex-grow px-0 md:px-20" v-cloak v-show="miscShow == 'komposisi'">
+                        <div class="flex flex-col h-full justify-end">
+                            @foreach ($product->productCompotitions as $compotition)
+                            <div class="flex flex-row flex-no-wrap items-end space-x-5 space-y-4 text-base lg:text-xl font-gotham-black text-white">
+                                <span><img src="{{ asset('img/icons/bullet_y.png') }}" alt="" class="w-10"></span>
+                                <span>{{ $compotition->name }}</span>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10 flex-grow px-0 md:px-10" v-cloak v-show="miscShow == 'nutrisi'">
                         <img src="{{ $product->nutrition }}" alt="" class="w-full">
                     </div>
                 </div>
