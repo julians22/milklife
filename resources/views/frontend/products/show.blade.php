@@ -55,8 +55,8 @@
                     @if ($product->productExcelences->count() > 0)
                     @foreach ($product->productExcelences as $productExcelence)
                     <div class="flex flex-row flex-no-wrap items-end space-x-5 space-y-4">
-                        <span><img src="{{ asset('img/icons/bullet_y.png') }}" alt="" class="w-10"></span>
-                        <span>{{ $productExcelence->name }}</span>
+                        <span class="w-10"><img src="{{ asset('img/icons/bullet_y.png') }}" alt=""></span>
+                        <span class="flex-1">{{ $productExcelence->name }}</span>
                     </div>
                     @endforeach
                     @endif
@@ -140,8 +140,8 @@
                         <div class="flex flex-col h-full justify-end">
                             @foreach ($product->productCompotitions as $compotition)
                             <div class="flex flex-row flex-no-wrap items-end space-x-5 space-y-4 text-base lg:text-xl font-gotham-black text-white">
-                                <span><img src="{{ asset('img/icons/bullet_y.png') }}" alt="" class="w-10"></span>
-                                <span>{{ $compotition->name }}</span>
+                                <span class="w-10"><img src="{{ asset('img/icons/bullet_y.png') }}" alt=""></span>
+                                <span class="flex-1">{{ $compotition->name }}</span>
                             </div>
                             @endforeach
                         </div>
