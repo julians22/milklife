@@ -46,10 +46,7 @@ class ProductController extends Controller
             'flavor' => 'required',
             'size' => 'required',
             'image' => 'required',
-            'nutrition' => 'required',
-            'links' => 'required|array',
-            'excelence' => 'required|array',
-            'compotition' => 'required|array',
+            'nutrition' => 'sometimes',
         ]);
 
         $product->update([
@@ -126,10 +123,7 @@ class ProductController extends Controller
             'flavor' => 'required',
             'size' => 'required',
             'image' => 'required',
-            'nutrition' => 'required',
-            'links' => 'required|array',
-            'excelence' => 'required|array',
-            'compotition' => 'required|array',
+            'nutrition' => 'sometimes'
         ]);
 
         $product = Product::create([
