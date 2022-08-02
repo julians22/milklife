@@ -13,7 +13,6 @@ class Post extends Model
 
     const TYPE_ARTICLE = 'article';
     const TYPE_RECIPE = 'recipe';
-    const TYPE_BANNER = 'slider_promo';
 
     protected $fillable = [
         'title', 'slug', 'body', 'post_type', 'user_id', 'image', 'image_thumb', 'bg_code', 'post_date'

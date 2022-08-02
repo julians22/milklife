@@ -10,7 +10,7 @@
             display: none !important;
         } */
 
-        .crt-post-text{
+        /* .crt-post-text{
             display: none !important;
         }
 
@@ -29,7 +29,7 @@
 
         .crt-panel-prev svg{
             margin: auto;
-        }
+        } */
     </style>
 @endpush
 
@@ -336,8 +336,8 @@
                     </div>
                 </div>
 
-                <div class="">
-                    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div><!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+                <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto w-full">
+                    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
                 </div>
 
                 <div class="text-center relative">
@@ -459,7 +459,7 @@
                     'position': 'right',
                     'tooltips': ['Beranda', 'Tentang MilkLife', 'Varian', 'Artikel', 'DuniaMilkLife', 'Kontak']
                 },
-                normalScrollElements: '.splide__slide, #curator-feed-default-feed-layout',
+                // normalScrollElements: '.splide__slide, #curator-feed-default-feed-layout',
                 normalScrollElementTouchThreshold: 10,
                 touchSensitivity: 5,
                 keyboardScrolling: true,
