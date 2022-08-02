@@ -391,7 +391,8 @@
                         <h3 class="text-3xl lg:text-5xl font-koara-bold text-center text-milklife-orange mb-5">Promo ekstra
                             untuk kamu yang berdedikasi ekstra</h3>
 
-                        <a href="#"
+                        <a href="https://bit.ly/HaloMilkLifee"
+                            target="_blank"
                             class="btn btn-whatsapp shadow-sm hover:shadow-3 focus:shadow-3 translate-y-0 focus:-translate-y-1 hover:-translate-y-1 transition-all ease-in-out duration-500">
                             <span>START CHAT</span>
                             <i class="fab fa-whatsapp"></i>
@@ -400,21 +401,20 @@
 
                     <footer class="absolute bottom-0 inset-x-0 flex flex-col space-y-2 py-3 items-center">
                         <div class="link-icons-wrapper flex items-center space-x-4">
-                            <a href="#" class="link-icon-items "
+                            <a href="https://www.instagram.com/milklife.id/" target="_blank" class="link-icon-items "
                                 style="background-image: url('{{ asset('img/icons/insta.png') }}')"></a>
-                            <a href="#" class="link-icon-items "
+                            <a href="https://www.tiktok.com/@milklife_id" target="_blank" class="link-icon-items "
                                 style="background-image: url('{{ asset('img/icons/tiktok.png') }}')"></a>
-                            <a href="#" class="link-icon-items "
+                            <a href="https://twitter.com/MilkLife_ID" target="_blank" class="link-icon-items "
                                 style="background-image: url('{{ asset('img/icons/twitter.png') }}')"></a>
-                            <a href="#" class="link-icon-items "
+                            <a href="https://www.facebook.com/milklifedairyID/" target="_blank" class="link-icon-items "
                                 style="background-image: url('{{ asset('img/icons/facebook.png') }}')"></a>
-                            <a href="#" class="link-icon-items "
+                            <a href="https://www.youtube.com/channel/UCNGNoT-SKbax1nsJwc5SkZA" target="_blank" class="link-icon-items "
                                 style="background-image: url('{{ asset('img/icons/youtube.png') }}')"></a>
                         </div>
 
                         <div class="copyright-wrapper">
-                            <h4 class="text-lg font-gotham-black text-milklife-orange">Copyright PT Global Dairi Alami 2022
-                            </h4>
+                            <h4 class="text-lg font-gotham-black text-milklife-orange">Copyright PT Global Dairi Alami &copy;{{ date('Y') }}</h4>
                         </div>
                     </footer>
                 </div>
