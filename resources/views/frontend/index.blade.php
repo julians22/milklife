@@ -6,9 +6,9 @@
 @push('after-styles')
     <link rel="stylesheet" href="{{ mix('css/pagepiling.css') }}">
     <style>
-        .crt-logo.crt-tag{
+        /* .crt-logo.crt-tag{
             display: none !important;
-        }
+        } */
 
         .crt-post-text{
             display: none !important;
@@ -336,7 +336,6 @@
                     </div>
                 </div>
 
-                <!-- Place <div> tag where you want the feed to appear -->
                 <div class="">
                     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div><!-- The Javascript can be moved to the end of the html page before the </body> tag -->
                 </div>
@@ -503,12 +502,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             scrollFunction();
 
+            /* curator-feed-default-feed-layout */
             (function(){
             var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-            i.src="https://cdn.curator.io/published/b04875f5-494c-40e1-b9ce-fd12246756c9.js";
+            i.src="https://cdn.curator.io/published/5ee16c2a-3104-4d9e-90fb-7109b5958e62.js";
             e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
             })();
-
 
             const navCloseBagde = document.querySelector('.toggler-nav-close');
 

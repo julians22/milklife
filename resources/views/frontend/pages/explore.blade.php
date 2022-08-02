@@ -4,15 +4,6 @@
 
 @section('meta_description', '#DuniaMilkLife')
 
-@push('after-styles')
-<style>
-    .explore-section.page .crt-widget.crt-widget-branded .crt-logo{
-        display: none !important;
-    }
-</style>
-
-@endpush
-
 @section('content')
     <div class="explore-section page" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
 
@@ -37,7 +28,7 @@
 
             <div class="feed-container mt-5">
                 <!-- Place <div> tag where you want the feed to appear -->
-                <div id="curator-feed-galery-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+                <div id="curator-feed-galery-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
             </div>
         </div>
 
@@ -46,19 +37,12 @@
 @endsection
 
 @push('after-scripts')
-    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
     <script type="text/javascript">
     /* curator-feed-galery-layout */
     (function(){
     var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-    i.src="https://cdn.curator.io/published/732d6c8e-6b8d-4f39-bd05-9bceb1ca18ec.js";
+    i.src="https://cdn.curator.io/published/b6395837-d7e0-4257-9e44-cb74948724a8.js";
     e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
     })();
-    </script>
-
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            alert('Halaman ini masih dalam pengembangan. Feed instagram yang ditampilkan tidak 100% sesuai dengan feed Instagram yang ada di DuniaMilkLife Feed. Mohon maaf atas ketidaknyamanan ini.');
-        })
     </script>
 @endpush
