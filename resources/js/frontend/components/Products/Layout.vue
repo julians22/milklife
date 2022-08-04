@@ -47,12 +47,12 @@ export default {
             if (id > 0) {
                 selfProducts.forEach(product => {
                     if (product.id == id) {
-                        products = product.products_size_desc;
+                        products = product.products;
                     }
                 });
             }else{
                 selfProducts.forEach(product => {
-                    products = products.concat(product.products_size_desc);
+                    products = products.concat(product.products);
                 });
 
                 this.product_shows = _.orderBy(products, ['size'], ['desc']);

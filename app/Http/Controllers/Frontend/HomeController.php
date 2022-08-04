@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Http\Resources\Frontend\VariantResources;
 use App\Models\Post;
 use App\Models\ProductVariant;
 use App\Models\Promotion;
@@ -58,7 +59,7 @@ class HomeController
     public function variant()
     {
         $variants = ProductVariant::with('products_size_desc')->get();
-        $variants = json_encode($variants, JSON_HEX_QUOT);
+        $variants = VariantResources::collection($variants);
         $pageColour = "blue";
         return view('frontend.pages.variant', compact('pageColour', 'variants'));
     }
