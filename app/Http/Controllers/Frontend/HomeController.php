@@ -57,7 +57,7 @@ class HomeController
      */
     public function variant()
     {
-        $variants = ProductVariant::with('products')->get();
+        $variants = ProductVariant::with('products_size_desc')->get();
         $pageColour = "blue";
         return view('frontend.pages.variant', compact('pageColour', 'variants'));
     }

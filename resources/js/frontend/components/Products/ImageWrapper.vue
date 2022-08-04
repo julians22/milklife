@@ -29,12 +29,12 @@ export default {
         nav_selected(new_val){
             if (new_val > 0) {
                 //sort by products.size
-                    this.sorted_products = _.orderBy(this.products, 'size', 'desc');
-                }else{
-                    setTimeout(() => {
-                        this.sorted_products = this.products;
-                    }, 400)
-                }
+                this.sorted_products = _.orderBy(this.products, 'size', 'desc');
+            }else{
+                setTimeout(() => {
+                    this.sorted_products = this.products;
+                }, 400)
+            }
         },
     },
 
@@ -42,19 +42,10 @@ export default {
         //image width by product size
         getImageWidth(size){
             if (size >= 1000) {
-                // return {
-                //     width: '100px',
-                // };
                 return 'product-image-large';
             }else if (size >= 200) {
-                // return {
-                //     width: '88px',
-                // };
                 return 'product-image-medium';
             }else if (size >= 125) {
-                // return {
-                    //     width: '85px',
-                // };
                 return 'product-image-small';
             }
             return 'product-image-large';
