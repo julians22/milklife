@@ -26,3 +26,11 @@ Route::group(['as' => 'frontend.'], function () {
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
     includeRouteFiles(__DIR__.'/backend/');
 });
+
+Route::get('deploy-website', function () {
+    if (config('app.env') === 'production') {
+        abort(404);
+    }
+    Artisan::call('deploy');
+    return 'Deployed';
+});

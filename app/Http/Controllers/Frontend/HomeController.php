@@ -60,6 +60,7 @@ class HomeController
     {
         $variants = ProductVariant::with('products_size_desc')->get();
         $variants = VariantResources::collection($variants);
+        $variants = json_encode($variants, JSON_NUMERIC_CHECK);
         $pageColour = "blue";
         return view('frontend.pages.variant', compact('pageColour', 'variants'));
     }

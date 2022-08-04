@@ -35,7 +35,7 @@
 
         <div class="variant-content mt-auto z-10 w-full h-full overflow-hidden flex flex-col items-stretch justify-end">
             <div class="title font-koara-bold text-4xl 2xl:text-5xl text-center text-white">Ragam Rasa MilkLife untuk Jelajahi Dunia</div>
-            <product-component :products='@json($variants)'></product-component>
+            <product-component :products="{{ $variants }}"></product-component>
         </div>
     </div>
 @endsection
