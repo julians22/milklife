@@ -394,7 +394,7 @@
                         <a href="https://bit.ly/HaloMilkLifee"
                             target="_blank"
                             class="btn btn-whatsapp shadow-sm hover:shadow-3 focus:shadow-3 translate-y-0 focus:-translate-y-1 hover:-translate-y-1 transition-all ease-in-out duration-500">
-                            <span>START CHAT</span>
+                            <span>MilkLife Careline</span>
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>

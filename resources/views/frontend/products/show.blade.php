@@ -64,8 +64,9 @@
             </div>
 
             {{-- product links --}}
+            @if ($product->productLinks->count() > 0)
             <div class="product-links text-center text-white mt-4">
-                <h4 class="text-xl lg:text-3xl font-koara-bold mb-4">Tersedia di:</h4>
+                <h4 class="text-xl lg:text-3xl font-koara-bold mb-4">Eksplor Promo:</h4>
                 <div class="flex flex-row flex-no-wrap items-stretch space-x-2 justify-center">
                     @if ($product->productLinks->count() > 0)
                         @foreach ($product->productLinks as $productLink)
@@ -82,6 +83,7 @@
                     @endif
                 </div>
             </div>
+            @endif
 
             {{-- product-related --}}
             <div class="product-related mt-10">
