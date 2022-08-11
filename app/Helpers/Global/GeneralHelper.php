@@ -50,3 +50,24 @@ if (! function_exists('homeRoute')) {
         return 'frontend.index';
     }
 }
+
+if (! function_exists('volumeConversion')) {
+
+    /**
+     * Convert the given volume from the given unit to the given unit.
+     *
+     * @return string // L / ml
+     */
+    function volumeConversion($volume)
+    {
+        if ($volume < 1000) {
+            return $volume.' ml';
+        }
+        if ($volume < 1000000) {
+            return round($volume / 1000, 2).' L';
+        }
+        if ($volume < 1000000000) {
+            return round($volume / 1000000, 2).' Ml';
+        }
+    }
+}

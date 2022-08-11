@@ -1,8 +1,8 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Variant')
+@section('title', 'Varian MilkLife')
 
-@section('meta_description', 'Variant Page')
+@section('meta_description', 'Ragam Rasa MilkLife')
 
 @section('content')
     <div class="variant-section page h-screen flex overflow-x-hidden" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">

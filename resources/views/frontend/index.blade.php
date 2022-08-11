@@ -5,32 +5,6 @@
 
 @push('after-styles')
     <link rel="stylesheet" href="{{ mix('css/pagepiling.css') }}">
-    <style>
-        /* .crt-logo.crt-tag{
-            display: none !important;
-        } */
-
-        /* .crt-post-text{
-            display: none !important;
-        }
-
-        .crt-post-header{
-            display: flex !important;
-            flex-direction: column;
-            align-items: center;
-        }
-        .crt-post .crt-post-header .crt-social-icon{
-            margin-bottom: 0 !important;
-        }
-
-        .crt-widget.crt-widget-carousel{
-            min-height: auto !important;
-        }
-
-        .crt-panel-prev svg{
-            margin: auto;
-        } */
-    </style>
 @endpush
 
 @section('content')
@@ -159,7 +133,7 @@
                 </div>
 
                 <div class="variant-content w-full">
-                    <h2 class="page-title mb-10">Variant MilkLife</h2>
+                    <h2 class="page-title mb-10">Varian MilkLife</h2>
                     <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl mx-auto mb-3 2xl:mt-24">
                         <div class="splide" id="variant__splide">
                             <div class="splide__track">
@@ -169,7 +143,7 @@
                                             <div class="variant-item">
                                                 <img src="{{ $product->image }}" alt="{{ $product->name }}"
                                                     class="variant-img">
-                                                <h3 class="variant-title px-2">{{ $product->name }}</h3>
+                                                <h3 class="variant-title px-2">{{ $product->name }} <br> {{ volumeConversion($product->size) }}</h3>
                                                 <a href="{{ route('frontend.product.show', ['slug' => $product->slug]) }}"
                                                     class="btn btn btn-doodle btn-doodle-basic btn-sm">Beli Sekarang</a>
                                             </div>

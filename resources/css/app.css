@@ -24,7 +24,7 @@
     }
 
     .nav .item-wrapper{
-        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold;
+        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold text-center leading-5 md:leading-5;
     }
 
     .index-page .toggler-nav-badge{
@@ -91,7 +91,7 @@
     }
 
     .variant-item{
-        @apply flex flex-col items-center justify-end text-lg 2xl:text-xl font-semibold text-white py-2 border-8 border-white rounded-md mx-auto space-y-1 w-[16rem] md:w-48 3xl:w-56 h-full;
+        @apply flex flex-col items-center justify-end text-lg 2xl:text-xl font-semibold text-white py-2 mx-auto space-y-2 w-[16rem] md:w-48 3xl:w-56 h-full;
     }
     .variant-item .variant-img{
         @apply w-[5rem] xs:w-[9rem] sm:w-[6.25rem] md:w-14 lg:w-16 xl:w-20 2xl:w-32 3xl:w-44 h-auto;
@@ -204,7 +204,7 @@
         @apply w-[100px] lg:w-[65px] 2xl:w-[120px] xl:w-[75px];
     }
     .product-image.product-image-medium{
-        @apply w-[88px] lg:w-[53px] 2xl:w-[108px] xl:w-[63px];
+        @apply w-[83px] lg:w-[48px] 2xl:w-[103px] xl:w-[58px];
     }
     .product-image.product-image-small{
         @apply w-[85px] lg:w-[45px] 2xl:w-[100px] xl:w-[55px];

@@ -28,7 +28,7 @@
                                 <div class="banner-item w-full relative flex justify-between items-start ">
                                     <div class="banner-text max-w-md md:space-y-4 text-center md:text-left">
                                         <h2 class="text-4xl md:text-6xl 2xl:text-7xl text-white font-koara-bold mb-3">{!! nl2br($promotion->title) !!}</h2>
-                                        <p class="text-white font-gotham-light text-lg 2xl:text-3xl mb-3 md:block hidden">
+                                        <p class="text-white font-gotham-bold text-lg 2xl:text-3xl mb-3 md:block hidden">
                                             {!! nl2br($promotion->exerpt) !!}
                                         </p>
                                         <img src="{{ $promotion->image }}" alt="" class="block md:hidden max-w-full w-4/5 mx-auto">

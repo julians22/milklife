@@ -45,7 +45,7 @@ class ProductService extends BaseService
      * @param  int  $perPage
      */
     public function getRelatedProducts(Product $product, int $perPage = 10){
-        $products = Product::where('id', '!=', $product->id)->inRandomOrder()->take($perPage)->get();
+        $products = Product::where('id', '!=', $product->id)->where('product_variant_id', $product->product_variant_id)->inRandomOrder()->take($perPage)->get();
         return $products;
     }
 

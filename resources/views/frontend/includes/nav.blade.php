@@ -13,19 +13,19 @@
             <img src="{{ asset('img/logo.png') }}" alt="" width="125">
         </a>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass((Route::is('frontend.variant') || Route::is('frontend.product*')), 'active') }}">
-            <a href="{{ route('frontend.product.index') }}">Varian</a>
+            <a href="{{ route('frontend.product.index') }}">Varian <br> MilkLife</a>
         </div>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass(Route::is('frontend.about'), 'active') }}">
-            <a href="{{ route('frontend.about') }}">Tentang MilkLife</a>
+            <a href="{{ route('frontend.about') }}">Tentang <br> MilkLife</a>
         </div>
         <a href="{{ route('frontend.index') }}" class="hidden md:block">
             <img src="{{ asset('img/logo.png') }}" alt="" width="125">
         </a>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass(Route::is('frontend.explore'), 'active') }}">
-            <a href="{{ route('frontend.explore') }}">Dunia Milklife</a>
+            <a href="{{ route('frontend.explore') }}">Dunia <br> MilkLife</a>
         </div>
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass(Route::is('frontend.article'), 'active') }}">
-            <a href="{{ route('frontend.article') }}">Artikel & Resep</a>
+            <a href="{{ route('frontend.article') }}">Artikel & <br> Resep</a>
         </div>
     </div>
 
