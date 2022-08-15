@@ -5,7 +5,7 @@
 @section('meta_description', '#DuniaMilkLife')
 
 @section('content')
-    <div class="explore-section page" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
+    <div class="explore-section page" style="background-image: url('{{ asset('img/bg/blue.jpg') }}'); min-height: 100vh;">
 
         <div class="explore-content pb-20">
 
@@ -26,7 +26,7 @@
 
             <h4 class="text-white text-xl mt-10 text-center font-gotham-bold max-w-4xl mx-auto">Ragam potret seru MilkLife di duniamu. Gunakan hashtag <b>#DuniaMilkLife</b> untuk tampil bersama #MilkLife.</h4>
 
-            <div class="feed-container mt-5 min-h-[400px]">
+            <div class="feed-container mt-5">
                 <!-- Place <div> tag where you want the feed to appear -->
                 <div id="curator-feed-galery-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
             </div>
