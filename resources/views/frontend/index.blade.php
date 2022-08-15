@@ -62,7 +62,7 @@
                                     src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
                                     <div class="about-textbox bottom-1 w-[350px] right-[120%]">
                                         <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Kualitas Konsisten</p>
-                                        <p class="text-white font-gotham-black leading-none ">Pengawasan ekstra tanpa henti dalam<br>
+                                        <p class="text-milklife-orange font-gotham-black leading-none ">Pengawasan ekstra tanpa henti dalam<br>
                                             satu kawasan,  memastikan kualitas<br>
                                             MilkLife terus terjaga</p>
                                         <img src="{{ asset('img/doodle/arrow_about_bottom_l.png') }}" alt="" class="absolute top-[-3rem] left-[90%] w-[60px]">
@@ -74,7 +74,7 @@
                                     src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
                                     <div class="about-textbox top-1 w-[350px] right-full">
                                         <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Kesegaran Murni</p>
-                                        <p class="text-white font-gotham-black leading-none ">Langsung dari peternakan, kesegaran susu<br>
+                                        <p class="text-milklife-orange font-gotham-black leading-none ">Langsung dari peternakan, kesegaran susu<br>
                                             selalu terjaga dengan ekstra sampai<br>
                                             ke meja makan anda</p>
                                         <img src="{{ asset('img/doodle/arrow_about_top_l.png') }}" alt="" class="absolute top-[-15px] left-[90%] w-[85px]">
@@ -86,7 +86,7 @@
                                     src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
                                     <div class="about-textbox bottom-1 w-[350px] left-[120%]">
                                         <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Rasa yang Luar Biasa</p>
-                                        <p class="text-white font-gotham-black leading-none ">Penuh dengan kenikmatan dan kesegaran<br>
+                                        <p class="text-milklife-orange font-gotham-black leading-none ">Penuh dengan kenikmatan dan kesegaran<br>
                                             ekstra, dapat langsung diminum atau<br>
                                             menjadi bahan dasar makanan</p>
                                         <img src="{{ asset('img/doodle/arrow_about_bottom_r.png') }}" alt="" class="absolute -bottom-3 right-full w-[85px]">
@@ -98,7 +98,7 @@
                                         src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
                                         <div class="about-textbox top-1 w-[320px] left-[120%]">
                                             <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Nutrisi <br> Lengkap & Seimbang</p>
-                                            <p class="text-white font-gotham-black leading-none ">Dari sapi -  sapi bahagia yang diberikan<br>
+                                            <p class="text-milklife-orange font-gotham-black leading-none ">Dari sapi -  sapi bahagia yang diberikan<br>
                                                 perhatian ekstra oleh Milk People,<br>
                                                 24 jam tanpa henti </p>
                                             <img src="{{ asset('img/doodle/arrow_about_top_r.png') }}" alt="" class="absolute -bottom-1 right-full w-[60px]">
@@ -488,7 +488,8 @@
             var bannerSplide = new Splide('#banner__splide', {
                 type: 'fade',
                 speed: 2000,
-                arrows: false
+                arrows: false,
+                autoplay: true,
             });
 
             bannerSplide.on('active', function(e) {
