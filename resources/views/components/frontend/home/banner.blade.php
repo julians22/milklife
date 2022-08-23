@@ -35,7 +35,7 @@
                                         <a href="{{ $promotion->url ?? '#' }}" target="_blank" class="btn btn-doodle text-shadow">{{ $promotion->button_label }}</a>
                                     </div>
 
-                                    <div class="banner-product max-w-xs xl:max-w-sm 2xl:max-w-lg hidden md:block">
+                                    <div class="banner-product max-w-xs xl:max-w-[30rem] 2xl:max-w-[40rem] hidden md:block">
                                         <img src="{{ $promotion->image }}" alt="{{$promotion->title}}">
                                     </div>
                                 </div>
