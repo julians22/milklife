@@ -26,7 +26,7 @@
                         @foreach ($promotions as $promotion)
                             <div class="splide__slide">
                                 <div class="banner-item w-full relative flex justify-between items-start ">
-                                    <div class="banner-text max-w-md md:space-y-4 text-center md:text-left">
+                                    <div class="banner-text flex-grow md:space-y-4 text-center md:text-left pr-2">
                                         <h2 class="text-4xl md:text-6xl 2xl:text-7xl text-white font-koara-bold mb-3">{!! nl2br($promotion->title) !!}</h2>
                                         <p class="text-white font-gotham-bold text-lg 2xl:text-3xl mb-3 md:block hidden">
                                             {!! nl2br($promotion->exerpt) !!}
