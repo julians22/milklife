@@ -68,7 +68,7 @@ class ProductController extends Controller
         }
 
         $excelences = collect($request->excelence);
-        $product->productExcelences->each(function ($item) use ($excelences) {
+        $product->productExcelences->each(function ($item){
             $item->delete();
         });
         $excelences->each(function ($item) use ($product) {
@@ -83,16 +83,15 @@ class ProductController extends Controller
         });
 
         $compotitions = collect($request->compotition);
+        $product->productCompotitions->each(function($item){
+            $item->delete();
+        });
         $compotitions->each(function ($item) use ($product) {
             foreach ($item as $key => $value) {
-                if ($key === 'new') {
+                if ($key !== 'deleted') {
                     $product->productCompotitions()->create([
                         'name' => $value,
                         'order' => 0,
-                    ]);
-                }else{
-                    $product->productCompotitions()->where('id', $key)->update([
-                        'name' => $value,
                     ]);
                 }
             }
@@ -159,14 +158,10 @@ class ProductController extends Controller
         $compotitions = collect($request->compotition);
         $compotitions->each(function ($item) use ($product) {
             foreach ($item as $key => $value) {
-                if ($key === 'new') {
+                if ($key !== 'deleted') {
                     $product->productCompotitions()->create([
                         'name' => $value,
                         'order' => 0,
-                    ]);
-                }else{
-                    $product->productCompotitions()->where('id', $key)->update([
-                        'name' => $value,
                     ]);
                 }
             }
