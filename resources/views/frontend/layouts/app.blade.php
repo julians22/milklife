@@ -65,7 +65,7 @@
                 bar.set(50);
                 setTimeout(() => {
                     bar.set(100);
-                }, 2000);
+                }, 500);
             };
 
             const removeLoading = () => {
