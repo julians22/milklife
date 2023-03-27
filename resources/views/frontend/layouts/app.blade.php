@@ -58,14 +58,13 @@
 
     <script>
         // loading method
-        document.addEventListener( 'DOMContentLoaded', function() {
-            const bar = new ldBar('#loading .ldBar');
+        const bar = new ldBar('#loading .ldBar');
             let barLength = 0;
             const startBar = () => {
                 bar.set(50);
                 setTimeout(() => {
                     bar.set(100);
-                }, 500);
+                }, 1000);
             };
 
             const removeLoading = () => {
@@ -76,8 +75,7 @@
             startBar();
             setTimeout(() => {
                 removeLoading();
-            }, 3000);
-        });
+            }, 2000);
 
         //window scroll event
         window.onscroll = function() {
