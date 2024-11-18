@@ -26,7 +26,7 @@
 <body>
     {{-- Loading  --}}
 
-    <div id="loading" class="fixed inset-0 bg-milklife-blue" style="z-index: 99999">
+    {{-- <div id="loading" class="fixed inset-0 bg-milklife-blue" style="z-index: 99999">
         <div class="flex items-center justify-center h-full w-full">
             <div class="loading-item flex flex-col space-y-4 items-center text-center">
                 <img src="{{ asset('img/logo.png') }}" alt="" class="max-w-xs">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     {{-- @include('includes.partials.read-only') --}}
     {{-- @include('includes.partials.logged-in-as') --}}
@@ -58,24 +58,26 @@
 
     <script>
         // loading method
-        const bar = new ldBar('#loading .ldBar');
-            let barLength = 0;
-            const startBar = () => {
-                bar.set(50);
-                setTimeout(() => {
-                    bar.set(100);
-                }, 1000);
-            };
+        // document.addEventListener( 'DOMContentLoaded', function() {
+        //     const bar = new ldBar('#loading .ldBar');
+        //     let barLength = 0;
+        //     const startBar = () => {
+        //         bar.set(50);
+        //         setTimeout(() => {
+        //             bar.set(100);
+        //         }, 1000);
+        //     };
 
-            const removeLoading = () => {
-                document.body.removeAttribute('data-loading');
-                document.getElementById('loading').remove();
-            };
+        //     const removeLoading = () => {
+        //         document.body.removeAttribute('data-loading');
+        //         document.getElementById('loading').remove();
+        //     };
 
-            startBar();
-            setTimeout(() => {
-                removeLoading();
-            }, 2000);
+        //     startBar();
+        //     setTimeout(() => {
+        //         removeLoading();
+        //     }, 2000);
+        // });
 
         //window scroll event
         window.onscroll = function() {

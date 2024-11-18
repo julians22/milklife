@@ -39,7 +39,23 @@ class HomeController
         $pageColour = "";
         $posts = Post::orderBy('created_at', 'desc')->latest()->take(3)->get();
         $products = $this->productService->getAllPaginated();
-        $promotions = Promotion::orderBy('order', 'asc')->get();
+        // $promotions = Promotion::orderBy('order', 'asc')->get();
+
+        $promotions = [
+            [
+                'image' => asset('campaign/img/CookieCrush.png'),
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+            ],
+            [
+                'image' => asset('campaign/img/Shace_Cake.png'),
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+            ],
+            [
+                'image' => asset('campaign/img/MochaMania.png'),
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+            ]
+        ];
+
         return view('frontend.index', compact('pageColour', 'posts', 'products', 'promotions'));
     }
 
