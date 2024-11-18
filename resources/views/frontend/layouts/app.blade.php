@@ -10,11 +10,11 @@
     @yield('meta')
 
     @stack('before-styles')
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="{{ mix('css/frontend.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
-    <livewire:styles />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="{{ mix('css/frontend.css') }}" rel="stylesheet">
+        <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
+        <livewire:styles />
     @stack('after-styles')
 
     <style>
@@ -22,6 +22,20 @@
             overflow: hidden;
         }
     </style>
+
+
+    @if (env('APP_DEPLOYMENT') == 'production')
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2L5WG5BHH9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2L5WG5BHH9');
+    </script>
+    @endif
 </head>
 <body>
     {{-- Loading  --}}

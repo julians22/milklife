@@ -26,10 +26,10 @@
                         @foreach ($promotions as $promotion)
                             <div class="splide__slide">
                                 <div class="banner-item w-full relative flex justify-between items-start ">
-                                    <div class="banner-text flex-grow md:space-y-4 text-center md:text-left pr-2">
+                                    <div class="banner-text flex-grow md:space-y-4 text-center md:text-left pr-2 lg:self-center">
                                         <div class="max-w-none lg:max-w-2xl">
-                                            <img src="{{ asset('campaign/img/HL Milkshake white.png') }}" alt="" class="w-full">
-                                            <img src="{{ $promotion['image'] }}" alt="" class="block md:hidden max-w-full w-4/5 mx-auto">
+                                            <img data-splide-lazy="{{ asset('campaign/img/HL Milkshake white.png') }}" alt="" class="w-full">
+                                            <img data-splide-lazy="{{ $promotion['image'] }}" alt="" class="block md:hidden max-w-full w-4/5 mx-auto" >
                                             <div class="text-center">
                                                 <a href="{{ $promotion['url'] ?? '#' }}" target="_blank" class="btn btn-doodle text-shadow">{{ "Beli Sekarang" }}</a>
                                             </div>
@@ -41,7 +41,7 @@
                                     </div>
 
                                     <div class="banner-product max-w-xs xl:max-w-[30rem] 2xl:max-w-[40rem] hidden md:block">
-                                        <img src="{{ $promotion['image'] }}" >
+                                        <img data-splide-lazy="{{ $promotion['image'] }}" width="640">
                                     </div>
                                 </div>
                             </div>

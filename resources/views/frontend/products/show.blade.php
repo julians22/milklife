@@ -149,8 +149,8 @@
                         </div>
                     </div>
                     <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10 flex-grow px-0 md:px-10" v-cloak v-show="miscShow == 'nutrisi'">
-                        <img src="{{ $product->nutrition }}" alt="" class="w-full">
-                    </div>
+                        <img class="{{ $product->product_variant_id == 6 ? 'md:max-w-[350px]' : '' }} w-full mx-auto"
+                            src="{{ $product->nutrition }}" alt="">                    </div>
                 </div>
             </div>
         </div>

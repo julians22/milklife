@@ -145,7 +145,9 @@
                                                     class="variant-img">
                                                 <h3 class="variant-title px-2">{{ $product->name }} <br> {{ volumeConversion($product->size) }}</h3>
                                                 <a href="{{ route('frontend.product.show', ['slug' => $product->slug]) }}"
-                                                    class="btn btn btn-doodle btn-doodle-basic btn-sm">Beli Sekarang</a>
+                                                    class="btn btn btn-doodle btn-doodle-basic btn-sm">
+                                                    Beli Sekarang
+                                                </a>
                                             </div>
                                         </div>
                                     @endforeach
@@ -388,26 +390,13 @@
                         </div>
 
                         <div class="copyright-wrapper">
-                            <h4 class="text-lg font-gotham-black text-milklife-orange">Copyright PT Global Dairi Alami &copy;{{ date('Y') }}</h4>
+                            <h4 class="text-lg font-gotham-black text-milklife-orange">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
                         </div>
                     </footer>
                 </div>
             </div>
         </div>
     </div>
-
-    {{-- <div class="page-nav hidden md:block absolute right-5 top-1/2 bottom-1/2">
-        <div class="bg-white rounded-full p-2 flex flex-col justify-center space-y-2">
-            <a href="#" class="page-nav-item active" data-target="0"></a>
-            <a href="#" class="page-nav-item" data-target="1"></a>
-            <a href="#" class="page-nav-item" data-target="2"></a>
-            <a href="#" class="page-nav-item" data-target="3"></a>
-            <a href="#" class="page-nav-item" data-target="4"></a>
-            <a href="#" class="page-nav-item" data-target="5"></a>
-        </div>
-    </div> --}}
-
-
 @endsection
 
 @push('after-scripts')
@@ -490,6 +479,7 @@
                 speed: 2000,
                 arrows: false,
                 autoplay: true,
+                lazyLoad: 'nearby',
             });
 
             bannerSplide.on('active', function(e) {

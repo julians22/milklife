@@ -39,8 +39,11 @@ class HomeController
         $pageColour = "";
         $posts = Post::orderBy('created_at', 'desc')->latest()->take(3)->get();
         $products = $this->productService->getAllPaginated();
-        // $promotions = Promotion::orderBy('order', 'asc')->get();
 
+
+        /* Updated at 2024-11-18 */
+        /* Update by Julian */
+        // $promotions = Promotion::orderBy('order', 'asc')->get();
         $promotions = [
             [
                 'image' => asset('campaign/img/CookieCrush.png'),

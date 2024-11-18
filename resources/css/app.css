@@ -24,7 +24,7 @@
     }
 
     .nav .item-wrapper{
-        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold text-center leading-5 md:leading-5;
+        @apply flex flex-col items-start md:items-center justify-center text-xl md:text-lg font-semibold;
     }
 
     .index-page .toggler-nav-badge{
@@ -80,6 +80,13 @@
 
     .banner-content{
         @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center flex-col md:flex-row justify-center md:justify-start flex-1;
+    }
+
+    /* Add Style for pagination banner */
+    /* Updated at 2024-11-18 */
+    /* Update by Julian */
+    .banner-content .splide__pagination{
+        @apply bottom-auto md:bottom-[.5em]
     }
 
     .banner-content .splide__pagination__page{
@@ -204,7 +211,7 @@
         @apply w-[100px] lg:w-[65px] 2xl:w-[120px] xl:w-[75px];
     }
     .product-image.product-image-medium{
-        @apply w-[83px] lg:w-[48px] 2xl:w-[103px] xl:w-[58px];
+        @apply w-[88px] lg:w-[53px] 2xl:w-[108px] xl:w-[63px];
     }
     .product-image.product-image-small{
         @apply w-[85px] lg:w-[45px] 2xl:w-[100px] xl:w-[55px];
