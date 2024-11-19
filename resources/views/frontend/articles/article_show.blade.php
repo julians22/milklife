@@ -12,7 +12,7 @@
             <img src="{{ $article->image ?? asset('img/dummy-milklife.jpg') }}" onerror="this.url = {{ asset('img/dummy-milklife.jpg') }}" alt="" class="w-full max-w-2xl mx-auto mb-10 border-x-8 border-y-[10px] -rotate-3 shadow-md">
 
             <div class="article-text">
-                <article class="prose lg:prose-xl prose-white">
+                <article class="prose lg:prose-xl prose-white mx-auto">
                     {!! $article->body !!}
                 </article>
             </div>

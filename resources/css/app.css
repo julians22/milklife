@@ -164,7 +164,7 @@
     }
 
     .article-section.page{
-        @apply min-h-screen h-auto overflow-auto;
+        @apply min-h-screen h-auto overflow-auto bg-repeat-y;
     }
 
     .about-title{
