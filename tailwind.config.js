@@ -16,7 +16,8 @@ module.exports = {
                     blue: '#4dacdf',
                     'blue-darken': '#256a8f',
                     yellow: '#e6e0d9',
-                    orange: '#c58d3b'
+                    orange: '#c58d3b',
+                    "orange-darken": '#ff7500',
                 }
             },
             fontFamily: {

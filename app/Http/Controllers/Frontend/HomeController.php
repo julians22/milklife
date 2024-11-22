@@ -46,17 +46,49 @@ class HomeController
         // $promotions = Promotion::orderBy('order', 'asc')->get();
         $promotions = [
             [
-                'image' => asset('campaign/img/CookieCrush.png'),
+                'pack_image' => asset('campaign/img/2024/milkshake-pack.png'),
+                'text_image' => asset('campaign/img/2024/milkshake-text.png'),
+                'text' => "<p>". "<img src='".asset('campaign/img/2024/milkshake-text.png')."' alt=''>" ."</p>",
+                "allow_text" => true,
+                "allow_text_image" => false,
                 'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
             ],
             [
-                'image' => asset('campaign/img/Shace_Cake.png'),
+                'pack_image' => asset('campaign/img/2024/uht_teens-pack.png'),
+                'text_image' => asset('campaign/img/2024/real_milk.png'),
+                'text' => "
+                    Real Life itu... <br>
+                    Tetep Jalan Meski <br>
+                    Semesta Menghadang
+                ",
+                "allow_text" => true,
+                "allow_text_image" => true,
                 'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
             ],
             [
-                'image' => asset('campaign/img/MochaMania.png'),
+                'pack_image' => asset('campaign/img/2024/fresh_milk-pack.png'),
+                'text_image' => asset('campaign/img/2024/real_milk.png'),
+                'text' => "
+                    Real Life itu... <br>
+                    Harus Bisa <br>
+                    Ini-Itu Sekaligus
+                ",
+                "allow_text" => true,
+                "allow_text_image" => true,
                 'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
-            ]
+            ],
+            [
+                'pack_image' => asset('campaign/img/2024/fresh_milk_2-pack.png'),
+                'text_image' => asset('campaign/img/2024/real_milk.png'),
+                'text' => "
+                    Real Life itu... <br>
+                    Gak Mual & Mules <br>
+                    Pas Minum Susu di Mana Aja
+                ",
+                "allow_text" => true,
+                "allow_text_image" => true,
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+            ],
         ];
 
         return view('frontend.index', compact('pageColour', 'posts', 'products', 'promotions'));

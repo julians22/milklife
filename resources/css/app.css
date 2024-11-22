@@ -57,6 +57,10 @@
         @apply text-lg font-semibold font-gotham-black p-6 2xl:text-2xl 2xl:p-8;
     }
 
+    .btn.btn-pill{
+        @apply px-2 py-1 rounded-full text-lg font-semibold font-gotham-black 2xl:text-2xl bg-milklife-orange-darken;
+    }
+
     .btn.btn-doodle.btn-sm{
         @apply text-base p-4;
     }
@@ -79,7 +83,7 @@
     }
 
     .banner-content{
-        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-7xl mx-auto flex items-center flex-col md:flex-row justify-center md:justify-start flex-1;
+        @apply h-full max-w-4xl md:max-w-5xl 2xl:max-w-[1400px] mx-auto flex items-center flex-col md:flex-row justify-center md:justify-start flex-1;
     }
 
     /* Add Style for pagination banner */
@@ -95,6 +99,14 @@
 
     .banner-content .splide__pagination__page.is-active{
         @apply w-4 h-4 bg-white scale-100;
+    }
+
+    .banner-content .banner-title{
+        @apply text-4xl md:text-6xl 2xl:text-7xl text-white font-koara-bold mb-3 text-center;
+    }
+
+    .banner-content .banner-title img{
+        @apply max-w-none lg:max-w-[700px] w-full;
     }
 
     .variant-item{
