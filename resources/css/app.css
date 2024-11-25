@@ -94,11 +94,11 @@
     }
 
     .banner-content .splide__pagination__page{
-        @apply w-4 h-4 bg-milklife-blue-darken;
+        @apply w-4 h-4 bg-white;
     }
 
     .banner-content .splide__pagination__page.is-active{
-        @apply w-4 h-4 bg-white scale-100;
+        @apply w-4 h-4 bg-milklife-orange-darken scale-105;
     }
 
     .banner-content .banner-title{

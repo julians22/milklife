@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Resources\Frontend\VariantResources;
 use App\Models\Post;
+use App\Models\Product;
 use App\Models\ProductVariant;
 use App\Models\Promotion;
 use App\Services\Frontend\ProductService;
@@ -63,7 +64,7 @@ class HomeController
                 ",
                 "allow_text" => true,
                 "allow_text_image" => true,
-                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&brand=MilkLife&sort=7'
             ],
             [
                 'pack_image' => asset('campaign/img/2024/fresh_milk-pack.png'),
@@ -75,7 +76,7 @@ class HomeController
                 ",
                 "allow_text" => true,
                 "allow_text_image" => true,
-                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&brand=MilkLife&sort=7'
             ],
             [
                 'pack_image' => asset('campaign/img/2024/fresh_milk_2-pack.png'),
@@ -87,7 +88,7 @@ class HomeController
                 ",
                 "allow_text" => true,
                 "allow_text_image" => true,
-                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&bc=Exclusive%20Launching%20MilkShake%20%21&sort=7'
+                'url' => 'https://www.blibli.com/brand/savoria-official-store?promoTab=false&excludeProductList=false&brand=MilkLife&sort=7'
             ],
         ];
 
@@ -126,7 +127,22 @@ class HomeController
         if (!$product) {
             abort(402, 'Product not found');
         }
-        $relatedProducts = $this->productService->getRelatedProducts($product, 3);
+
+        $specialProducts = [
+            "susu-uht-choco-macchiato", "susu-uht-cookies-cream", "susu-uht-strawberry-cheesecake"
+        ];
+
+        if (in_array($product->slug, $specialProducts)) {
+
+            // remove $slug from $specialProducts
+            $key = array_search($product->slug, $specialProducts);
+            unset($specialProducts[$key]);
+            $relatedProducts = Product::whereIn('slug', $specialProducts)->get();
+        }else{
+            $relatedProducts = $this->productService->getRelatedProducts($product, 3);
+        }
+
+
 
         $metas = [
             'title' => $product->name,
