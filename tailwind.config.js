@@ -27,6 +27,8 @@ module.exports = {
                 'gotham-bold': ['Gotham Bold'],
                 'koara-light': ['Koara Light', 'sans-serif'],
                 'koara-bold': ['Koara Bold'],
+                'nunito': ['Nunito', 'sans-serif'],
+                'lato' : ['Lato', 'sans-serif'],
             },
             screens: {
                 'xs' : {'min' : '390px', 'max' : '424px'},

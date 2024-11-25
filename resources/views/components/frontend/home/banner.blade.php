@@ -28,7 +28,7 @@
                             <div class="splide__slide">
                                 <div class="banner-item w-full relative flex justify-between items-start ">
                                     <div class="banner-text flex-grow md:space-y-4 text-center md:text-left pr-2 lg:self-center">
-                                        <div class="max-w-none lg:max-w-3xl">
+                                        <div class="flex-1 flex-shrink-0 lg:space-y-4">
                                             @if ($promotion['allow_text'])
                                                 <div class="banner-title">{!! $promotion['text'] !!}</div>
                                             @endif
@@ -52,7 +52,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         @endforeach
                     </div>
                 </div>
