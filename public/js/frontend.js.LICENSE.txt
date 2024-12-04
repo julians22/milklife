@@ -1,13 +1,13 @@
 /*!
  * Splide.js
- * Version  : 4.0.2
+ * Version  : 4.1.4
  * License  : MIT
  * Copyright: 2022 Naotoshi Fujita
  */
 
 /*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
+ * Vue.js v2.7.16
+ * (c) 2014-2023 Evan You
  * Released under the MIT License.
  */
 

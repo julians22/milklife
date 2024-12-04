@@ -138,8 +138,12 @@
         @apply w-full h-48;
     }
 
+    .article-box:hover .article-image-wrapper{
+        @apply border-[12px] shadow-xl -rotate-2;
+    }
+
     .article-image-wrapper{
-        @apply mb-3 border-[12px] shadow-md -rotate-2;
+        @apply mb-3 border-[12px] shadow-md transform transition-all duration-300;
     }
 
     .article-image-wrapper .article-image{

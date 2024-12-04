@@ -209,9 +209,13 @@
 
 // variant splide
 #variant__splide {
-    .splide__arrow svg{
-        display: none;
+    .splide__arrow {
+        background: unset;
+        svg{
+            display: none;
+        }
     }
+
     button.splide__arrow.splide__arrow--next{
         right: -4em;
         width: 50px;

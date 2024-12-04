@@ -12,7 +12,9 @@
                     </a>
                 </div>
                 <div class="text-xl text-white text-center font-koara-bold">
-                    <h2>{{ $post->title }}</h2>
+                    <a href="{{ route('frontend.article.show', $post->slug) }}">
+                        <h2>{{ $post->title }}</h2>
+                    </a>
                 </div>
             </div>
         @endforeach
