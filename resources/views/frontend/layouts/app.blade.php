@@ -25,17 +25,16 @@
     </style>
 
 
-    @if (env('APP_DEPLOYMENT') == 'production')
+    @if (config('app.env') == 'production')
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2L5WG5BHH9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2L5WG5BHH9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-2L5WG5BHH9');
-    </script>
+            gtag('config', 'G-2L5WG5BHH9');
+        </script>
     @endif
 </head>
 <body>
