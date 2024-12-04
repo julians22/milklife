@@ -18,24 +18,6 @@
 
             <section class="about-section relative bg-milklife-blue-banner"
                 data-splide-hash="about">
-                {{-- top right doodle --}}
-                <div class="absolute top-0 right-0 md:w-44 w-40">
-                    <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="rotate-180 w-full">
-                </div>
-                {{-- bottom left doodle --}}
-                <div class="absolute bottom-0 left-0 md:w-36 w-40">
-                    <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- bug doodle --}}
-                <div class="absolute md:top-40 top-24 left-24 md:w-24 w-20">
-                    <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- flower right bottom --}}
-                <div class="absolute bottom-0 right-0 md:w-28 w-20">
-                    <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
-                </div>
 
                 <div class="about-content w-full h-full relative">
                     <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
@@ -117,21 +99,6 @@
             <section class="variant-section bg-milklife-blue-banner"
                 data-splide-hash="variant">
 
-                {{-- top right doodle straight --}}
-                <div class="absolute top-40 md:top-12 -right-3 md:w-36 w-40">
-                    <img src="{{ asset('img/doodle/straight1.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- top left doodle rocket --}}
-                <div class="absolute -top-12 left-40 md:w-36 w-40">
-                    <img src="{{ asset('img/doodle/rocket.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- left doodle --}}
-                <div class="absolute left-0 top-1/4 md:w-36 w-40">
-                    <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full">
-                </div>
-
                 <div class="variant-content w-full flex flex-col h-full justify-between items-center pb-10">
                     <h2 class="page-title">Varian MilkLife</h2>
                     <div class="max-w-4xl 2xl:max-w-7xl">
@@ -166,36 +133,6 @@
         <div class="section">
             <section class="article-section bg-milklife-blue-banner"
                 data-splide-hash="artikel">
-                {{-- planet top right --}}
-                <div class="absolute md:-top-10 top-0 right-4 md:right-28 md:w-40 w-24">
-                    <img src="{{ asset('img/doodle/Planet.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- moon top left --}}
-                <div class="absolute top-4 left-4 md:-top-16 md:left-40 md:w-32 w-24">
-                    <img src="{{ asset('img/doodle/Moon.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- doodle cloud left --}}
-                <div class="absolute left-20 top-[80%] md:top-[20%] md:w-32 w-40">
-                    <img src="{{ asset('img/doodle/Cloud.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- doodle right --}}
-                <div class="absolute right-0 top-1/4 md:w-32 w-40">
-                    <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full -scale-100">
-                </div>
-
-
-                {{-- doodle love --}}
-                <div class="absolute right-[30%] top-24 md:w-10 w-3">
-                    <img src="{{ asset('img/doodle/love.png') }}" alt="" class="w-full">
-                </div>
-
-                {{-- doodle star --}}
-                <div class="absolute right-[35%] bottom-24 md:w-16 w-3">
-                    <img src="{{ asset('img/doodle/star_orange.png') }}" alt="" class="w-full">
-                </div>
 
 
                 <div class="article-content flex flex-col h-full justify-between items-center pb-10">
@@ -258,24 +195,6 @@
         <div class="section">
             <section class="explore-section bg-milklife-blue-banner flex flex-col pb-10 h-full justify-between items-center"
                 data-splide-hash="explore">
-                {{-- top right doodle --}}
-                <div class="absolute top-0 left-0 md:w-40 w-40">
-                    <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt=""
-                        class="rotate-180 w-full">
-                </div>
-                {{-- bottom right doodle --}}
-                <div class="absolute bottom-0 right-0 md:w-40 w-40">
-                    <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt="" class="w-full">
-                </div>
-                {{-- flower left --}}
-                <div class="absolute left-0 bottom-[20%] md:w-20 w-40">
-                    <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full -scale-x-100">
-                </div>
-
-                {{-- butterfly top --}}
-                <div class="absolute top-[20%] md:-top-[5%] left-[5%] md:left-[20%] md:w-20 w-40">
-                    <img src="{{ asset('img/doodle/bug_1.png') }}" alt="" class="w-full">
-                </div>
 
                 <div class="explore-content">
                     <h2 class="page-title page-title-lg explore-title mb-8 2xl:mb-20">#DuniaMilkLife</h2>
@@ -307,39 +226,6 @@
 
 
                 <div class="flex w-full h-screen justify-center items-center relative">
-                    {{-- line left doodle --}}
-                    <div class="absolute bottom-28 lg:bottom-16 left-0 w-20 lg:w-40">
-                        <img src="{{ asset('img/doodle/doodle_orange.png') }}" alt="" class="w-full">
-                    </div>
-                    {{-- line right doodle --}}
-                    <div class="absolute top-28 lg:top-16 right-0 w-20 lg:w-40">
-                        <img src="{{ asset('img/doodle/doodle_orange.png') }}" alt="" class="w-full -scale-100">
-                    </div>
-
-                    {{-- star top left doodle --}}
-                    <div class="absolute -top-[10%] left-[20%] md:w-16 w-6">
-                        <img src="{{ asset('img/doodle/star_2.png') }}" alt="" class="w-full">
-                    </div>
-
-                    {{-- star top right doodle --}}
-                    <div class="absolute -top-[8%] right-[20%] md:w-16 w-6">
-                        <img src="{{ asset('img/doodle/star.png') }}" alt="" class="w-full">
-                    </div>
-
-                    {{-- love right doodle --}}
-                    <div class="absolute right-[10%] top-32 lg:w-16 w-3">
-                        <img src="{{ asset('img/doodle/love_doodle.png') }}" alt="" class="w-full -scale-x-100">
-                    </div>
-
-                    {{-- star left doodle --}}
-                    <div class="absolute left-[10%] top-36 lg:w-16 w-3">
-                        <img src="{{ asset('img/doodle/star.png') }}" alt="" class="w-full -scale-x-100">
-                    </div>
-
-                    {{-- star bottom doodle --}}
-                    <div class="absolute bottom-0 left-[20%] lg:w-24 w-3">
-                        <img src="{{ asset('img/doodle/star_fall.png') }}" alt="" class="w-full">
-                    </div>
 
                     <div class="the-content max-w-screen-md w-full text-center">
                         <h3 class="text-3xl lg:text-5xl font-koara-bold text-center text-white mb-5">Promo ekstra

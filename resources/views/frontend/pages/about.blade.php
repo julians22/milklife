@@ -9,25 +9,6 @@
 
         <div class="about-content">
 
-            {{-- top right doodle --}}
-            <div class="absolute top-0 right-0 md:w-40 w-6">
-                <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="w-full rotate-180">
-            </div>
-            {{-- bottom left doodle --}}
-            <div class="absolute bottom-0 left-0 md:w-40 w-6">
-                <img src="{{ asset('img/doodle/bottom_about.png') }}" alt="" class="w-full">
-            </div>
-
-            {{-- bottom left 2 --}}
-            <div class="absolute bottom-0 left-72 md:w-20 w-6">
-                <img src="{{ asset('img/doodle/flower_2.png') }}" alt="" class="w-full">
-            </div>
-
-            {{-- bottom right doodle --}}
-            <div class="absolute bottom-0 right-0 md:w-20 w-6">
-                <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
-            </div>
-
             <h1 class="about-title mb-2">
                 Kami Milk People menuangkan kebahagiaan dan kebaikan dalam segelas susu yang diperoleh hanya dari sapi berkualitas yang dirawat dengan cinta. Selamat menikmati!
             </h1>

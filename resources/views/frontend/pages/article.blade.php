@@ -7,31 +7,6 @@
 @section('content')
     <div class="article-section page bg-milklife-blue-banner">
 
-        {{-- doodle rounds right --}}
-        <div class="absolute right-0 top-[150px] w-28">
-            <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="-scale-x-100 w-full">
-        </div>
-
-        {{-- doodle bug --}}
-        <div class="absolute left-[10%] top-[150px] w-20">
-            <img src="{{ asset('img/doodle/bug_2.png') }}" alt="" class="w-full">
-        </div>
-
-        {{-- doodle love --}}
-        <div class="absolute left-[30%] top-[225px] w-14">
-            <img src="{{ asset('img/doodle/love.png') }}" alt="" class="w-full">
-        </div>
-
-        {{-- doodle flower --}}
-        <div class="absolute left-0 bottom-[10%] w-20">
-            <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full -scale-x-100">
-        </div>
-
-        {{-- doodle cloud --}}
-        <div class="absolute left-[40%] bottom-0 w-20">
-            <img src="{{ asset('img/doodle/Cloud.png') }}" alt="" class="w-full">
-        </div>
-
         <div class="article-content pb-20">
             <h1 class="article-title text-white font-koara-bold text-3xl mt-10 text-center">Cari Tahu yang Kamu Mau!</h1>
 

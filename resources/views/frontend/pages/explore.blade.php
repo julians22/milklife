@@ -9,21 +9,6 @@
 
         <div class="explore-content pb-20">
 
-            {{-- top left bug_2 doodle --}}
-            <div class="absolute top-[12%] left-[10%] md:w-20 w-6">
-                <img src="{{ asset('img/doodle/bug_2.png') }}" alt="" class="w-full">
-            </div>
-
-            {{-- bottom left fflower doodle --}}
-            <div class="absolute top-[50%] left-0 md:w-20 w-6">
-                <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full -scale-x-100">
-            </div>
-
-            {{-- bottom right lightning doodle --}}
-            <div class="absolute bottom-0 right-0 w-28">
-                <img src="{{ asset('img/doodle/orange_bottom_rdoodle.png') }}" alt="" class="w-full">
-            </div>
-
             <h4 class="text-white text-xl mt-10 text-center font-gotham-bold max-w-4xl mx-auto">Ragam potret seru MilkLife di duniamu. Gunakan hashtag <b>#DuniaMilkLife</b> untuk tampil bersama #MilkLife.</h4>
 
             <div class="feed-container mt-5">
