@@ -5,7 +5,10 @@
             <div class="article-box">
                 <div class="article-image-wrapper">
                     <a href="{{ route('frontend.article.show', $post->slug) }}">
-                        <img src="{{ $post->image_thumb ?? asset('img/dummy-milklife.jpg') }}" onerror="this.src = '{{ asset('img/dummy-milklife.jpg') }}'" alt="{{ $post->title }}" class="article-image">
+                        <img
+                            src="{{ $post->image_thumb ? $post->image_thumb . '?cache=' . $post->updated_at : asset('img/dummy-milklife.jpg') }}"
+                            onerror="this.src = '{{ asset('img/dummy-milklife.jpg') }}'"
+                            alt="{{ $post->title }}" class="article-image">
                     </a>
                 </div>
                 <div class="text-xl text-white text-center font-koara-bold">

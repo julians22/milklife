@@ -4,7 +4,12 @@
             <!-- <div @mouseover="hoverProduct(index)" @mouseout="hoverProduct(-1)" data-aos="fade-right" data-aos-easing="ease-out-cubic" :data-aos-duration="500" :data-aos-delay="150 + (2 * index)"> -->
             <div @mouseover="hoverProduct(index)" @mouseout="hoverProduct(-1)" @click="showProduct(product)" class="shadow-2xl">
                 <div class="product-wrapper">
-                    <img :src="product.image" alt="" :ref="`product-image-${product.id}`" class="product-image" :class="[{'selected': isSelected(index)}, getImageWidth(product.size)]" v-tooltip.bottom-start="tooltipContent(product)">
+                    <img :src="generateImageCacheUrl(product)"
+                        :alt="product.name"
+                        :ref="`product-image-${product.id}`" 
+                        class="product-image" 
+                        :class="[{'selected': isSelected(index)}, getImageWidth(product.size)]" 
+                        v-tooltip.bottom-start="tooltipContent(product)">
                 </div>
             </div>
         </div>
@@ -73,6 +78,11 @@ export default {
             const url = `/varian-milklife/${slug}`;
             window.location.href = url;
         },
+
+        // Geneate cache by adding parameter_updated_at to image url
+        generateImageCacheUrl(product){
+            return `${product.image}?updated_at=${product.updated_at}`;
+        }
     },
 
 }

@@ -11,7 +11,7 @@
         z-index: 9999;
     }
     .nav.scroll{
-        @apply top-[-500px] duration-[700ms];
+        @apply top-[0] duration-[700ms] bg-milklife-blue-banner-lighter;
     }
     .nav.open-badge{
         @apply bg-milklife-blue-banner-lighter bg-opacity-95 shadow;
@@ -46,8 +46,6 @@
     .nav .logo-mobile{
         @apply block md:hidden mx-auto mb-4;
     }
-
-
 
     .btn{
         @apply px-2 py-1 text-white rounded-sm transition-all ease-linear duration-300 inline-block;
@@ -217,6 +215,10 @@
     }
     .nav-misc-wrapper .nav-misc span{
         @apply block;
+    }
+
+    .article-post-container{
+        @apply flex flex-col gap-y-2 lg:gap-y-8 justify-between items-center;
     }
 
     footer .link-icons-wrapper .link-icon-items{

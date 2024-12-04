@@ -49,7 +49,10 @@
                     <p class="description text-xl lg:text-lg">{{ $product->slogan }}</p>
                 </div>
                 <div class="product-image w-[150px]">
-                    <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="w-full">
+                    <img
+                        src="{{ asset($product->image) }}?cache={{$product->updated_at}}"
+                        alt="{{ $product->name }}"
+                        class="w-full">
                 </div>
                 <div class="product-excelence">
                     @if ($product->productExcelences->count() > 0)
@@ -90,13 +93,18 @@
                 <div class="flex flex-row flex-no-wrap items-end space-x-6 justify-center">
                     <div class="product-item w-20">
                         <a href="{{ route('frontend.product.show', $product->slug) }}" class="">
-                            <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="w-full">
+                            <img
+                                src="{{ asset($product->image) }}?cache={{$product->updated_at}}"
+                                alt="{{ $product->name }}"
+                                class="w-full">
                         </a>
                     </div>
                     @foreach ($relatedProducts as $relatedProduct)
                     <div class="product-item w-20">
                         <a href="{{ route('frontend.product.show', $relatedProduct->slug) }}" class="">
-                            <img src="{{ asset($relatedProduct->image) }}" alt="{{ $relatedProduct->name }}" class="w-full opacity-80 hover:opacity-100 hover:-translate-y-4 transform transition">
+                            <img
+                                src="{{ asset($relatedProduct->image) }}?cache={{$relatedProduct->updated_at}}"
+                                alt="{{ $relatedProduct->name }}" class="w-full opacity-80 hover:opacity-100 hover:-translate-y-4 transform transition">
                         </a>
                     </div>
                     @endforeach
@@ -127,9 +135,11 @@
             {{-- product misc (nutrition & compotition) --}}
             <div class="product-misc">
                 <div class="product-image hidden md:block w-[170px]">
-                    <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="w-full">
+                    <img
+                        src="{{ asset($product->image) }}?cache={{$product->updated_at}}"
+                        alt="{{ $product->name }}" class="w-full">
                 </div>
-                <div class="product-misc-content flex flex-col">
+                <div class="product-misc-content flex flex-col lg:space-y-2">
                     <div class="nav-misc-wrapper">
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'komposisi' }" v-on:click.prevent="showMisc('komposisi')">
                             <span href="#" class="font-gotham-bold text-base lg:text-2xl text-center">Komposisi</span>
@@ -149,8 +159,11 @@
                         </div>
                     </div>
                     <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10 flex-grow px-0 md:px-10" v-cloak v-show="miscShow == 'nutrisi'">
-                        <img class="{{ $product->product_variant_id == 6 ? 'md:max-w-[350px]' : '' }} w-full mx-auto"
-                            src="{{ $product->nutrition }}" alt="">                    </div>
+                        <img
+                            class="{{ $product->product_variant_id == 6 ? 'md:max-w-[350px]' : '' }} w-full mx-auto"
+                            src="{{ $product->nutrition }}?cache={{$product->updated_at}}"
+                            alt="">
+                    </div>
                 </div>
             </div>
         </div>

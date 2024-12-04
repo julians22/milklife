@@ -139,7 +139,7 @@ class HomeController
             unset($specialProducts[$key]);
             $relatedProducts = Product::whereIn('slug', $specialProducts)->get();
         }else{
-            $relatedProducts = $this->productService->getRelatedProducts($product, 3);
+            $relatedProducts = $this->productService->getRelatedProducts($product, 10);
         }
 
 

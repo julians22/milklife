@@ -108,7 +108,9 @@
                                     @foreach ($products as $product)
                                         <div class="splide__slide">
                                             <div class="variant-item">
-                                                <img src="{{ $product->image }}" alt="{{ $product->name }}"
+                                                <img
+                                                    src="{{ $product->image }}?cache={{$product->updated_at}}"
+                                                    alt="{{ $product->name }}"
                                                     class="variant-img">
                                                 <h3 class="variant-title px-2">{{ $product->name }} <br> {{ volumeConversion($product->size) }}</h3>
                                                 <a href="{{ route('frontend.product.show', ['slug' => $product->slug]) }}"
@@ -145,7 +147,10 @@
                                 <div class="article-box ">
                                     <div class="article-image-wrapper">
                                         <a href="{{ route('frontend.article.show', $post->slug) }}">
-                                            <img src="{{ $post->image ?? asset('img/dummy-milklife.jpg') }}" onerror="this.url = '{{asset('img/dummy-milklife.jpg')}}'" alt="{{ $post->title }}"
+                                            <img
+                                                src="{{ $post->image ? $post->image . '?cache=' . $post->updated_at : asset('img/dummy-milklife.jpg') }}"
+                                                onerror="this.url = '{{asset('img/dummy-milklife.jpg')}}'"
+                                                alt="{{ $post->title }}"
                                                 class="article-image">
                                         </a>
                                     </div>
@@ -166,7 +171,10 @@
                                             <div class="article-box ">
                                                 <div class="article-image-wrapper">
                                                     <a href="{{ route('frontend.article.show', $post->slug) }}">
-                                                        <img src="{{ $post->image ?? asset('img/dummy-milklife.jpg') }}" onerror="this.url = '{{ asset('img/dummy-milklife.jpg') }}'" alt="{{ $post->title }}"
+                                                        <img
+                                                            src="{{ $post->image ? $post->image . '?cache=' . $post->updated_at : asset('img/dummy-milklife.jpg') }}"
+                                                            onerror="this.url = '{{ asset('img/dummy-milklife.jpg') }}'"
+                                                            alt="{{ $post->title }}"
                                                             class="article-image">
                                                     </a>
                                                 </div>

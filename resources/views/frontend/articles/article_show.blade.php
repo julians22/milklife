@@ -9,7 +9,11 @@
         <div class="article-content text-center pb-10">
             <h1 class="article-title text-white font-koara-bold text-4xl my-10 text-center">{{ $article->title }}</h1>
 
-            <img src="{{ $article->image ?? asset('img/dummy-milklife.jpg') }}" onerror="this.url = {{ asset('img/dummy-milklife.jpg') }}" alt="" class="w-full max-w-2xl mx-auto mb-10 border-x-8 border-y-[10px] -rotate-3 shadow-md">
+            <img
+                src="{{ $article->image ? $article->image . '?cache=' . $article->updated_at : asset('img/dummy-milklife.jpg') }}"
+                onerror="this.url = {{ asset('img/dummy-milklife.jpg') }}"
+                alt="{{ $article->title }}"
+                class="w-full max-w-2xl mx-auto mb-10 border-x-8 border-y-[10px] -rotate-3 shadow-md">
 
             <div class="article-text">
                 <article class="prose lg:prose-xl prose-white mx-auto">
