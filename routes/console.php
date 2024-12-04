@@ -19,6 +19,6 @@ Artisan::command('inspire', function () {
 
 Artisan::command('deploy', function () {
     $this->comment('Deploying...');
-    $this->call('cache:clear');
-    $this->call('storage:link');
+    $this->call('optimize');
+    // $this->call('storage:link');
 })->describe('Deploy the application');
