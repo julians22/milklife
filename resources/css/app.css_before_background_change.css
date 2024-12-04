@@ -14,7 +14,7 @@
         @apply top-[-500px] duration-[700ms];
     }
     .nav.open-badge{
-        @apply bg-milklife-blue-banner-lighter bg-opacity-95 shadow;
+        @apply bg-milklife-blue bg-opacity-95 shadow;
     }
     .nav.open-badge .toggler-nav-close{
         @apply block;
@@ -125,7 +125,7 @@
     }
 
     .section .article-content{
-        @apply h-full flex justify-between items-center flex-col;
+        @apply h-full flex justify-between items-center flex-col md:block;
     }
 
     .article-box{
@@ -172,7 +172,7 @@
     }
 
     .explore-section.page{
-        @apply min-h-screen h-auto;
+        @apply min-h-0 h-auto;
     }
 
     .article-section.page .article-content{
@@ -184,11 +184,11 @@
     }
 
     .about-title{
-        @apply text-center font-gotham-bold text-xl md:text-3xl text-white mt-10 md:mt-0;
+        @apply text-center font-gotham-bold text-xl md:text-3xl text-milklife-orange mt-10 md:mt-0;
     }
 
     .about-body .detail .title{
-        @apply font-koara-bold text-3xl text-white mb-2;
+        @apply font-koara-bold text-3xl text-milklife-orange mb-2;
     }
 
     .nav-artikel-wrapper{
@@ -197,10 +197,10 @@
 
 
     .nav-artikel-wrapper .nav-artikel{
-        @apply relative py-2 px-10 block text-white cursor-pointer mt-4;
+        @apply relative p-10 block text-white cursor-pointer;
     }
     .nav-artikel-wrapper .nav-artikel.active, .nav-artikel-wrapper .nav-artikel:hover{
-        @apply text-white;
+        @apply text-milklife-blue-darken;
     }
     .nav-artikel-wrapper .nav-artikel span{
         @apply block;
@@ -210,10 +210,10 @@
         @apply flex flex-col md:flex-row space-x-0 space-y-2 md:space-y-0 md:space-x-10 justify-center items-center mx-auto max-w-max;
     }
     .nav-misc-wrapper .nav-misc{
-        @apply relative py-2 px-[17px] lg:py-4 lg:px-4 block text-white cursor-pointer w-[240px] lg:w-[315px];
+        @apply relative p-[17px] lg:p-10 block text-white cursor-pointer w-[240px] lg:w-[315px];
     }
     .nav-misc-wrapper .nav-misc.active, .nav-misc-wrapper .nav-misc:hover{
-        @apply text-white;
+        @apply text-milklife-blue-darken;
     }
     .nav-misc-wrapper .nav-misc span{
         @apply block;

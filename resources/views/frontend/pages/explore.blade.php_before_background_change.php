@@ -5,7 +5,7 @@
 @section('meta_description', '#DuniaMilkLife')
 
 @section('content')
-    <div class="explore-section page bg-milklife-blue-banner">
+    <div class="explore-section page" style="background-image: url('{{ asset('img/bg/blue.jpg') }}'); min-height: 100vh;">
 
         <div class="explore-content pb-20">
 

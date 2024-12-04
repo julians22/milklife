@@ -15,6 +15,7 @@ module.exports = {
                 milklife: {
                     blue: '#4dacdf',
                     'blue-banner': '#1f2e99',
+                    'blue-banner-lighter': '#2639bf',
                     'blue-darken': '#256a8f',
                     yellow: '#e6e0d9',
                     orange: '#c58d3b',

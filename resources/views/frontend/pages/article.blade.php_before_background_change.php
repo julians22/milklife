@@ -5,7 +5,7 @@
 @section('meta_description', 'halaman Artikel & Resep')
 
 @section('content')
-    <div class="article-section page bg-milklife-blue-banner">
+    <div class="article-section page" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')">
 
         {{-- doodle rounds right --}}
         <div class="absolute right-0 top-[150px] w-28">
@@ -37,10 +37,10 @@
 
             <div class="nav-artikel-wrapper">
                 <div class="nav-artikel" v-bind:class="{ active : articleShow == 'article' }" v-on:click.prevent="showArticle('article')">
-                    <span href="#" class="font-gotham-bold text-2xl text-center">Artikel</span>
+                    <span href="#" class="font-gotham-black text-2xl text-center">Artikel</span>
                 </div>
                 <div class="nav-artikel" v-bind:class="{ active : articleShow == 'recipe' }" v-on:click.prevent="showArticle('recipe')">
-                    <span href="#" class="font-gotham-bold text-2xl text-center">Resep</span>
+                    <span href="#" class="font-gotham-black text-2xl text-center">Resep</span>
                 </div>
             </div>
 

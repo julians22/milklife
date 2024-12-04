@@ -5,10 +5,11 @@
 @section('meta_description', 'Ragam Rasa MilkLife')
 
 @section('content')
-    <div class="variant-section page flex h-screen overflow-x-hidden bg-milklife-blue-banner">
+    <div class="variant-section page flex h-screen overflow-x-hidden"
+        style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
 
-        <div class="absolute inset-x-0 bottom-0 z-0 h-56 2xl:h-[350px] bg-milklife-blue-banner-lighter">
-            {{-- <img class="h-full w-full" src="{{ asset('img/bg/tables.jpg') }}" alt=""> --}}
+        <div class="absolute inset-x-0 bottom-0 z-0 h-56 2xl:h-[350px]">
+            <img class="h-full w-full" src="{{ asset('img/bg/tables.jpg') }}" alt="">
         </div>
 
         {{-- right doodle --}}

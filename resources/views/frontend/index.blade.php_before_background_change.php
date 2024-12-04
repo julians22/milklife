@@ -16,7 +16,7 @@
         {{-- About --}}
         <div class="section">
 
-            <section class="about-section relative bg-milklife-blue-banner"
+            <section class="about-section relative" style="background-image: url('{{ asset('img/bg/gray_yellbg.jpg') }}')"
                 data-splide-hash="about">
                 {{-- top right doodle --}}
                 <div class="absolute top-0 right-0 md:w-44 w-40">
@@ -61,8 +61,8 @@
                                     <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
                                     <div class="about-textbox bottom-1 w-[350px] right-[120%]">
-                                        <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Kualitas Konsisten</p>
-                                        <p class="text-white font-gotham-black leading-none ">Pengawasan ekstra tanpa henti dalam<br>
+                                        <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Kualitas Konsisten</p>
+                                        <p class="text-milklife-orange font-gotham-black leading-none ">Pengawasan ekstra tanpa henti dalam<br>
                                             satu kawasan,  memastikan kualitas<br>
                                             MilkLife terus terjaga</p>
                                         <img src="{{ asset('img/doodle/arrow_about_bottom_l.png') }}" alt="" class="absolute top-[-3rem] left-[90%] w-[60px]">
@@ -73,8 +73,8 @@
                                     <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
                                     <div class="about-textbox top-1 w-[350px] right-full">
-                                        <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Kesegaran Murni</p>
-                                        <p class="text-white font-gotham-black leading-none ">Langsung dari peternakan, kesegaran susu<br>
+                                        <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Kesegaran Murni</p>
+                                        <p class="text-milklife-orange font-gotham-black leading-none ">Langsung dari peternakan, kesegaran susu<br>
                                             selalu terjaga dengan ekstra sampai<br>
                                             ke meja makan anda</p>
                                         <img src="{{ asset('img/doodle/arrow_about_top_l.png') }}" alt="" class="absolute top-[-15px] left-[90%] w-[85px]">
@@ -85,8 +85,8 @@
                                     <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
                                     <div class="about-textbox bottom-1 w-[350px] left-[120%]">
-                                        <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Rasa yang Luar Biasa</p>
-                                        <p class="text-white font-gotham-black leading-none ">Penuh dengan kenikmatan dan kesegaran<br>
+                                        <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Rasa yang Luar Biasa</p>
+                                        <p class="text-milklife-orange font-gotham-black leading-none ">Penuh dengan kenikmatan dan kesegaran<br>
                                             ekstra, dapat langsung diminum atau<br>
                                             menjadi bahan dasar makanan</p>
                                         <img src="{{ asset('img/doodle/arrow_about_bottom_r.png') }}" alt="" class="absolute -bottom-3 right-full w-[85px]">
@@ -97,8 +97,8 @@
                                     <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in"
                                         src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
                                         <div class="about-textbox top-1 w-[320px] left-[120%]">
-                                            <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Nutrisi <br> Lengkap & Seimbang</p>
-                                            <p class="text-white font-gotham-black leading-none ">Dari sapi -  sapi bahagia yang diberikan<br>
+                                            <p class="font-koara-bold text-milklife-orange leading-none text-[30px] mb-2">Nutrisi <br> Lengkap & Seimbang</p>
+                                            <p class="text-milklife-orange font-gotham-black leading-none ">Dari sapi -  sapi bahagia yang diberikan<br>
                                                 perhatian ekstra oleh Milk People,<br>
                                                 24 jam tanpa henti </p>
                                             <img src="{{ asset('img/doodle/arrow_about_top_r.png') }}" alt="" class="absolute -bottom-1 right-full w-[60px]">
@@ -114,7 +114,7 @@
         {{-- Variants --}}
         <div class="section">
 
-            <section class="variant-section bg-milklife-blue-banner"
+            <section class="variant-section" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')"
                 data-splide-hash="variant">
 
                 {{-- top right doodle straight --}}
@@ -132,9 +132,9 @@
                     <img src="{{ asset('img/doodle/doodle_left_bottom_1.png') }}" alt="" class="w-full">
                 </div>
 
-                <div class="variant-content w-full flex flex-col h-full justify-between items-center pb-10">
-                    <h2 class="page-title">Varian MilkLife</h2>
-                    <div class="max-w-4xl 2xl:max-w-7xl">
+                <div class="variant-content w-full">
+                    <h2 class="page-title mb-10">Varian MilkLife</h2>
+                    <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl mx-auto mb-3 2xl:mt-24">
                         <div class="splide" id="variant__splide">
                             <div class="splide__track">
                                 <div class="splide__list">
@@ -145,7 +145,7 @@
                                                     class="variant-img">
                                                 <h3 class="variant-title px-2">{{ $product->name }} <br> {{ volumeConversion($product->size) }}</h3>
                                                 <a href="{{ route('frontend.product.show', ['slug' => $product->slug]) }}"
-                                                    class="btn btn-pill">
+                                                    class="btn btn btn-doodle btn-doodle-basic btn-sm">
                                                     Beli Sekarang
                                                 </a>
                                             </div>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="{{ route('frontend.product.index') }}" class="btn btn-pill text-shadow">Eksplor Lebih</a>
+                        <a href="{{ route('frontend.product.index') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
                     </div>
                 </div>
             </section>
@@ -164,7 +164,7 @@
 
         {{-- Artikel --}}
         <div class="section">
-            <section class="article-section bg-milklife-blue-banner"
+            <section class="article-section" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')"
                 data-splide-hash="artikel">
                 {{-- planet top right --}}
                 <div class="absolute md:-top-10 top-0 right-4 md:right-28 md:w-40 w-24">
@@ -198,11 +198,11 @@
                 </div>
 
 
-                <div class="article-content flex flex-col h-full justify-between items-center pb-10">
+                <div class="article-content h-full">
                     <h2 class="page-title relative">Artikel & Resep</h2>
 
                     <div
-                        class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto flex-col justify-center hidden md:flex">
+                        class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto flex-col justify-center mt-12 md:mt-32 2xl:mt-40 3xl:mt-48 hidden md:flex">
                         <div class="flex flex-row flex-wrap md:flex-nowrap justify-center space-x-10 space-y-5 items-baseline">
                             @foreach ($posts as $post)
                                 <div class="article-box ">
@@ -246,7 +246,7 @@
 
                     <div class="text-center relative">
                         <a href="{{ route('frontend.article') }}"
-                            class="btn btn-pill">Eksplor Lebih</a>
+                            class="btn btn-doodle btn-doodle-blue text-shadow">Eksplor Lebih</a>
                     </div>
                 </div>
 
@@ -256,7 +256,7 @@
 
         {{-- Explore --}}
         <div class="section">
-            <section class="explore-section bg-milklife-blue-banner flex flex-col pb-10 h-full justify-between items-center"
+            <section class="explore-section" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')"
                 data-splide-hash="explore">
                 {{-- top right doodle --}}
                 <div class="absolute top-0 left-0 md:w-40 w-40">
@@ -290,19 +290,41 @@
                     </div>
                 </div>
 
+                <div class="explore-rope-image hidden">
+                    <img src="{{ asset('img/rope.png') }}" alt="" class="w-full absolute inset-x-0 bottom-[85%]">
+                    <div class="flex items-center space-x-12 justify-center">
+                        <div class="relative thumb-wrapper">
+                            <img src="{{ asset('img/thumbnail/home/6 Januari 2022dml.jpg') }}" alt=""
+                                class="img-thumbnail -translate-y-7 rotate-12">
+                        </div>
+                        <div class="relative thumb-wrapper">
+                            <img src="{{ asset('img/thumbnail/home/8 maret 2022 feeddml.jpg') }}" alt=""
+                                class="img-thumbnail rotate-6">
+                        </div>
+                        <div class="relative thumb-wrapper">
+                            <img src="{{ asset('img/thumbnail/home/21 maret 2022 revdml.jpg') }}" alt=""
+                                class="img-thumbnail -rotate-6">
+                        </div>
+                        <div class="relative thumb-wrapper">
+                            <img src="{{ asset('img/thumbnail/home/23 Maret 2022dml.jpg') }}" alt=""
+                                class="img-thumbnail -translate-y-7 -rotate-12">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto w-full">
                     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
                 </div>
 
                 <div class="text-center relative">
-                    <a href="{{ route('frontend.explore') }}" class="btn btn-pill">Eksplor Lebih</a>
+                    <a href="{{ route('frontend.explore') }}" class="btn btn-doodle text-shadow">Eksplor Lebih</a>
                 </div>
             </section>
         </div>
 
         {{-- Contact --}}
         <div class="section">
-            <div class="contact-section bg-milklife-blue-banner"
+            <div class="contact-section" style="background-image: url('{{ asset('img/bg/gray_yellbg.jpg') }}')"
                 data-splide-hash="contact">
 
 
@@ -342,7 +364,7 @@
                     </div>
 
                     <div class="the-content max-w-screen-md w-full text-center">
-                        <h3 class="text-3xl lg:text-5xl font-koara-bold text-center text-white mb-5">Promo ekstra
+                        <h3 class="text-3xl lg:text-5xl font-koara-bold text-center text-milklife-orange mb-5">Promo ekstra
                             untuk kamu yang berdedikasi ekstra</h3>
 
                         <a href="https://bit.ly/HaloMilkLifee"
@@ -368,7 +390,7 @@
                         </div>
 
                         <div class="copyright-wrapper">
-                            <h4 class="text-lg font-gotham-black text-white">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
+                            <h4 class="text-lg font-gotham-black text-milklife-orange">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
                         </div>
                     </footer>
                 </div>

@@ -16,7 +16,7 @@
         </div>
 
         <div class="text-center relative {{ $perPage < $posts->total() ?: 'hidden'  }}">
-            <a href="#" wire:loading.remove wire:click.prevent="loadMore('{{$post_type}}')" class="btn btn-doodle btn-doodle-blue text-shadow">Muat Lebih</a>
+            <a href="#" wire:loading.remove wire:click.prevent="loadMore('{{$post_type}}')" class="btn btn-pill">Muat Lebih</a>
         </div>
     </div>
 {{-- </div> --}}

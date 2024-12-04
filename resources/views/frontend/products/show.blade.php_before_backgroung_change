@@ -4,7 +4,7 @@
 @section('meta_description', $metas['meta_description'])
 
 @section('content')
-    <div class="variant-section page min-h-max pb-8 antialiased overflow-hidden bg-milklife-blue-banner">
+    <div class="variant-section page min-h-max pb-8 antialiased overflow-hidden" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')">
 
         {{-- doodle right straight 1 --}}
         <div class="absolute top-[8%] right-0 w-28">
@@ -104,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div class="variant-section page py-8 2xl:py-14 min-h-max overflow-hidden bg-milklife-blue-banner">
+    <div class="variant-section page py-8 2xl:py-14 min-h-max overflow-hidden" style="background-image: url('{{ asset('img/bg/orangebg.jpg') }}')">
         {{-- doodle flower top right --}}
         <div class="absolute -top-[19%] right-0 w-28">
             <img src="{{ asset('img/doodle/flower.png') }}" alt="" class="w-full">
@@ -132,10 +132,10 @@
                 <div class="product-misc-content flex flex-col">
                     <div class="nav-misc-wrapper">
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'komposisi' }" v-on:click.prevent="showMisc('komposisi')">
-                            <span href="#" class="font-gotham-bold text-base lg:text-2xl text-center">Komposisi</span>
+                            <span href="#" class="font-gotham-black text-base lg:text-2xl text-center">Komposisi</span>
                         </div>
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'nutrisi' }" v-on:click.prevent="showMisc('nutrisi')">
-                            <span href="#" class="font-gotham-bold text-base lg:text-2xl text-center">Informasi Nilai Gizi</span>
+                            <span href="#" class="font-gotham-black text-base lg:text-2xl text-center">Informasi Nilai Gizi</span>
                         </div>
                     </div>
                     <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10 flex-grow px-0 md:px-20" v-cloak v-show="miscShow == 'komposisi'">

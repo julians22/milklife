@@ -7,7 +7,7 @@
     }
 @endphp
 
-<nav class="nav bg-milklife-orange md:bg-transparent" id="navigation">
+<nav class="nav bg-milklife-orange-darken md:bg-transparent" id="navigation">
     <div class="nav-wrapper">
         <a href="{{ route('frontend.index') }}" class="logo-mobile">
             <img src="{{ asset('img/logo.png') }}" alt="" width="125">

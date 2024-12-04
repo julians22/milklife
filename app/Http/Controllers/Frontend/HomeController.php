@@ -113,7 +113,7 @@ class HomeController
         $variants = ProductVariant::with('products_size_desc')->get();
         $variants = VariantResources::collection($variants);
         $variants = json_encode($variants, JSON_NUMERIC_CHECK);
-        $pageColour = "blue";
+        $pageColour = "";
         return view('frontend.pages.variant', compact('pageColour', 'variants'));
     }
 
@@ -157,7 +157,7 @@ class HomeController
      */
     public function article()
     {
-        $pageColour = "orange";
+        $pageColour = "";
         // $content = [
         //     'articles' => Post::article()->take(5)->orderBy('post_date', 'desc')->get(),
         //     'recipes' => Post::recipe()->take(5)->orderBy('post_date', 'desc')->get(),
@@ -175,7 +175,7 @@ class HomeController
         if (!$article) {
             abort(402, 'Article not found');
         }
-        $pageColour = "blue";
+        $pageColour = "";
         if ($article->post_type == POST::TYPE_ARTICLE) {
             return view('frontend.articles.article_show', compact('article', 'pageColour'));
         }elseif ($article->post_type == POST::TYPE_RECIPE) {
@@ -190,7 +190,7 @@ class HomeController
      */
     public function explore()
     {
-        $pageColour = "blue";
+        $pageColour = "";
         return view('frontend.pages.explore', compact('pageColour'));
     }
 
