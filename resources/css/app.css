@@ -4,14 +4,14 @@
 
 @layer components {
     .nav{
-        @apply py-4 fixed top-0 bottom-0 md:bottom-auto left-[-500px] md:left-0 right-auto md:right-0 bg-transparent z-10 transition-all ease-linear duration-300;
+        @apply top-0 right-auto md:right-0 bottom-0 md:bottom-auto left-[-500px] md:left-0 z-10 fixed bg-transparent py-4 transition-all duration-300 ease-linear;
     }
     .nav.open-mobile{
-        @apply left-0 right-0;
+        @apply right-0 left-0;
         z-index: 9999;
     }
     .nav.scroll{
-        @apply top-[0] duration-[700ms] bg-milklife-blue-banner-lighter;
+        @apply top-[0] bg-milklife-blue-banner-lighter duration-[700ms];
     }
     .nav.open-badge{
         @apply bg-milklife-blue-banner-lighter bg-opacity-95 shadow;
@@ -20,19 +20,24 @@
         @apply block;
     }
     .nav .nav-wrapper{
-        @apply flex justify-between items-start max-w-6xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto font-gotham-black text-white tracking-wide flex-col md:flex-row md:items-center divide-y-reverse divide-y-2 md:divide-y-0;
+        @apply flex md:flex-row flex-col justify-between items-start md:items-center mx-auto divide-y-2 divide-y-reverse md:divide-y-0 2xl:max-w-[90rem] max-w-6xl xl:max-w-7xl font-gotham-black text-white tracking-wide;
     }
 
     .nav .item-wrapper{
-        @apply font-lato flex flex-col items-center md:items-center justify-center text-xl md:text-lg font-semibold lg:font-normal text-center;
+        @apply flex flex-col justify-center items-center md:items-center font-lato lg:font-normal font-semibold md:text-lg text-xl text-center;
     }
 
     .nav .item-wrapper br{
         @apply hidden md:block;
     }
 
+    .nav .item-wrapper.contact-link{
+        @apply md:hidden block;
+    }
+
+
     .index-page .toggler-nav-badge{
-        @apply hidden md:block fixed inset-x-0 z-[9] transition-all ease-linear duration-75 cursor-pointer;
+        @apply hidden md:block z-[9] fixed inset-x-0 transition-all duration-75 ease-linear cursor-pointer;
     }
 
     .toggler-nav-badge{
@@ -40,44 +45,44 @@
     }
 
     .toggler-nav-close{
-        @apply absolute inset-x-0 bg-transparent hidden;
+        @apply hidden absolute inset-x-0 bg-transparent;
     }
 
     .nav .logo-mobile{
-        @apply block md:hidden mx-auto mb-4;
+        @apply md:hidden block mx-auto mb-4;
     }
 
     .btn{
-        @apply px-2 py-1 text-white rounded-sm transition-all ease-linear duration-300 inline-block;
+        @apply inline-block px-2 py-1 rounded-sm text-white transition-all duration-300 ease-linear;
     }
 
     .btn-milklife-blue{
-        @apply bg-milklife-blue text-white active:ring-2 ring-offset-milklife-blue-darken;
+        @apply bg-milklife-blue active:ring-2 ring-offset-milklife-blue-darken text-white;
     }
 
     .btn.btn-doodle{
-        @apply text-lg font-semibold font-gotham-black p-6 2xl:text-2xl 2xl:p-8;
+        @apply p-6 2xl:p-8 font-gotham-black font-semibold text-lg 2xl:text-2xl;
     }
 
     .btn.btn-pill{
-        @apply px-2 py-1 rounded-full text-lg font-semibold font-gotham-black 2xl:text-2xl bg-milklife-orange-darken;
+        @apply bg-milklife-orange-darken px-2 py-1 rounded-full font-gotham-black font-semibold text-lg 2xl:text-2xl;
     }
 
     .btn.btn-doodle.btn-sm{
-        @apply text-base p-4;
+        @apply p-4 text-base;
     }
 
     .btn.btn-whatsapp{
-        @apply inline-flex items-center space-x-4 bg-green-500 text-xl lg:text-3xl p-3 rounded-2xl font-gotham-bold;
+        @apply inline-flex items-center space-x-4 bg-green-500 p-3 rounded-2xl font-gotham-bold text-xl lg:text-3xl;
     }
 
 
     .banner-section, .about-section, .variant-section, .article-section, .explore-section, .contact-section{
-        @apply h-full w-full bg-cover bg-left-top bg-no-repeat;
+        @apply bg-cover bg-no-repeat bg-left-top w-full h-full;
     }
 
     .about-section, .variant-section, .article-section, .explore-section, .contact-section, .variant-section{
-        @apply pt-4 relative px-2 md:px-0 overflow-hidden;
+        @apply relative px-2 md:px-0 pt-4 overflow-hidden;
     }
 
     .about-section.page{
@@ -85,7 +90,7 @@
     }
 
     .banner-content{
-        @apply h-full max-w-4xl md:max-w-5xl xl:max-w-6xl 2xl:max-w-[1500px] mx-auto flex items-center flex-col md:flex-row justify-center md:justify-start flex-1 lg:pb-8;
+        @apply flex md:flex-row flex-col flex-1 justify-center md:justify-start items-center mx-auto lg:pb-8 2xl:max-w-[1500px] max-w-4xl md:max-w-5xl xl:max-w-6xl h-full;
     }
 
     /* Add Style for pagination banner */
@@ -96,34 +101,34 @@
     }
 
     .banner-content .splide__pagination__page{
-        @apply w-4 h-4 bg-white;
+        @apply bg-white w-4 h-4;
     }
 
     .banner-content .splide__pagination__page.is-active{
-        @apply w-4 h-4 bg-milklife-orange-darken scale-105;
+        @apply bg-milklife-orange-darken w-4 h-4 scale-105;
     }
 
     .banner-content .banner-title{
-        @apply text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white font-koara-bold mb-3 text-center;
+        @apply mb-3 font-koara-bold text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center;
     }
 
     .banner-content .banner-title img{
-        @apply max-w-none lg:max-w-[580px] 2xl:max-w-[700px] w-full mx-auto;
+        @apply mx-auto w-full max-w-none lg:max-w-[580px] 2xl:max-w-[700px];
     }
 
     .variant-item{
-        @apply flex flex-col items-center justify-end text-lg 2xl:text-xl font-semibold text-white py-2 mx-auto space-y-2 w-[16rem] md:w-48 3xl:w-56 h-full;
+        @apply flex flex-col justify-end items-center space-y-2 mx-auto py-2 w-[16rem] md:w-48 3xl:w-56 h-full font-semibold text-white text-lg 2xl:text-xl;
     }
     .variant-item .variant-img{
-        @apply w-[5rem] xs:w-[9rem] sm:w-[6.25rem] md:w-14 lg:w-16 xl:w-20 2xl:w-32 3xl:w-44 h-auto;
+        @apply w-[5rem] xs:w-[9rem] sm:w-[6.25rem] md:w-14 lg:w-16 2xl:w-32 3xl:w-44 xl:w-20 h-auto;
     }
 
     .variant-title{
-        @apply text-center font-gotham-black text-lg;
+        @apply font-gotham-black text-lg text-center;
     }
 
     .section .article-content{
-        @apply h-full flex justify-between items-center flex-col;
+        @apply flex flex-col justify-between items-center h-full;
     }
 
     .article-box{
@@ -139,11 +144,11 @@
     }
 
     .article-box:hover .article-image-wrapper{
-        @apply border-[12px] shadow-xl -rotate-2;
+        @apply shadow-xl border-[12px] -rotate-2;
     }
 
     .article-image-wrapper{
-        @apply mb-3 border-[12px] shadow-md transform transition-all duration-300;
+        @apply shadow-md mb-3 border-[12px] transition-all duration-300 transform;
     }
 
     .article-image-wrapper .article-image{
@@ -151,14 +156,14 @@
     }
 
     .page-nav-item{
-        @apply w-5 h-5 rounded-full bg-milklife-blue transition-all ease-in-out duration-700;
+        @apply bg-milklife-blue rounded-full w-5 h-5 transition-all duration-700 ease-in-out;
     }
     .page-nav-item.active{
         @apply bg-milklife-blue-darken;
     }
 
     .page-title{
-        @apply font-koara-bold text-4xl mt-12 md:mt-0 md:text-5xl text-center text-white tracking-wider leading-tight;
+        @apply mt-12 md:mt-0 font-koara-bold text-white text-4xl md:text-5xl text-center leading-tight tracking-wider;
     }
 
     .page-title.page-title-lg{
@@ -166,40 +171,40 @@
     }
 
     .about-section.page .about-content, .explore-section.page .explore-content, .variant-section.page .variant-content, .explore-section.page .explore-content{
-        @apply max-w-5xl xl:max-w-7xl 2xl:max-w-[90rem] mx-auto;
+        @apply mx-auto 2xl:max-w-[90rem] max-w-5xl xl:max-w-7xl;
     }
 
     .variant-section.page .variant-content{
-        @apply max-w-5xl xl:max-w-[70rem] 2xl:max-w-[90rem] mx-auto;
+        @apply mx-auto 2xl:max-w-[90rem] xl:max-w-[70rem] max-w-5xl;
     }
 
     .explore-section.page{
-        @apply min-h-screen h-auto;
+        @apply h-auto min-h-screen;
     }
 
     .article-section.page .article-content{
-        @apply max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto;
+        @apply mx-auto 3xl:max-w-screen-2xl max-w-4xl lg:max-w-5xl 2xl:max-w-7xl;
     }
 
     .article-section.page{
-        @apply min-h-screen h-auto overflow-auto bg-repeat-y;
+        @apply bg-repeat-y h-auto min-h-screen overflow-auto;
     }
 
     .about-title{
-        @apply text-center font-gotham-bold text-xl md:text-3xl text-white mt-10 md:mt-0;
+        @apply mt-10 md:mt-0 font-gotham-bold text-white text-xl md:text-3xl text-center;
     }
 
     .about-body .detail .title{
-        @apply font-koara-bold text-3xl text-white mb-2;
+        @apply mb-2 font-koara-bold text-white text-3xl;
     }
 
     .nav-artikel-wrapper{
-        @apply flex space-x-10 justify-center items-center mx-auto max-w-max;
+        @apply flex justify-center items-center space-x-10 mx-auto max-w-max;
     }
 
 
     .nav-artikel-wrapper .nav-artikel{
-        @apply relative py-2 px-10 block text-white cursor-pointer mt-4;
+        @apply block relative mt-4 px-10 py-2 text-white cursor-pointer;
     }
     .nav-artikel-wrapper .nav-artikel.active, .nav-artikel-wrapper .nav-artikel:hover{
         @apply text-white;
@@ -209,10 +214,10 @@
     }
 
     .nav-misc-wrapper{
-        @apply flex flex-col md:flex-row space-x-0 space-y-2 md:space-y-0 md:space-x-10 justify-center items-center mx-auto max-w-max;
+        @apply flex md:flex-row flex-col justify-center items-center space-x-0 md:space-x-10 space-y-2 md:space-y-0 mx-auto max-w-max;
     }
     .nav-misc-wrapper .nav-misc{
-        @apply relative py-2 px-[17px] lg:py-4 lg:px-4 block text-white cursor-pointer w-[240px] lg:w-[315px];
+        @apply block relative px-[17px] lg:px-4 py-2 lg:py-4 w-[240px] lg:w-[315px] text-white cursor-pointer;
     }
     .nav-misc-wrapper .nav-misc.active, .nav-misc-wrapper .nav-misc:hover{
         @apply text-white;
@@ -222,11 +227,11 @@
     }
 
     .article-post-container{
-        @apply flex flex-col gap-y-2 lg:gap-y-8 justify-between items-center;
+        @apply flex flex-col justify-between items-center gap-y-2 lg:gap-y-8;
     }
 
     footer .link-icons-wrapper .link-icon-items{
-        @apply w-10 h-10 bg-contain bg-center bg-no-repeat hover:scale-110 hover:-translate-y-2 transition-transform ease-in-out duration-300;
+        @apply bg-contain bg-no-repeat bg-center w-10 h-10 hover:scale-110 transition-transform hover:-translate-y-2 duration-300 ease-in-out;
     }
 
     .product-image.product-image-large{
@@ -240,7 +245,7 @@
     }
 
     .product-show-case{
-        @apply flex flex-col lg:flex-row justify-around items-center lg:items-start text-white relative;
+        @apply relative flex lg:flex-row flex-col justify-around items-center lg:items-start text-white;
     }
     .product-show-case .product-intro{
         @apply w-full lg:w-2/5 mb-4 lg:mb-0;
@@ -249,35 +254,35 @@
         @apply w-full lg:w-2/5 text-2xl lg:text-4xl font-koara-bold pl-5 mt-4 lg:mt-0;
     }
     .product-misc{
-        @apply flex justify-between items-start flex-row;
+        @apply flex flex-row justify-between items-start;
     }
     .product-misc .product-misc-content{
-        @apply min-h-[400px] flex-1 pl-7;
+        @apply flex-1 pl-7 min-h-[400px];
     }
     .grid-instax{
-        @apply md:w-[50px] md:h-[50px] transition-all ease-linear duration-500 delay-200 relative;
+        @apply relative md:w-[50px] md:h-[50px] transition-all duration-500 delay-200 ease-linear;
     }
 
     .grid-instax img{
-        @apply transition-transform duration-500 ease-in-out scale-0;
+        @apply scale-0 transition-transform duration-500 ease-in-out;
     }
 
     .section.active .grid-instax{
-        @apply w-[140px] h-[140px]  md:w-[200px] md:h-[200px] 2xl:w-[260px] 2xl:h-[260px] 3xl:w-[300px] 3xl:h-[300px];
+        @apply w-[140px] md:w-[200px] 2xl:w-[260px] 3xl:w-[300px] h-[140px] md:h-[200px] 2xl:h-[260px] 3xl:h-[300px];
     }
     .section.active .grid-instax img{
         @apply scale-100;
     }
 
     .explore-rope-image{
-        @apply relative inset-x-0 top-12 2xl:top-16 3xl:top-32 xl:mb-20 2xl:mb-40;
+        @apply top-12 2xl:top-16 3xl:top-32 relative inset-x-0 2xl:mb-40 xl:mb-20;
     }
     .explore-rope-image .img-thumbnail{
-        @apply border-[12px] shadow-xl border-white w-[164px] h-[164px] 3xl:w-[220px] 3xl:h-[220px] 2xl:w-48 2xl:h-48;
+        @apply shadow-xl border-[12px] border-white w-[164px] 2xl:w-48 3xl:w-[220px] h-[164px] 2xl:h-48 3xl:h-[220px];
     }
 
     .shop-link{
-        @apply bg-slate-200 md:bg-white p-2 rounded-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all ease-in-out;
+        @apply bg-slate-200 md:bg-white hover:shadow-2xl p-2 rounded-lg transition-all hover:-translate-y-2 ease-in-out transform;
     }
 
     .about-textbox{
@@ -285,7 +290,7 @@
     }
 
     .article-text{
-        @apply text-left text-white 2xl:text-lg font-gotham-light;
+        @apply font-gotham-light text-white 2xl:text-lg text-left;
     }
 
     .article-text strong, .article-text b{

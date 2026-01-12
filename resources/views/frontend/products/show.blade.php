@@ -57,7 +57,7 @@
                 <div class="product-excelence">
                     @if ($product->productExcelences->count() > 0)
                     @foreach ($product->productExcelences as $productExcelence)
-                    <div class="flex flex-row flex-no-wrap items-end space-x-5 space-y-4">
+                    <div class="flex flex-row flex-no-wrap items-center space-x-5 space-y-4">
                         <span class="w-10"><img src="{{ asset('img/icons/bullet_y.png') }}" alt=""></span>
                         <span class="flex-1">{{ $productExcelence->name }}</span>
                     </div>
@@ -131,7 +131,7 @@
         <div class="absolute w-full bottom-0 2xl:-bottom-8">
             <img src="{{ asset('img/milk.png') }}" alt="" class="w-full">
         </div>
-        <div class="variant-content z-10 relative">
+        <div class="variant-content relative" style="z-index: 9;">
             {{-- product misc (nutrition & compotition) --}}
             <div class="product-misc">
                 <div class="product-image hidden md:block w-[170px]">

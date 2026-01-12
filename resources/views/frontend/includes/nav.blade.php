@@ -27,7 +27,7 @@
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass(Route::is('frontend.article'), 'active') }}">
             <a href="{{ route('frontend.article') }}">Artikel & <br> Resep</a>
         </div>
-        <div class="item-wrapper {{ $nav_class_col }}" id="contact-link">
+        <div class="item-wrapper {{ $nav_class_col }} contact-link" id="contact-link">
             @if (Route::is('frontend.index'))
                 <a href="#kontak">Hubungi Kami</a>
             @else

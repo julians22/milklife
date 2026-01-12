@@ -41,8 +41,8 @@
     {{-- Loading  --}}
 
     {{-- <div id="loading" class="fixed inset-0 bg-milklife-blue" style="z-index: 99999">
-        <div class="flex items-center justify-center h-full w-full">
-            <div class="loading-item flex flex-col space-y-4 items-center text-center">
+        <div class="flex justify-center items-center w-full h-full">
+            <div class="flex flex-col items-center space-y-4 text-center loading-item">
                 <img src="{{ asset('img/logo.png') }}" alt="" class="max-w-xs">
                 <div class="ldBar" data-value="0" data-type="stroke" data-stroke-trail="#256a8f" data-stroke="#efefef" data-stroke-width="5" data-stroke-trail-width="8">
                 </div>
