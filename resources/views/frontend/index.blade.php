@@ -16,23 +16,23 @@
         {{-- About --}}
         <div class="section">
 
-            <section class="about-section relative bg-milklife-blue-banner"
+            <section class="relative bg-milklife-blue-banner about-section"
                 data-splide-hash="about">
 
-                <div class="about-content w-full h-full relative">
+                <div class="relative w-full h-full about-content">
                     <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
 
                     <div class="about-grid w-full h-full">
-                        <div class="flex items-start md:items-center justify-center h-full">
-                            <div class="grid grid-cols-2 grid-rows-2 relative mt-32 md:mt-0">
+                        <div class="flex justify-center items-start md:items-center h-full">
+                            <div class="relative grid grid-cols-2 grid-rows-2 mt-32 md:mt-0">
                                 {{-- doodle stright right --}}
-                                <div class="absolute right-[-2em] top-[50%] -translate-y-1/2 w-12">
+                                <div class="top-[50%] right-[-2em] absolute w-12 -translate-y-1/2">
                                     <img src="{{ asset('img/doodle/staright_right.png') }}" alt=""
                                         class="w-full anim-fade-in">
                                 </div>
 
                                 {{-- doodle stright left --}}
-                                <div class="absolute left-[-2em] top-[50%] -translate-y-1/2 w-12">
+                                <div class="top-[50%] left-[-2em] absolute w-12 -translate-y-1/2">
                                     <img src="{{ asset('img/doodle/staright_left.png') }}" alt=""
                                         class="w-full anim-fade-in">
                                 </div>
@@ -40,50 +40,50 @@
 
                                 {{-- bottom-left --}}
                                 <div class="z-[4] grid-instax row-start-2">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute bottom-0 left-0 hover:translate-y-8 hover:-translate-x-4 anim-fade-in"
+                                    <img class="bottom-0 left-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:-translate-x-4 hover:translate-y-8 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
-                                    <div class="about-textbox bottom-1 w-[350px] right-[120%]">
-                                        <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Kualitas Konsisten</p>
-                                        <p class="text-white font-gotham-black leading-none ">Pengawasan ekstra tanpa henti dalam<br>
+                                    <div class="right-[120%] bottom-1 w-[350px] about-textbox">
+                                        <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Kualitas Konsisten</p>
+                                        <p class="font-gotham-black text-white leading-none">Pengawasan ekstra tanpa henti dalam<br>
                                             satu kawasan,  memastikan kualitas<br>
                                             MilkLife terus terjaga</p>
-                                        <img src="{{ asset('img/doodle/arrow_about_bottom_l.png') }}" alt="" class="absolute top-[-3rem] left-[90%] w-[60px]">
+                                        <img src="{{ asset('img/doodle/arrow_about_bottom_l.png') }}" alt="" class="top-[-3rem] left-[90%] absolute w-[60px]">
                                     </div>
                                 </div>
                                 {{-- top-left --}}
                                 <div class="z-[3] grid-instax row-start-1">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute top-0 left-0 hover:-translate-y-8 hover:-translate-x-4 anim-fade-in"
+                                    <img class="top-0 left-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:-translate-x-4 hover:-translate-y-8 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
-                                    <div class="about-textbox top-1 w-[350px] right-full">
-                                        <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Kesegaran Murni</p>
-                                        <p class="text-white font-gotham-black leading-none ">Langsung dari peternakan, kesegaran susu<br>
+                                    <div class="top-1 right-full w-[350px] about-textbox">
+                                        <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Kesegaran Murni</p>
+                                        <p class="font-gotham-black text-white leading-none">Langsung dari peternakan, kesegaran susu<br>
                                             selalu terjaga dengan ekstra sampai<br>
                                             ke meja makan anda</p>
-                                        <img src="{{ asset('img/doodle/arrow_about_top_l.png') }}" alt="" class="absolute top-[-15px] left-[90%] w-[85px]">
+                                        <img src="{{ asset('img/doodle/arrow_about_top_l.png') }}" alt="" class="top-[-15px] left-[90%] absolute w-[85px]">
                                     </div>
                                 </div>
                                 {{-- bottom-right --}}
                                 <div class="z-[2] grid-instax row-start-2">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute right-0 bottom-0 hover:translate-y-8 hover:translate-x-4 anim-fade-in"
+                                    <img class="right-0 bottom-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:translate-x-4 hover:translate-y-8 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
-                                    <div class="about-textbox bottom-1 w-[350px] left-[120%]">
-                                        <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Rasa yang Luar Biasa</p>
-                                        <p class="text-white font-gotham-black leading-none ">Penuh dengan kenikmatan dan kesegaran<br>
+                                    <div class="bottom-1 left-[120%] w-[350px] about-textbox">
+                                        <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Rasa yang Luar Biasa</p>
+                                        <p class="font-gotham-black text-white leading-none">Penuh dengan kenikmatan dan kesegaran<br>
                                             ekstra, dapat langsung diminum atau<br>
                                             menjadi bahan dasar makanan</p>
-                                        <img src="{{ asset('img/doodle/arrow_about_bottom_r.png') }}" alt="" class="absolute -bottom-3 right-full w-[85px]">
+                                        <img src="{{ asset('img/doodle/arrow_about_bottom_r.png') }}" alt="" class="right-full -bottom-3 absolute w-[85px]">
                                     </div>
                                 </div>
                                 {{-- top-right --}}
                                 <div class="z-[1] grid-instax row-start-1">
-                                    <img class="max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] absolute right-0 top-0 hover:-translate-y-8 hover:translate-x-4 anim-fade-in"
+                                    <img class="top-0 right-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:-translate-y-8 hover:translate-x-4 anim-fade-in"
                                         src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
-                                        <div class="about-textbox top-1 w-[320px] left-[120%]">
-                                            <p class="font-koara-bold text-white leading-none text-[30px] mb-2">Nutrisi <br> Lengkap & Seimbang</p>
-                                            <p class="text-white font-gotham-black leading-none ">Dari sapi -  sapi bahagia yang diberikan<br>
+                                        <div class="top-1 left-[120%] w-[320px] about-textbox">
+                                            <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Nutrisi <br> Lengkap & Seimbang</p>
+                                            <p class="font-gotham-black text-white leading-none">Dari sapi -  sapi bahagia yang diberikan<br>
                                                 perhatian ekstra oleh Milk People,<br>
                                                 24 jam tanpa henti </p>
-                                            <img src="{{ asset('img/doodle/arrow_about_top_r.png') }}" alt="" class="absolute -bottom-1 right-full w-[60px]">
+                                            <img src="{{ asset('img/doodle/arrow_about_top_r.png') }}" alt="" class="right-full -bottom-1 absolute w-[60px]">
                                         </div>
                                 </div>
                             </div>
@@ -96,10 +96,10 @@
         {{-- Variants --}}
         <div class="section">
 
-            <section class="variant-section bg-milklife-blue-banner"
+            <section class="bg-milklife-blue-banner variant-section"
                 data-splide-hash="variant">
 
-                <div class="variant-content w-full flex flex-col h-full justify-between items-center pb-10">
+                <div class="flex flex-col justify-between items-center pb-10 w-full h-full variant-content">
                     <h2 class="page-title">Varian MilkLife</h2>
                     <div class="max-w-4xl 2xl:max-w-7xl">
                         <div class="splide" id="variant__splide">
@@ -112,7 +112,7 @@
                                                     src="{{ $product->image }}?cache={{$product->updated_at}}"
                                                     alt="{{ $product->name }}"
                                                     class="variant-img">
-                                                <h3 class="variant-title px-2">{{ $product->name }} <br> {{ volumeConversion($product->size) }}</h3>
+                                                <h3 class="px-2 variant-title">{{ $product->name }} <br> {{ volumeConversion($product->size) }}</h3>
                                                 <a href="{{ route('frontend.product.show', ['slug' => $product->slug]) }}"
                                                     class="btn btn-pill">
                                                     Beli Sekarang
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="{{ route('frontend.product.index') }}" class="btn btn-pill text-shadow">Eksplor Lebih</a>
+                        <a href="{{ route('frontend.product.index') }}" class="text-shadow btn btn-pill">Eksplor Lebih</a>
                     </div>
                 </div>
             </section>
@@ -133,18 +133,18 @@
 
         {{-- Artikel --}}
         <div class="section">
-            <section class="article-section bg-milklife-blue-banner"
+            <section class="bg-milklife-blue-banner article-section"
                 data-splide-hash="artikel">
 
 
-                <div class="article-content flex flex-col h-full justify-between items-center pb-10">
-                    <h2 class="page-title relative">Artikel & Resep</h2>
+                <div class="flex flex-col justify-between items-center pb-10 h-full article-content">
+                    <h2 class="relative page-title">Artikel & Resep</h2>
 
                     <div
-                        class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto flex-col justify-center hidden md:flex">
-                        <div class="flex flex-row flex-wrap md:flex-nowrap justify-center space-x-10 space-y-5 items-baseline">
+                        class="hidden md:flex flex-col justify-center mx-auto 3xl:max-w-screen-2xl max-w-4xl lg:max-w-5xl 2xl:max-w-7xl">
+                        <div class="flex flex-row flex-wrap md:flex-nowrap justify-center items-baseline space-x-10 space-y-5">
                             @foreach ($posts as $post)
-                                <div class="article-box ">
+                                <div class="article-box">
                                     <div class="article-image-wrapper">
                                         <a href="{{ route('frontend.article.show', $post->slug) }}">
                                             <img
@@ -154,7 +154,7 @@
                                                 class="article-image">
                                         </a>
                                     </div>
-                                    <div class="text-xl text-white text-center font-koara-bold">
+                                    <div class="font-koara-bold text-white text-xl text-center">
                                         <h2>{{ $post->title }}</h2>
                                     </div>
                                 </div>
@@ -162,13 +162,13 @@
                         </div>
                     </div>
 
-                    <div class="w-full md:hidden block mt-12">
+                    <div class="md:hidden block mt-12 w-full">
                         <div class="splide" id="article__splide">
                             <div class="splide__track">
                                 <div class="splide__list">
                                     @foreach ($posts as $post)
                                         <div class="splide__slide">
-                                            <div class="article-box ">
+                                            <div class="article-box">
                                                 <div class="article-image-wrapper">
                                                     <a href="{{ route('frontend.article.show', $post->slug) }}">
                                                         <img
@@ -178,7 +178,7 @@
                                                             class="article-image">
                                                     </a>
                                                 </div>
-                                                <div class="text-xl text-white text-center font-koara-bold">
+                                                <div class="font-koara-bold text-white text-xl text-center">
                                                     <h2>{{ $post->title }}</h2>
                                                 </div>
                                             </div>
@@ -189,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="text-center relative">
+                    <div class="relative text-center">
                         <a href="{{ route('frontend.article') }}"
                             class="btn btn-pill">Eksplor Lebih</a>
                     </div>
@@ -201,13 +201,13 @@
 
         {{-- Explore --}}
         <div class="section">
-            <section class="explore-section bg-milklife-blue-banner flex flex-col pb-10 h-full justify-between items-center"
+            <section class="flex flex-col justify-between items-center bg-milklife-blue-banner pb-10 h-full explore-section"
                 data-splide-hash="explore">
 
                 <div class="explore-content">
-                    <h2 class="page-title page-title-lg explore-title mb-8 2xl:mb-20">#DuniaMilkLife</h2>
-                    <div class="max-w-full lg:max-w-[60%] text-center text-white mx-auto hidden">
-                        <h4 class="text-2xl 2xl:text-4xl font-koara-bold mb-4">Semua Tentang MilkLife</h4>
+                    <h2 class="mb-8 2xl:mb-20 page-title page-title-lg explore-title">#DuniaMilkLife</h2>
+                    <div class="hidden mx-auto max-w-full lg:max-w-[60%] text-white text-center">
+                        <h4 class="mb-4 font-koara-bold text-2xl 2xl:text-4xl">Semua Tentang MilkLife</h4>
                         <p class="font-gotham-light text-lg 2xl:text-xl">Beragam informasi dan kegiatan seru MilkLife
                             sehari-hari. Kenali
                             MilkLife lebih dekat dengan mengunjungi Instagram @milklife.id.
@@ -217,11 +217,11 @@
                     </div>
                 </div>
 
-                <div class="max-w-4xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-screen-2xl mx-auto w-full">
+                <div class="mx-auto w-full 3xl:max-w-screen-2xl max-w-4xl lg:max-w-5xl 2xl:max-w-7xl">
                     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
                 </div>
 
-                <div class="text-center relative">
+                <div class="relative text-center">
                     <a href="{{ route('frontend.explore') }}" class="btn btn-pill">Eksplor Lebih</a>
                 </div>
             </section>
@@ -229,40 +229,40 @@
 
         {{-- Contact --}}
         <div class="section">
-            <div class="contact-section bg-milklife-blue-banner"
+            <div class="bg-milklife-blue-banner contact-section"
                 data-splide-hash="contact">
 
 
-                <div class="flex w-full h-screen justify-center items-center relative">
+                <div class="relative flex justify-center items-center w-full h-screen">
 
-                    <div class="the-content max-w-screen-md w-full text-center">
-                        <h3 class="text-3xl lg:text-5xl font-koara-bold text-center text-white mb-5">Promo ekstra
+                    <div class="w-full max-w-screen-md text-center the-content">
+                        <h3 class="mb-5 font-koara-bold text-white text-3xl lg:text-5xl text-center">Promo ekstra
                             untuk kamu yang berdedikasi ekstra</h3>
 
                         <a href="https://bit.ly/HaloMilkLifee"
                             target="_blank"
-                            class="btn btn-whatsapp shadow-sm hover:shadow-3 focus:shadow-3 translate-y-0 focus:-translate-y-1 hover:-translate-y-1 transition-all ease-in-out duration-500">
+                            class="shadow-sm hover:shadow-3 focus:shadow-3 transition-all translate-y-0 hover:-translate-y-1 focus:-translate-y-1 duration-500 ease-in-out btn btn-whatsapp">
                             <span>MilkLife Careline</span>
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
 
-                    <footer class="absolute bottom-0 inset-x-0 flex flex-col space-y-2 py-3 items-center">
-                        <div class="link-icons-wrapper flex items-center space-x-4">
-                            <a href="https://www.instagram.com/milklife.id/" target="_blank" class="link-icon-items "
+                    <footer class="bottom-0 absolute inset-x-0 flex flex-col items-center space-y-2 py-3">
+                        <div class="flex items-center space-x-4 link-icons-wrapper">
+                            <a href="https://www.instagram.com/milklife.id/" target="_blank" class="link-icon-items"
                                 style="background-image: url('{{ asset('img/icons/insta.png') }}')"></a>
-                            <a href="https://www.tiktok.com/@milklife_id" target="_blank" class="link-icon-items "
+                            <a href="https://www.tiktok.com/@milklife_id" target="_blank" class="link-icon-items"
                                 style="background-image: url('{{ asset('img/icons/tiktok.png') }}')"></a>
-                            <a href="https://twitter.com/MilkLife_ID" target="_blank" class="link-icon-items "
+                            <a href="https://twitter.com/MilkLife_ID" target="_blank" class="link-icon-items"
                                 style="background-image: url('{{ asset('img/icons/twitter.png') }}')"></a>
-                            <a href="https://www.facebook.com/milklifedairyID/" target="_blank" class="link-icon-items "
+                            <a href="https://www.facebook.com/milklifedairyID/" target="_blank" class="link-icon-items"
                                 style="background-image: url('{{ asset('img/icons/facebook.png') }}')"></a>
-                            <a href="https://www.youtube.com/channel/UCNGNoT-SKbax1nsJwc5SkZA" target="_blank" class="link-icon-items "
+                            <a href="https://www.youtube.com/channel/UCNGNoT-SKbax1nsJwc5SkZA" target="_blank" class="link-icon-items"
                                 style="background-image: url('{{ asset('img/icons/youtube.png') }}')"></a>
                         </div>
 
                         <div class="copyright-wrapper">
-                            <h4 class="text-lg font-gotham-black text-white">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
+                            <h4 class="font-gotham-black text-white text-lg">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
                         </div>
                     </footer>
                 </div>
@@ -317,6 +317,12 @@
                 afterRender: function(){
                     navigationListen(0)
                 },
+            });
+
+            $('#contact-link').click(function(e){
+                console.log(e);
+                $.fn.pagepiling.moveTo('kontak');
+                mobileNav();
             });
         });
 

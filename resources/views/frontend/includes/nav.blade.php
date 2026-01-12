@@ -7,7 +7,7 @@
     }
 @endphp
 
-<nav class="nav bg-milklife-orange-darken md:bg-transparent" id="navigation">
+<nav class="bg-milklife-orange-darken md:bg-transparent nav" id="navigation">
     <div class="nav-wrapper">
         <a href="{{ route('frontend.index') }}" class="logo-mobile">
             <img src="{{ asset('img/logo.png') }}" alt="" width="125">
@@ -27,17 +27,24 @@
         <div class="item-wrapper {{ $nav_class_col }} {{ activeClass(Route::is('frontend.article'), 'active') }}">
             <a href="{{ route('frontend.article') }}">Artikel & <br> Resep</a>
         </div>
+        <div class="item-wrapper {{ $nav_class_col }}" id="contact-link">
+            @if (Route::is('frontend.index'))
+                <a href="#kontak">Hubungi Kami</a>
+            @else
+                <a href="{{ route('frontend.index') }}#kontak">Hubungi Kami</a>
+            @endif
+        </div>
     </div>
 
     <div class="toggler-nav-close">
-        <div class="w-11 rounded-b-sm mx-auto text-white text-center cursor-pointer">
+        <div class="mx-auto rounded-b-sm w-11 text-white text-center cursor-pointer">
             <i class="fas fa-chevron-circle-up"></i>
         </div>
     </div>
 </nav>
 
 <nav class="toggler-nav-badge">
-    <div class="w-11 bg-black bg-opacity-30 rounded-b-sm mx-auto text-white text-center">
+    <div class="bg-black bg-opacity-30 mx-auto rounded-b-sm w-11 text-white text-center">
         <i class="fas fa-chevron-circle-down"></i>
     </div>
 </nav>
