@@ -1,8 +1,11 @@
 @props(['promotions' => $promotions])
 <div class="section">
-
     {{-- <section class="banner-section" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')" > --}}
     <section class="banner-section bg-milklife-blue-banner" >
+        <video class="w-full h-full object-cover brightness-[.8]" autoplay muted loop playsinline>
+            <source src="{{ asset('videos/banner-video.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         {{-- top left doodle --}}
         {{-- <div class="absolute top-0 right-0 md:w-28 w-36">
             <img src="{{ asset('img/doodle/white_top_rdoodle.png') }}" alt="" class="w-full">
@@ -20,7 +23,7 @@
             <img src="{{ asset('img/doodle/doodle_bottom_left.png') }}" alt="" class="w-full">
         </div> --}}
 
-        <div class="banner-content">
+        {{-- <div class="banner-content">
             <div class="splide w-full" id="banner__splide">
                 <div class="splide__track">
                     <div class="splide__list">
@@ -41,11 +44,13 @@
                                             <div class="text-center">
                                                 <a href="{{ $promotion['url'] ?? '#' }}" target="_blank" class="btn btn-pill">{{ "Beli Sekarang" }}</a>
                                             </div>
-                                        </div>
+                                        </div> --}}
+                                        {{-- PROMOTION - TAKEOUT --}}
                                         {{-- <p class="text-white font-gotham-bold text-lg 2xl:text-3xl mb-3 md:block hidden">
                                             {!! nl2br($promotion->exerpt) !!}
                                         </p> --}}
-                                    </div>
+                                        {{-- PROMOTION - TAKEOUT --}}
+                                    {{-- </div>
 
                                     <div class="banner-product max-w-xs xl:max-w-[30rem] 2xl:max-w-[36rem] hidden md:block">
                                         <img data-splide-lazy="{{ $promotion['pack_image'] }}" width="640">
@@ -56,6 +61,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 </div>

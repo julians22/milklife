@@ -20,7 +20,7 @@
                 data-splide-hash="about">
 
                 <div class="relative w-full h-full about-content">
-                    <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2>
+                    {{-- <h2 class="page-title" style="text-shadow: 6px 6px 0 #22619F;">Mengapa MilkLife?</h2> --}}
 
                     <div class="about-grid w-full h-full">
                         <div class="flex justify-center items-start md:items-center h-full">
