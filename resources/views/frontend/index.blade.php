@@ -352,29 +352,29 @@
 
             const navCloseBagde = document.querySelector('.toggler-nav-close');
 
-            var bannerSplide = new Splide('#banner__splide', {
-                type: 'fade',
-                speed: 2000,
-                arrows: false,
-                autoplay: true,
-                lazyLoad: 'nearby',
-            });
+            // var bannerSplide = new Splide('#banner__splide', {
+            //     type: 'fade',
+            //     speed: 2000,
+            //     arrows: false,
+            //     autoplay: true,
+            //     lazyLoad: 'nearby',
+            // });
 
-            bannerSplide.on('active', function(e) {
-                const bannerProduct = document.querySelectorAll('.banner-product');
-                const bannerText = document.querySelectorAll('.banner-text');
-                bannerProduct[e.index].classList.add('animate__animated', 'animate__fadeInRightBig');
-                bannerText[e.index].classList.add('animate__animated', 'animate__fadeInLeftBig');
-            });
+            // bannerSplide.on('active', function(e) {
+            //     const bannerProduct = document.querySelectorAll('.banner-product');
+            //     const bannerText = document.querySelectorAll('.banner-text');
+            //     bannerProduct[e.index].classList.add('animate__animated', 'animate__fadeInRightBig');
+            //     bannerText[e.index].classList.add('animate__animated', 'animate__fadeInLeftBig');
+            // });
 
-            bannerSplide.on('inactive', function(e) {
-                const bannerProduct = document.querySelectorAll('.banner-product');
-                const bannerText = document.querySelectorAll('.banner-text');
-                bannerProduct[e.index].classList.remove('animate__animated', 'animate__fadeInRightBig');
-                bannerText[e.index].classList.remove('animate__animated', 'animate__fadeInLeftBig');
-            });
+            // bannerSplide.on('inactive', function(e) {
+            //     const bannerProduct = document.querySelectorAll('.banner-product');
+            //     const bannerText = document.querySelectorAll('.banner-text');
+            //     bannerProduct[e.index].classList.remove('animate__animated', 'animate__fadeInRightBig');
+            //     bannerText[e.index].classList.remove('animate__animated', 'animate__fadeInLeftBig');
+            // });
 
-            bannerSplide.mount();
+            // bannerSplide.mount();
 
 
             var pageNav = document.querySelectorAll('.page-nav-item');
