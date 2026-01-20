@@ -1,7 +1,7 @@
 @props(['promotions' => $promotions])
 <div class="section">
     {{-- <section class="banner-section" style="background-image: url('{{ asset('img/bg/blue.jpg') }}')" > --}}
-    <section class="banner-section bg-milklife-blue-banner" >
+    <section class="banner-section bg-milklife-blue-banner pt-0" >
         <video class="w-full h-full object-cover brightness-[.8]" autoplay muted loop playsinline>
             <source src="{{ asset('videos/banner-video.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
