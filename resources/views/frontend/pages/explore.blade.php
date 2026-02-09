@@ -9,7 +9,7 @@
 
         <div class="explore-content pb-20">
 
-            <h4 class="text-white text-xl mt-10 text-center font-gotham-bold max-w-4xl mx-auto">Ragam potret seru MilkLife di duniamu. Gunakan hashtag <b>#DuniaMilkLife</b> untuk tampil bersama #MilkLife.</h4>
+            <h4 class="text-white text-xl mt-10 text-center font-geologica font-bold max-w-4xl mx-auto">Ragam potret seru MilkLife di duniamu. Gunakan hashtag <b>#DuniaMilkLife</b> untuk tampil bersama #MilkLife.</h4>
 
             <div class="feed-container mt-5">
                 <!-- Place <div> tag where you want the feed to appear -->

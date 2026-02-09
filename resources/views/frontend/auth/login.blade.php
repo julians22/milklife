@@ -3,7 +3,7 @@
 @section('content')
 <div class="w-full h-screen flex items-center justify-center">
     <div class="rounded bg-white text-milklife-blue-darken md:w-1/3 w-11/12">
-        <div class="header-bar text-center font-koara-bold border-b border-milklife-blue p-4">
+        <div class="header-bar text-center font-geologica font-bold border-b border-milklife-blue p-4">
             <h4 class="text-2xl">Login Administrator</h4>
         </div>
 

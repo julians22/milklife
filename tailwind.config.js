@@ -30,6 +30,7 @@ module.exports = {
                 'koara-bold': ['Koara Bold'],
                 'nunito': ['Nunito', 'sans-serif'],
                 'lato' : ['Lato', 'sans-serif'],
+                'geologica' : ['Geologica', 'sans-serif'],
             },
             screens: {
                 'xs' : {'min' : '390px', 'max' : '424px'},

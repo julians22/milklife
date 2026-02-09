@@ -45,7 +45,7 @@
             {{-- product showcase --}}
             <div class="product-show-case mt-5">
                 <div class="product-intro">
-                    <h1 class="text-4xl font-koara-bold mb-6 mt-4 lg:mt-0 text-center lg:text-left">{{ $product->name }}</h1>
+                    <h1 class="text-4xl font-geologica font-bold mb-6 mt-4 lg:mt-0 text-center lg:text-left">{{ $product->name }}</h1>
                     <p class="description text-xl lg:text-lg">{{ $product->slogan }}</p>
                 </div>
                 <div class="product-image w-[150px]">
@@ -69,7 +69,7 @@
             {{-- product links --}}
             @if ($product->productLinks->count() > 0)
             <div class="product-links text-center text-white mt-4">
-                <h4 class="text-xl lg:text-3xl font-koara-bold mb-4">Eksplor Promo:</h4>
+                <h4 class="text-xl lg:text-3xl font-geologica font-bold mb-4">Eksplor Promo:</h4>
                 <div class="flex flex-row flex-no-wrap items-stretch space-x-2 justify-center">
                     @if ($product->productLinks->count() > 0)
                         @foreach ($product->productLinks as $productLink)
@@ -142,16 +142,16 @@
                 <div class="product-misc-content flex flex-col lg:space-y-2">
                     <div class="nav-misc-wrapper">
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'komposisi' }" v-on:click.prevent="showMisc('komposisi')">
-                            <span href="#" class="font-gotham-bold text-base lg:text-2xl text-center">Komposisi</span>
+                            <span href="#" class="font-geologica font-bold text-base lg:text-2xl text-center">Komposisi</span>
                         </div>
                         <div class="nav-misc" v-bind:class="{ active : miscShow == 'nutrisi' }" v-on:click.prevent="showMisc('nutrisi')">
-                            <span href="#" class="font-gotham-bold text-base lg:text-2xl text-center">Informasi Nilai Gizi</span>
+                            <span href="#" class="font-geologica font-bold text-base lg:text-2xl text-center">Informasi Nilai Gizi</span>
                         </div>
                     </div>
                     <div class="misc-body mt-10 md:mt-0 pb-0 md:pb-10 flex-grow px-0 md:px-20" v-cloak v-show="miscShow == 'komposisi'">
                         <div class="flex flex-col h-full justify-end">
                             @foreach ($product->productCompotitions as $compotition)
-                            <div class="flex flex-row flex-no-wrap items-end space-x-5 space-y-4 text-base lg:text-xl font-gotham-black text-white">
+                            <div class="flex flex-row flex-no-wrap items-end space-x-5 space-y-4 text-base lg:text-xl font-geologica font-black text-white">
                                 <span class="w-10"><img src="{{ asset('img/icons/bullet_y.png') }}" alt=""></span>
                                 <span class="flex-1">{{ $compotition->name }}</span>
                             </div>

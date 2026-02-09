@@ -20,11 +20,11 @@
         @apply block;
     }
     .nav .nav-wrapper{
-        @apply flex md:flex-row flex-col justify-between items-start md:items-center mx-auto divide-y-2 divide-y-reverse md:divide-y-0 2xl:max-w-[90rem] max-w-6xl xl:max-w-7xl font-gotham-black text-white tracking-wide;
+        @apply flex md:flex-row flex-col justify-between items-start md:items-center mx-auto divide-y-2 divide-y-reverse md:divide-y-0 2xl:max-w-[90rem] max-w-6xl xl:max-w-7xl font-geologica font-black text-white tracking-wide;
     }
 
     .nav .item-wrapper{
-        @apply flex flex-col justify-center items-center md:items-center font-lato lg:font-normal font-semibold md:text-lg text-xl text-center;
+        @apply flex flex-col justify-center items-center md:items-center font-geologica font-normal lg:font-normal font-semibold md:text-lg text-xl text-center;
     }
 
     .nav .item-wrapper br{
@@ -61,11 +61,11 @@
     }
 
     .btn.btn-doodle{
-        @apply p-6 2xl:p-8 font-gotham-black font-semibold text-lg 2xl:text-2xl;
+        @apply p-6 2xl:p-8 font-geologica font-black font-semibold text-lg 2xl:text-2xl;
     }
 
     .btn.btn-pill{
-        @apply bg-milklife-orange-darken px-2 py-1 rounded-full font-gotham-black font-semibold text-lg 2xl:text-2xl;
+        @apply bg-milklife-orange-darken px-2 py-1 rounded-full font-geologica font-black font-semibold text-lg 2xl:text-2xl;
     }
 
     .btn.btn-doodle.btn-sm{
@@ -73,7 +73,7 @@
     }
 
     .btn.btn-whatsapp{
-        @apply inline-flex items-center space-x-4 bg-green-500 p-3 rounded-2xl font-gotham-bold text-xl lg:text-3xl;
+        @apply inline-flex items-center space-x-4 bg-green-500 p-3 rounded-2xl font-geologica font-bold text-xl lg:text-3xl;
     }
 
 
@@ -109,7 +109,7 @@
     }
 
     .banner-content .banner-title{
-        @apply mb-3 font-koara-bold text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center;
+        @apply mb-3 font-geologica font-bold text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-center;
     }
 
     .banner-content .banner-title img{
@@ -124,7 +124,7 @@
     }
 
     .variant-title{
-        @apply font-gotham-black text-lg text-center;
+        @apply font-geologica font-black text-lg text-center;
     }
 
     .section .article-content{
@@ -163,7 +163,7 @@
     }
 
     .page-title{
-        @apply mt-12 md:mt-0 font-koara-bold text-white text-4xl md:text-5xl text-center leading-tight tracking-wider;
+        @apply mt-12 md:mt-0 font-geologica font-bold text-white text-4xl md:text-5xl text-center leading-tight tracking-wider;
     }
 
     .page-title.page-title-lg{
@@ -191,11 +191,11 @@
     }
 
     .about-title{
-        @apply mt-10 md:mt-0 font-gotham-bold text-white text-xl md:text-3xl text-center;
+        @apply mt-10 md:mt-0 font-geologica font-bold text-white text-xl md:text-3xl text-center;
     }
 
     .about-body .detail .title{
-        @apply mb-2 font-koara-bold text-white text-3xl;
+        @apply mb-2 font-geologica font-bold text-white text-3xl;
     }
 
     .nav-artikel-wrapper{
@@ -251,7 +251,7 @@
         @apply w-full lg:w-2/5 mb-4 lg:mb-0;
     }
     .product-show-case .product-excelence{
-        @apply w-full lg:w-2/5 text-2xl lg:text-4xl font-koara-bold pl-5 mt-4 lg:mt-0;
+        @apply w-full lg:w-2/5 text-2xl lg:text-4xl font-geologica font-bold pl-5 mt-4 lg:mt-0;
     }
     .product-misc{
         @apply flex flex-row justify-between items-start;
@@ -290,15 +290,15 @@
     }
 
     .article-text{
-        @apply font-gotham-light text-white 2xl:text-lg text-left;
+        @apply font-geologica font-light text-white 2xl:text-lg text-left;
     }
 
     .article-text strong, .article-text b{
-        @apply font-gotham-black;
+        @apply font-geologica font-black;
     }
 
     .article-text p{
-        @apply font-gotham-light;
+        @apply font-geologica font-light;
     }
 
 }

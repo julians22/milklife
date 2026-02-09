@@ -11,7 +11,7 @@
                             alt="{{ $post->title }}" class="article-image">
                     </a>
                 </div>
-                <div class="text-xl text-white text-center font-koara-bold">
+                <div class="text-xl text-white text-center font-geologica font-bold">
                     <a href="{{ route('frontend.article.show', $post->slug) }}">
                         <h2>{{ $post->title }}</h2>
                     </a>

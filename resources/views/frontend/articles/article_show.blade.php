@@ -7,7 +7,7 @@
 @section('content')
     <div class="article-section page bg-milklife-blue-banner">
         <div class="article-content text-center pb-10">
-            <h1 class="article-title text-white font-koara-bold text-4xl my-10 text-center">{{ $article->title }}</h1>
+            <h1 class="article-title text-white font-geologica font-bold text-4xl my-10 text-center">{{ $article->title }}</h1>
 
             <img
                 src="{{ $article->image ? $article->image . '?cache=' . $article->updated_at : asset('img/dummy-milklife.jpg') }}"

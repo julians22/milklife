@@ -23,7 +23,7 @@
                             </div>
                             <div class="detail absolute right-[100%] top-1/2 bottom-1/2  w-[400px] hidden md:block">
                                 <h4 class="title">Kolaborasi Kelas Dunia</h4>
-                                <p class="font-gotham-bold text-base text-white">Kami bekerja sama dengan perusahaan kelas dunia
+                                <p class="font-geologica font-bold text-base text-white">Kami bekerja sama dengan perusahaan kelas dunia
                                     yang berteknologi mutakhir untuk memberikan susu
                                     terbaik ke meja makan Anda.</p>
                             </div>
@@ -37,7 +37,7 @@
                             </div>
                             <div class="detail absolute left-[100%] top-0 w-[400px] hidden md:block">
                                 <h4 class="title">The Milk People</h4>
-                                <p class="font-gotham-bold text-base text-white">
+                                <p class="font-geologica font-bold text-base text-white">
                                     Dengan pengalaman puluhan tahun, kami menggabungkan ilmu pengetahuan, dedikasi dan cinta untuk menghadirkan susu berkualitas setiap harinya. Para peternak dan nutrisionis menjaga sapi-sapi dan peternakan kami, di mana mereka memberi pakan berkualitas, menjaga suhu di peternakan, dan senantiasa memberi sapi-sapi kasih sayang sepenuhnya.
                                 </p>
                             </div>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="detail absolute right-[100%] top-1/2 bottom-1/2 hidden md:block w-[400px]">
                                 <h4 class="title">Peternakan Kami</h4>
-                                <p class="font-gotham-bold text-base text-white">
+                                <p class="font-geologica font-bold text-base text-white">
                                     Sapi-sapi Frisian Holstein yang didatangkan dari Australia tinggal di peternakan seluas kurang lebih 50 hektar dengan suhu yang sama seperti di habitat asli mereka, dirawat dan dijaga dengan kasih sayang.
                                     <br><br>Susu segar yang dihasilkan oleh sapi-sapi kami dikemas di pabrik berteknologi tinggi, dengan sumber energi ramah lingkungan yang dihasilkan oleh pengolahan bertenaga biogas.
                                 </p>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="detail absolute left-[100%] top-4 w-[400px] hidden md:block">
                                 <h4 class="title">Sustainability</h4>
-                                <p class="font-gotham-bold text-base text-white">
+                                <p class="font-geologica font-bold text-base text-white">
                                     Kebaikan alam dan teknologi ramah lingkungan.
                                     PT. Global Dairi Alami menjadi satu-satunya pabrik
                                     yang ramah lingkungan di Indonesia yang menerapkan

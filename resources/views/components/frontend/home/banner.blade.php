@@ -42,7 +42,7 @@
                                                 <a href="{{ $promotion['url'] ?? '#' }}" target="_blank" class="btn btn-pill">{{ "Beli Sekarang" }}</a>
                                             </div>
                                         </div>
-                                        {{-- <p class="text-white font-gotham-bold text-lg 2xl:text-3xl mb-3 md:block hidden">
+                                        {{-- <p class="text-white font-geologica font-bold text-lg 2xl:text-3xl mb-3 md:block hidden">
                                             {!! nl2br($promotion->exerpt) !!}
                                         </p> --}}
                                     </div>

@@ -43,8 +43,8 @@
                                     <img class="bottom-0 left-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:-translate-x-4 hover:translate-y-8 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 1.png') }}" alt="">
                                     <div class="right-[120%] bottom-1 w-[350px] about-textbox">
-                                        <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Kualitas Konsisten</p>
-                                        <p class="font-gotham-black text-white leading-none">Pengawasan ekstra tanpa henti dalam<br>
+                                        <p class="mb-2 font-geologica font-bold text-[30px] text-white leading-none">Kualitas Konsisten</p>
+                                        <p class="font-geologica font-black text-white leading-none">Pengawasan ekstra tanpa henti dalam<br>
                                             satu kawasan,  memastikan kualitas<br>
                                             MilkLife terus terjaga</p>
                                         <img src="{{ asset('img/doodle/arrow_about_bottom_l.png') }}" alt="" class="top-[-3rem] left-[90%] absolute w-[60px]">
@@ -55,8 +55,8 @@
                                     <img class="top-0 left-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:-translate-x-4 hover:-translate-y-8 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 2.png') }}" alt="">
                                     <div class="top-1 right-full w-[350px] about-textbox">
-                                        <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Kesegaran Murni</p>
-                                        <p class="font-gotham-black text-white leading-none">Langsung dari peternakan, kesegaran susu<br>
+                                        <p class="mb-2 font-geologica font-bold text-[30px] text-white leading-none">Kesegaran Murni</p>
+                                        <p class="font-geologica font-black text-white leading-none">Langsung dari peternakan, kesegaran susu<br>
                                             selalu terjaga dengan ekstra sampai<br>
                                             ke meja makan anda</p>
                                         <img src="{{ asset('img/doodle/arrow_about_top_l.png') }}" alt="" class="top-[-15px] left-[90%] absolute w-[85px]">
@@ -67,8 +67,8 @@
                                     <img class="right-0 bottom-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:translate-x-4 hover:translate-y-8 anim-fade-in"
                                     src="{{ asset('img/thumbnail/home/Photo 3.png') }}" alt="">
                                     <div class="bottom-1 left-[120%] w-[350px] about-textbox">
-                                        <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Rasa yang Luar Biasa</p>
-                                        <p class="font-gotham-black text-white leading-none">Penuh dengan kenikmatan dan kesegaran<br>
+                                        <p class="mb-2 font-geologica font-bold text-[30px] text-white leading-none">Rasa yang Luar Biasa</p>
+                                        <p class="font-geologica font-black text-white leading-none">Penuh dengan kenikmatan dan kesegaran<br>
                                             ekstra, dapat langsung diminum atau<br>
                                             menjadi bahan dasar makanan</p>
                                         <img src="{{ asset('img/doodle/arrow_about_bottom_r.png') }}" alt="" class="right-full -bottom-3 absolute w-[85px]">
@@ -79,8 +79,8 @@
                                     <img class="top-0 right-0 absolute max-w-[160px] md:max-w-[240px] 2xl:max-w-[300px] 3xl:max-w-[350px] hover:-translate-y-8 hover:translate-x-4 anim-fade-in"
                                         src="{{ asset('img/thumbnail/home/Photo 4.png') }}" alt="">
                                         <div class="top-1 left-[120%] w-[320px] about-textbox">
-                                            <p class="mb-2 font-koara-bold text-[30px] text-white leading-none">Nutrisi <br> Lengkap & Seimbang</p>
-                                            <p class="font-gotham-black text-white leading-none">Dari sapi -  sapi bahagia yang diberikan<br>
+                                            <p class="mb-2 font-geologica font-bold text-[30px] text-white leading-none">Nutrisi <br> Lengkap & Seimbang</p>
+                                            <p class="font-geologica font-black text-white leading-none">Dari sapi -  sapi bahagia yang diberikan<br>
                                                 perhatian ekstra oleh Milk People,<br>
                                                 24 jam tanpa henti </p>
                                             <img src="{{ asset('img/doodle/arrow_about_top_r.png') }}" alt="" class="right-full -bottom-1 absolute w-[60px]">
@@ -154,7 +154,7 @@
                                                 class="article-image">
                                         </a>
                                     </div>
-                                    <div class="font-koara-bold text-white text-xl text-center">
+                                    <div class="font-geologica font-bold text-white text-xl text-center">
                                         <h2>{{ $post->title }}</h2>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@
                                                             class="article-image">
                                                     </a>
                                                 </div>
-                                                <div class="font-koara-bold text-white text-xl text-center">
+                                                <div class="font-geologica font-bold text-white text-xl text-center">
                                                     <h2>{{ $post->title }}</h2>
                                                 </div>
                                             </div>
@@ -207,8 +207,8 @@
                 <div class="explore-content">
                     <h2 class="mb-8 2xl:mb-20 page-title page-title-lg explore-title">#DuniaMilkLife</h2>
                     <div class="hidden mx-auto max-w-full lg:max-w-[60%] text-white text-center">
-                        <h4 class="mb-4 font-koara-bold text-2xl 2xl:text-4xl">Semua Tentang MilkLife</h4>
-                        <p class="font-gotham-light text-lg 2xl:text-xl">Beragam informasi dan kegiatan seru MilkLife
+                        <h4 class="mb-4 font-geologica font-bold text-2xl 2xl:text-4xl">Semua Tentang MilkLife</h4>
+                        <p class="font-geologica font-light text-lg 2xl:text-xl">Beragam informasi dan kegiatan seru MilkLife
                             sehari-hari. Kenali
                             MilkLife lebih dekat dengan mengunjungi Instagram @milklife.id.
                             Jangan lupa, pakai hashtag #TentangMilkLife untuk tampil
@@ -236,7 +236,7 @@
                 <div class="relative flex justify-center items-center w-full h-screen">
 
                     <div class="w-full max-w-screen-md text-center the-content">
-                        <h3 class="mb-5 font-koara-bold text-white text-3xl lg:text-5xl text-center">Promo ekstra
+                        <h3 class="mb-5 font-geologica font-bold text-white text-3xl lg:text-5xl text-center">Promo ekstra
                             untuk kamu yang berdedikasi ekstra</h3>
 
                         <a href="https://bit.ly/HaloMilkLifee"
@@ -262,7 +262,7 @@
                         </div>
 
                         <div class="copyright-wrapper">
-                            <h4 class="font-gotham-black text-white text-lg">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
+                            <h4 class="font-geologica font-black text-white text-lg">Copyright &copy; {{ date('Y') }} Member of Savoria Group, All Rights Reserved.</h4>
                         </div>
                     </footer>
                 </div>
