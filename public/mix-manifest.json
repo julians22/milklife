@@ -5,6 +5,7 @@
     "/css/frontend.css": "/css/frontend.css",
     "/css/backend.css": "/css/backend.css",
     "/css/pagepiling.css": "/css/pagepiling.css",
+    "/css/tailwind.css": "/css/tailwind.css",
     "/js/vendor.js": "/js/vendor.js",
     "/vendor/tinymce/skins/content/dark/content.css": "/vendor/tinymce/skins/content/dark/content.css",
     "/vendor/tinymce/skins/content/dark/content.min.css": "/vendor/tinymce/skins/content/dark/content.min.css",
@@ -39,6 +40,5 @@
     "/vendor/tinymce/skins/ui/oxide-dark/skin.mobile.css": "/vendor/tinymce/skins/ui/oxide-dark/skin.mobile.css",
     "/vendor/tinymce/skins/ui/oxide-dark/skin.mobile.min.css": "/vendor/tinymce/skins/ui/oxide-dark/skin.mobile.min.css",
     "/vendor/tinymce/skins/ui/oxide-dark/skin.shadowdom.css": "/vendor/tinymce/skins/ui/oxide-dark/skin.shadowdom.css",
-    "/vendor/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css": "/vendor/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css",
-    "/css/tailwind.css": "/css/tailwind.css"
+    "/vendor/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css": "/vendor/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css"
 }

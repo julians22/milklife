@@ -7,6 +7,12 @@ module.exports = {
     ],
     theme: {
         extend: {
+            animation: {
+                'slide-top-right-scale' : 'slide-top-right-scale 1s ease-in-out',
+                'slide-top-left-scale' : 'slide-top-left-scale 1s ease-in-out',
+                'slide-bottom-left-scale' : 'slide-bottom-left-scale 1s ease-in-out',
+                'slide-bottom-right-scale ' : 'slide-bottom-right-scale  1s ease-in-out',
+            },
             boxShadow: {
                 '1' : '10px 10px 5px 0px rgba(0,0,0,0.1)',
                 '3' : '10px 10px 5px 0px rgba(0,0,0,0.3)',
